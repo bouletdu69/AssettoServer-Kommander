@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  assetto-server:
+    image: compujuckel/assettoserver:latest
+    container_name: WebGuiAssettoServer
+    ports:
+      - "9666:9666"
+      - "9666:9666/udp"
+      - "8666:8666"
+    volumes:
+      - ./data/:/data
+      - ../data/cfg:/app/cfg
+    environment:
+      - TZ=Europe/Paris

@@ -1,0 +1,8 @@
+AI_TRAFFIC:
+    ENABLED: false
+    MAX_CARS: 10
+    MIN_DISTANCE: 100
+
+IgnoreConfigurationErrors:
+  MissingCarChecksums: true
+  MissingTrackParams: true

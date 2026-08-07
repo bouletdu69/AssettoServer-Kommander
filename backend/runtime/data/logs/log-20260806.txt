@@ -1,0 +1,31 @@
+2026-08-06 19:54:31.997 +02:00 [INF] Server shutting down
+2026-08-06 20:39:38.128 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:39:38.176 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:39:38.205 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:39:38.212 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:39:38.369 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:39:41.609 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:39:41.649 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:39:41.670 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:39:41.676 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:39:41.812 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75

@@ -1,0 +1,237 @@
+2026-08-03 18:22:41.841 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:22:41.887 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:22:41.901 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:22:41.905 +02:00 [FTL] Error starting server
+IniParser.Exceptions.ParsingException: Could not parse file cfg/entry_list.ini while parsing line number 0 with value '' - IniParser version: 2.5.2.0
+ ---> System.IO.FileNotFoundException: Could not find file '/data/cfg/entry_list.ini'.
+File name: '/data/cfg/entry_list.ini'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access, FileShare share)
+   at IniParser.FileIniDataParser.ReadFile(String filePath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at IniParser.FileIniDataParser.ReadFile(String filePath, Encoding fileEncoding)
+   at IniParser.FileIniDataParser.ReadFile(String filePath)
+   at AssettoServer.Server.Configuration.EntryList.FromFile(String path) in AssettoServer/Server/Configuration/EntryList.cs:line 31
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 69
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-03 18:24:57.727 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:24:57.776 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:24:57.789 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:24:57.801 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:24:58.059 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-03 18:26:45.532 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:26:45.571 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:26:45.583 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:26:45.586 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:26:46.473 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Weather.DefaultWeatherProvider.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(AssettoServer.Server.Weather.WeatherManager, AssettoServer.Server.Weather.IWeatherTypeProvider, AssettoServer.Server.Configuration.ACServerConfiguration)' on type 'DefaultWeatherProvider'.
+ ---> System.InvalidOperationException: Could not set initial weather configuration
+   at AssettoServer.Server.Weather.DefaultWeatherProvider..ctor(WeatherManager weatherManager, IWeatherTypeProvider weatherTypeProvider, ACServerConfiguration configuration) in AssettoServer/Server/Weather/DefaultWeatherProvider.cs:line 25
+   at lambda_method96(Closure, Object[])
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass14_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-03 18:28:39.763 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:28:39.820 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:28:39.852 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:28:39.855 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:28:40.475 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-03 18:28:40.526 +02:00 [INF] Starting server
+2026-08-03 18:28:40.626 +02:00 [WRN] No XML encryptor configured. Key {10bb7b0e-4546-426a-b780-f68751cb3a12} may be persisted to storage in unencrypted form.
+2026-08-03 18:28:40.883 +02:00 [INF] File blacklist.txt changed on disk, reloading
+2026-08-03 18:28:40.884 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:28:40.887 +02:00 [INF] File whitelist.txt changed on disk, reloading
+2026-08-03 18:28:40.889 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:28:40.889 +02:00 [INF] File admins.txt changed on disk, reloading
+2026-08-03 18:28:40.889 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:28:40.893 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-03 18:28:40.897 +02:00 [INF] Loaded 1 cars
+2026-08-03 18:28:40.904 +02:00 [INF] Initialized 0 track checksums
+2026-08-03 18:28:40.907 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:28:40.909 +02:00 [INF] Initialized 0 car checksums
+2026-08-03 18:28:40.913 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-03 18:28:40.914 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:28:40.914 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:28:40.949 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-03 18:31:18.399 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:31:18.443 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:31:18.463 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:31:18.466 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:31:19.050 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-03 18:31:19.077 +02:00 [INF] Starting server
+2026-08-03 18:31:19.227 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:31:19.233 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:31:19.235 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:31:19.238 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-03 18:31:19.239 +02:00 [INF] Loaded 1 cars
+2026-08-03 18:31:19.245 +02:00 [INF] Initialized 0 track checksums
+2026-08-03 18:31:19.249 +02:00 [INF] Initialized 0 car checksums
+2026-08-03 18:31:19.250 +02:00 [WRN] No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-03 18:31:19.253 +02:00 [INF] Next session: 
+2026-08-03 18:31:19.254 +02:00 [INF] Switching session to id 0
+2026-08-03 18:31:19.550 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-03 18:31:19.552 +02:00 [INF] cfg/data_track_params.ini not found, downloading from GitHub...
+2026-08-03 18:31:19.558 +02:00 [INF] Starting TCP server on port 9600
+2026-08-03 18:31:19.563 +02:00 [INF] Starting UDP server on port 9600
+2026-08-03 18:31:19.571 +02:00 [INF] Starting update loop with an update rate of 20hz
+2026-08-03 18:31:20.037 +02:00 [FTL] Error executing critical background service
+System.AggregateException: One or more errors occurred. (No track params found for ks_monza. More info: https://assettoserver.org/docs/common-configuration-errors#missing-track-params)
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No track params found for ks_monza. More info: https://assettoserver.org/docs/common-configuration-errors#missing-track-params
+   at AssettoServer.Server.Weather.WeatherManager.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/Weather/WeatherManager.cs:line 112
+   --- End of inner exception stack trace ---
+2026-08-03 18:31:20.055 +02:00 [INF] Server shutting down
+2026-08-03 18:32:42.535 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:32:42.586 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:32:42.617 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:32:42.621 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:32:43.179 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-03 18:32:43.204 +02:00 [INF] Starting server
+2026-08-03 18:32:43.351 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:32:43.355 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:32:43.355 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:32:43.358 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-03 18:32:43.359 +02:00 [INF] Loaded 1 cars
+2026-08-03 18:32:43.369 +02:00 [INF] Initialized 0 track checksums
+2026-08-03 18:32:43.375 +02:00 [INF] Initialized 0 car checksums
+2026-08-03 18:32:43.377 +02:00 [WRN] No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-03 18:32:43.380 +02:00 [INF] Next session: 
+2026-08-03 18:32:43.381 +02:00 [INF] Switching session to id 0
+2026-08-03 18:32:43.621 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-03 18:32:43.628 +02:00 [WRN] Using UTC as default time zone
+2026-08-03 18:32:43.633 +02:00 [INF] Starting TCP server on port 9600
+2026-08-03 18:32:43.635 +02:00 [INF] Starting UDP server on port 9600
+2026-08-03 18:32:43.645 +02:00 [INF] Starting update loop with an update rate of 20hz
+2026-08-03 18:35:47.603 +02:00 [INF] Server shutting down
+2026-08-03 18:35:49.899 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:35:49.946 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:35:49.969 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:35:49.972 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:35:50.561 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-03 18:35:50.589 +02:00 [INF] Starting server
+2026-08-03 18:35:50.616 +02:00 [WRN] No XML encryptor configured. Key {1bff9d05-738d-4542-93fd-85a9bb5efc4d} may be persisted to storage in unencrypted form.
+2026-08-03 18:35:50.750 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:35:50.758 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:35:50.759 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:35:50.761 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-03 18:35:50.763 +02:00 [INF] Loaded 1 cars
+2026-08-03 18:35:50.769 +02:00 [INF] Initialized 0 track checksums
+2026-08-03 18:35:50.774 +02:00 [INF] Initialized 0 car checksums
+2026-08-03 18:35:50.775 +02:00 [WRN] No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-03 18:35:50.776 +02:00 [INF] Next session: 
+2026-08-03 18:35:50.777 +02:00 [INF] Switching session to id 0
+2026-08-03 18:35:51.023 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-03 18:35:51.033 +02:00 [WRN] Using UTC as default time zone
+2026-08-03 18:35:51.038 +02:00 [INF] Starting TCP server on port 9600
+2026-08-03 18:35:51.040 +02:00 [INF] Starting UDP server on port 9600
+2026-08-03 18:35:51.046 +02:00 [INF] Starting update loop with an update rate of 20hz
+2026-08-03 18:39:09.076 +02:00 [INF] Server shutting down
+2026-08-03 18:39:11.217 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:39:11.260 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:39:11.283 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:39:11.286 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:39:11.846 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-03 18:39:11.873 +02:00 [INF] Starting server
+2026-08-03 18:39:12.025 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:39:12.034 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:39:12.035 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:39:12.037 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-03 18:39:12.039 +02:00 [INF] Loaded 1 cars
+2026-08-03 18:39:12.045 +02:00 [INF] Initialized 0 track checksums
+2026-08-03 18:39:12.049 +02:00 [INF] Initialized 0 car checksums
+2026-08-03 18:39:12.050 +02:00 [WRN] No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-03 18:39:12.052 +02:00 [INF] Next session: 
+2026-08-03 18:39:12.053 +02:00 [INF] Switching session to id 0
+2026-08-03 18:39:12.282 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-03 18:39:12.292 +02:00 [WRN] Using UTC as default time zone
+2026-08-03 18:39:12.298 +02:00 [INF] Starting TCP server on port 9666
+2026-08-03 18:39:12.301 +02:00 [INF] Starting UDP server on port 9666
+2026-08-03 18:39:12.309 +02:00 [INF] Starting update loop with an update rate of 20hz
+2026-08-03 18:45:20.029 +02:00 [INF] Server shutting down
+2026-08-03 18:45:22.306 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-03 18:45:22.358 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-03 18:45:22.384 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-03 18:45:22.387 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-03 18:45:22.963 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-03 18:45:22.994 +02:00 [INF] Starting server
+2026-08-03 18:45:23.182 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-03 18:45:23.193 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-03 18:45:23.194 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-03 18:45:23.197 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-03 18:45:23.200 +02:00 [INF] Loaded 1 cars
+2026-08-03 18:45:23.207 +02:00 [INF] Initialized 0 track checksums
+2026-08-03 18:45:23.211 +02:00 [INF] Initialized 0 car checksums
+2026-08-03 18:45:23.212 +02:00 [WRN] No data.acd found for bmw_m3_e30. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-03 18:45:23.215 +02:00 [INF] Next session: 
+2026-08-03 18:45:23.216 +02:00 [INF] Switching session to id 0
+2026-08-03 18:45:23.472 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-03 18:45:23.484 +02:00 [WRN] Using UTC as default time zone
+2026-08-03 18:45:23.489 +02:00 [INF] Starting TCP server on port 9666
+2026-08-03 18:45:23.492 +02:00 [INF] Starting UDP server on port 9666
+2026-08-03 18:45:23.499 +02:00 [INF] Starting update loop with an update rate of 20hz
+2026-08-03 19:45:23.234 +02:00 [INF] Next session: 
+2026-08-03 19:45:23.238 +02:00 [INF] Switching session to id 1
+2026-08-03 19:45:23.738 +02:00 [INF] Next session: 
+2026-08-03 19:45:23.739 +02:00 [INF] Switching session to id 2

@@ -1,0 +1,26 @@
+[SERVER]
+NAME           = WebGUI AssettoServer
+PASSWORD       = 
+ADMIN_PASSWORD = admin123
+TRACK          = ks_monza
+CONFIG_TRACK   = 
+MAX_CLIENTS    = 24
+HTTP_PORT      = 8666
+TCP_PORT       = 9666
+UDP_PORT       = 9666
+
+[PRACTICE]
+TIME = 60
+
+[QUALIFY]
+TIME = 0
+
+[RACE]
+LAPS = 10
+
+[WEATHER_0]
+GRAPHICS                 = 3_clear
+BASE_TEMPERATURE_AMBIENT = 22
+BASE_TEMPERATURE_ROAD    = 30
+VARIATION_AMBIENT        = 1
+VARIATION_ROAD           = 1
