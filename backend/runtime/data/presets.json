@@ -1,0 +1,147 @@
+[
+  {
+    "id": "929c9937-22a7-4598-a543-d04e2e64ac5a",
+    "name": "test ia revival",
+    "description": "",
+    "track": "ks_monza66",
+    "trackLayout": "full",
+    "availableCars": [
+      "ks_alfa_romeo_gta"
+    ],
+    "maxClients": 24,
+    "password": "",
+    "loopMode": true,
+    "weather": {
+      "graphics": "Clear",
+      "baseTemperatureAmbient": 22,
+      "baseTemperatureRoad": 30,
+      "variationAmbient": 1,
+      "variationRoad": 1,
+      "windBaseSpeedMin": 3,
+      "windBaseSpeedMax": 15,
+      "windBaseDirection": 0,
+      "windVariationDirection": 10
+    },
+    "sessions": {
+      "practice": {
+        "enabled": true,
+        "time": 50
+      },
+      "qualify": {
+        "enabled": false,
+        "time": 0
+      },
+      "race": {
+        "enabled": false,
+        "time": 0
+      }
+    },
+    "entryList": [
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "name": "",
+        "team": "",
+        "guid": ""
+      },
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "name": "",
+        "team": "",
+        "guid": ""
+      },
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "name": "",
+        "team": "",
+        "guid": ""
+      },
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "name": "",
+        "team": "",
+        "guid": ""
+      },
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "name": "",
+        "team": "",
+        "guid": ""
+      }
+    ],
+    "traffic": [],
+    "aiMaxCars": 0,
+    "aiMinDistance": 0,
+    "createdAt": "2026-08-06T17:38:57.969867621Z",
+    "updatedAt": "2026-08-07T17:45:47.180870678Z"
+  },
+  {
+    "id": "28b27a0c-b124-4770-a848-5a91ca28ba92",
+    "name": "Traffic test",
+    "description": "",
+    "track": "shuto_revival_project_beta",
+    "trackLayout": "main_layout",
+    "availableCars": [
+      "ks_alfa_romeo_gta",
+      "gpl67_honda"
+    ],
+    "maxClients": 50,
+    "password": "",
+    "loopMode": true,
+    "weather": {
+      "graphics": "Clear",
+      "baseTemperatureAmbient": 22,
+      "baseTemperatureRoad": 30,
+      "variationAmbient": 1,
+      "variationRoad": 1,
+      "windBaseSpeedMin": 3,
+      "windBaseSpeedMax": 15,
+      "windBaseDirection": 0,
+      "windVariationDirection": 10
+    },
+    "sessions": {
+      "practice": {
+        "enabled": true,
+        "time": 13200
+      },
+      "qualify": {
+        "enabled": false,
+        "time": 20
+      },
+      "race": {
+        "enabled": false,
+        "time": 20,
+        "laps": 10
+      }
+    },
+    "entryList": [
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "name": "",
+        "team": "",
+        "guid": ""
+      }
+    ],
+    "traffic": [
+      {
+        "car": "ks_alfa_romeo_gta",
+        "skin": "0_rosso_alfa",
+        "count": 10
+      },
+      {
+        "car": "gpl67_honda",
+        "skin": "BOuledeterre69",
+        "count": 10
+      }
+    ],
+    "aiMaxCars": 20,
+    "aiMinDistance": 100,
+    "createdAt": "2026-08-07T21:46:10.942102933Z",
+    "updatedAt": "2026-08-07T22:18:52.955338225Z"
+  }
+]

@@ -54,7 +54,7 @@ func LiveMetricsHandler(w http.ResponseWriter, r *http.Request) {
 	// In most cases AssettoServer runs on 8666 locally in this project
 	port := "8666" 
 
-	infoResp, err := http.Get("http://localhost:" + port + "/INFO")
+	infoResp, err := http.Get("http://assettoserver:" + port + "/INFO")
 	if err != nil {
 		http.Error(w, `{"error": "Server unreachable"}`, http.StatusBadGateway)
 		return
@@ -75,7 +75,7 @@ func LiveMetricsHandler(w http.ResponseWriter, r *http.Request) {
 		info.IP = "82.29.172.87" // Fallback to known IP for this specific deployment
 	}
 
-	jsonResp, err := http.Get("http://localhost:" + port + "/JSON|1")
+	jsonResp, err := http.Get("http://assettoserver:" + port + "/JSON|1")
 	if err != nil {
 		http.Error(w, `{"error": "Server unreachable"}`, http.StatusBadGateway)
 		return

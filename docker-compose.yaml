@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  assettoserver:
+    image: compujuckel/assettoserver:latest
+    container_name: AssettoServer
+    ports:
+      - "9666:9666"
+      - "9666:9666/udp"
+      - "8666:8666"
+    volumes:
+      - ./backend/runtime/data:/data
+      - /home/rs/docker/acsm/server/assetto/content:/data/content
+    environment:
+      - TZ=Europe/Paris
+    restart: always
+
+  kommander-backend:
+    build: 
+      context: ./backend
+    container_name: KommanderBackend
+    environment:
+      - AC_SERVER_INI_PATH=/app/data/cfg/server_cfg.ini
+      - AC_SERVER_YAML_PATH=/app/data/cfg/extra_cfg.yml
+      - AC_CONTENT_PATH=/data/content
+      - AC_PRESETS_PATH=/app/data/presets.json
+      - AC_LOGS_PATH=/app/data/logs
+      - PORT=8080
+    volumes:
+      - ./backend/runtime/data:/app/data
+      - /home/rs/docker/acsm/server/assetto/content:/data/content
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+
+  kommander-frontend:
+    build:
+      context: ./frontend
+    container_name: KommanderFrontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - kommander-backend
+    restart: always

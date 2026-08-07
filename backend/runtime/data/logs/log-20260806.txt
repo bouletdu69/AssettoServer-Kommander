@@ -1,9 +1,8 @@
-2026-08-06 19:54:31.997 +02:00 [INF] Server shutting down
-2026-08-06 20:39:38.128 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
-2026-08-06 20:39:38.176 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
-2026-08-06 20:39:38.205 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
-2026-08-06 20:39:38.212 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
-2026-08-06 20:39:38.369 +02:00 [FTL] Error starting server
+2026-08-06 20:37:27.925 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:28.000 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:28.039 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:28.055 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:28.263 +02:00 [FTL] Error starting server
 FluentValidation.ValidationException: Validation failed: 
  -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
    at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
@@ -14,11 +13,11 @@ FluentValidation.ValidationException: Validation failed:
    at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
    at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
    at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
-2026-08-06 20:39:41.609 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
-2026-08-06 20:39:41.649 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
-2026-08-06 20:39:41.670 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
-2026-08-06 20:39:41.676 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
-2026-08-06 20:39:41.812 +02:00 [FTL] Error starting server
+2026-08-06 20:37:29.450 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:29.495 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:29.522 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:29.530 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:29.682 +02:00 [FTL] Error starting server
 FluentValidation.ValidationException: Validation failed: 
  -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
    at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
@@ -29,3 +28,707 @@ FluentValidation.ValidationException: Validation failed:
    at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
    at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
    at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:37:30.814 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:30.857 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:30.882 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:30.888 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:31.038 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:37:32.262 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:32.306 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:32.331 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:32.338 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:32.493 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:37:33.970 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:34.027 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:34.054 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:34.062 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:34.211 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:37:36.647 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:36.689 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:36.713 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:36.719 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:36.866 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:37:40.826 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:40.871 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:40.897 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:40.902 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:41.040 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:37:48.199 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:37:48.243 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:37:48.270 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:37:48.277 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:37:48.432 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:38:02.829 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:38:02.877 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:38:02.903 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:38:02.911 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:38:03.083 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:38:29.496 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:38:29.543 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:38:29.571 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:38:29.578 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:38:29.737 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:39:21.691 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:39:21.736 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:39:21.761 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:39:21.768 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:39:21.919 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:40:22.741 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:40:22.787 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:40:22.814 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:40:22.820 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:40:22.980 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:41:23.808 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:41:23.856 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:41:23.881 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:41:23.888 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:41:24.052 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:42:24.822 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:42:24.870 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:42:24.898 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:42:24.905 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:42:25.067 +02:00 [FTL] Error starting server
+FluentValidation.ValidationException: Validation failed: 
+ -- Server.AdminPassword: The length of 'ADMIN_PASSWORD' must be at least 8 characters. You entered 5 characters. Severity: Error
+   at FluentValidation.AbstractValidator`1.RaiseValidationException(ValidationContext`1 context, ValidationResult result) in /_/src/FluentValidation/AbstractValidator.cs:line 531
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 258
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.DefaultValidatorExtensions.Validate[T](IValidator`1 validator, T instance, Action`1 options) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 38
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance) in /_/src/FluentValidation/DefaultValidatorExtensions_Validate.cs:line 59
+   at AssettoServer.Server.Configuration.ACServerConfiguration..ctor(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir) in AssettoServer/Server/Configuration/ACServerConfiguration.cs:line 119
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 75
+2026-08-06 20:43:25.942 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:43:25.986 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:43:26.011 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:43:26.017 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:43:26.946 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:43:26.985 +02:00 [INF] Starting server
+2026-08-06 20:43:27.111 +02:00 [WRN] No XML encryptor configured. Key {a693643a-4b3b-4e5f-85bb-b2c15f1e9908} may be persisted to storage in unencrypted form.
+2026-08-06 20:43:27.376 +02:00 [INF] File blacklist.txt changed on disk, reloading
+2026-08-06 20:43:27.377 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:43:27.379 +02:00 [INF] File whitelist.txt changed on disk, reloading
+2026-08-06 20:43:27.379 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:43:27.379 +02:00 [INF] File admins.txt changed on disk, reloading
+2026-08-06 20:43:27.379 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:43:27.381 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:43:27.383 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:43:27.392 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:43:27.393 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:43:27.399 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:43:27.402 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:43:27.403 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:43:27.403 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:43:27.430 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:44:28.170 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:44:28.208 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:44:28.233 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:44:28.239 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:44:28.836 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:44:28.862 +02:00 [INF] Starting server
+2026-08-06 20:44:29.018 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:44:29.024 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:44:29.025 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:44:29.027 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:44:29.029 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:44:29.036 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:44:29.041 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:44:29.044 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:44:29.071 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:45:29.830 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:45:29.876 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:45:29.907 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:45:29.913 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:45:30.494 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:45:30.519 +02:00 [INF] Starting server
+2026-08-06 20:45:30.678 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:45:30.682 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:45:30.683 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:45:30.687 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:45:30.689 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:45:30.698 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:45:30.704 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:45:30.708 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:45:30.748 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:46:31.516 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:46:31.562 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:46:31.594 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:46:31.602 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:46:32.202 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:46:32.229 +02:00 [INF] Starting server
+2026-08-06 20:46:32.403 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:46:32.406 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:46:32.407 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:46:32.410 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:46:32.411 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:46:32.421 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:46:32.427 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:46:32.430 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:46:32.461 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:47:33.229 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:47:33.274 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:47:33.302 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:47:33.309 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:47:33.862 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:47:33.888 +02:00 [INF] Starting server
+2026-08-06 20:47:34.038 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:47:34.046 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:47:34.048 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:47:34.051 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:47:34.052 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:47:34.059 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:47:34.064 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:47:34.067 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:47:34.097 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:48:34.930 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:48:34.976 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:48:35.000 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:48:35.007 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:48:35.600 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:48:35.626 +02:00 [INF] Starting server
+2026-08-06 20:48:35.793 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:48:35.798 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:48:35.798 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:48:35.801 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:48:35.802 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:48:35.809 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:48:35.814 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:48:35.817 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:48:35.846 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:49:36.638 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:49:36.689 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:49:36.714 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:49:36.722 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:49:37.304 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:49:37.330 +02:00 [INF] Starting server
+2026-08-06 20:49:37.503 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:49:37.511 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:49:37.512 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:49:37.515 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:49:37.517 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:49:37.526 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:49:37.531 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:49:37.534 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:49:37.563 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:50:38.349 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:50:38.393 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:50:38.418 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:50:38.424 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:50:38.993 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:50:39.019 +02:00 [INF] Starting server
+2026-08-06 20:50:39.174 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:50:39.182 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:50:39.183 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:50:39.185 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:50:39.187 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:50:39.194 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:50:39.198 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:50:39.201 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:50:39.229 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:51:40.010 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:51:40.053 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:51:40.083 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:51:40.091 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:51:40.664 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:51:40.690 +02:00 [INF] Starting server
+2026-08-06 20:51:40.842 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:51:40.846 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:51:40.847 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:51:40.849 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:51:40.851 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:51:40.859 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:51:40.865 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:51:40.868 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:51:40.896 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:52:41.603 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:52:41.650 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:52:41.679 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:52:41.686 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:52:42.245 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:52:42.270 +02:00 [INF] Starting server
+2026-08-06 20:52:42.422 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:52:42.425 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:52:42.426 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:52:42.428 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:52:42.429 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:52:42.436 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:52:42.440 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:52:42.443 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:52:42.470 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:53:43.193 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:53:43.234 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:53:43.255 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:53:43.261 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:53:43.836 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:53:43.865 +02:00 [INF] Starting server
+2026-08-06 20:53:44.034 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:53:44.037 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:53:44.038 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:53:44.041 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:53:44.042 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:53:44.052 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:53:44.057 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:53:44.060 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:53:44.089 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:54:44.852 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:54:44.905 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:54:44.932 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:54:44.938 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:54:45.504 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:54:45.534 +02:00 [INF] Starting server
+2026-08-06 20:54:45.704 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:54:45.711 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:54:45.711 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:54:45.715 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:54:45.716 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:54:45.725 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:54:45.730 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:54:45.733 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:54:45.761 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:55:46.503 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:55:46.548 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:55:46.577 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:55:46.584 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:55:47.137 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:55:47.165 +02:00 [INF] Starting server
+2026-08-06 20:55:47.330 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:55:47.341 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:55:47.343 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:55:47.345 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:55:47.346 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:55:47.352 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:55:47.356 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:55:47.359 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:55:47.383 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:56:48.235 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:56:48.284 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:56:48.310 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:56:48.317 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:56:48.886 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:56:48.916 +02:00 [INF] Starting server
+2026-08-06 20:56:49.090 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:56:49.102 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:56:49.103 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:56:49.105 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:56:49.106 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:56:49.113 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:56:49.118 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:56:49.120 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:56:49.150 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:57:49.900 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:57:49.942 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:57:49.964 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:57:49.969 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:57:50.497 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:57:50.521 +02:00 [INF] Starting server
+2026-08-06 20:57:50.666 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:57:50.674 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:57:50.675 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:57:50.678 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:57:50.679 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:57:50.687 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:57:50.692 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:57:50.695 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-06 20:57:50.724 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-06 20:58:50.497 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 20:58:50.542 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 20:58:50.568 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 20:58:50.575 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 20:58:51.174 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 20:58:51.203 +02:00 [INF] Starting server
+2026-08-06 20:58:51.378 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 20:58:51.383 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 20:58:51.384 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 20:58:51.386 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 20:58:51.387 +02:00 [INF] Loaded 5 cars
+2026-08-06 20:58:51.394 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 20:58:51.398 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 20:58:51.399 +02:00 [WRN] No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-06 20:58:51.402 +02:00 [INF] Next session: Free Practice
+2026-08-06 20:58:51.403 +02:00 [INF] Switching session to id 0
+2026-08-06 20:58:51.721 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-06 20:58:51.723 +02:00 [INF] cfg/data_track_params.ini not found, downloading from GitHub...
+2026-08-06 20:58:51.729 +02:00 [INF] Starting TCP server on port 9600
+2026-08-06 20:58:51.732 +02:00 [INF] Starting UDP server on port 9600
+2026-08-06 20:58:51.752 +02:00 [INF] Registering server to lobby...
+2026-08-06 20:58:51.757 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-06 20:58:51.851 +02:00 [INF] Lobby registration successful
+2026-08-06 20:58:57.873 +02:00 [INF] Server shutting down
+2026-08-06 21:03:27.482 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 21:03:27.524 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 21:03:27.549 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 21:03:27.556 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 21:03:28.160 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 21:03:28.198 +02:00 [INF] Starting server
+2026-08-06 21:03:28.381 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 21:03:28.385 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 21:03:28.386 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 21:03:28.390 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 21:03:28.392 +02:00 [INF] Loaded 5 cars
+2026-08-06 21:03:28.400 +02:00 [INF] Initialized 0 track checksums
+2026-08-06 21:03:28.405 +02:00 [INF] Initialized 0 car checksums
+2026-08-06 21:03:28.408 +02:00 [WRN] No data.acd found for j8_shelby_gt500_67, ks_alfa_romeo_gta. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+2026-08-06 21:03:28.411 +02:00 [INF] Next session: Free Practice
+2026-08-06 21:03:28.412 +02:00 [INF] Switching session to id 0
+2026-08-06 21:03:28.654 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-06 21:03:28.695 +02:00 [INF] Starting TCP server on port 9600
+2026-08-06 21:03:28.699 +02:00 [INF] Starting UDP server on port 9600
+2026-08-06 21:03:28.712 +02:00 [INF] Registering server to lobby...
+2026-08-06 21:03:28.718 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-06 21:03:28.821 +02:00 [INF] Lobby registration successful
+2026-08-06 21:05:20.673 +02:00 [INF] Server shutting down
+2026-08-06 21:06:39.009 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-06 21:06:39.048 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-06 21:06:39.069 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-06 21:06:39.075 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-06 21:06:39.642 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-06 21:06:39.668 +02:00 [INF] Starting server
+2026-08-06 21:06:39.696 +02:00 [WRN] No XML encryptor configured. Key {1ee3d817-4a79-4bee-b38c-9a33851a332a} may be persisted to storage in unencrypted form.
+2026-08-06 21:06:39.823 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-06 21:06:39.833 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-06 21:06:39.834 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-06 21:06:39.837 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-06 21:06:39.838 +02:00 [INF] Loaded 5 cars
+2026-08-06 21:06:39.847 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-06 21:06:39.848 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-06 21:06:39.848 +02:00 [INF] Initialized 2 track checksums
+2026-08-06 21:06:39.854 +02:00 [DBG] Added checksum for j8_shelby_gt500_67
+2026-08-06 21:06:39.857 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-06 21:06:39.861 +02:00 [INF] Initialized 2 car checksums
+2026-08-06 21:06:39.864 +02:00 [INF] Next session: Free Practice
+2026-08-06 21:06:39.865 +02:00 [INF] Switching session to id 0
+2026-08-06 21:06:40.093 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-06 21:06:40.129 +02:00 [INF] Starting TCP server on port 9600
+2026-08-06 21:06:40.131 +02:00 [INF] Starting UDP server on port 9600
+2026-08-06 21:06:40.138 +02:00 [INF] Registering server to lobby...
+2026-08-06 21:06:40.144 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-06 21:06:40.235 +02:00 [INF] Lobby registration successful
+2026-08-06 21:56:40.038 +02:00 [INF] Looping sessions
+2026-08-06 21:56:40.039 +02:00 [INF] Next session: Free Practice
+2026-08-06 21:56:40.041 +02:00 [INF] Switching session to id 0
+2026-08-06 22:46:40.374 +02:00 [INF] Looping sessions
+2026-08-06 22:46:40.375 +02:00 [INF] Next session: Free Practice
+2026-08-06 22:46:40.375 +02:00 [INF] Switching session to id 0
+2026-08-06 23:36:40.700 +02:00 [INF] Looping sessions
+2026-08-06 23:36:40.701 +02:00 [INF] Next session: Free Practice
+2026-08-06 23:36:40.701 +02:00 [INF] Switching session to id 0

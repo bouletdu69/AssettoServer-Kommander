@@ -1,0 +1,1282 @@
+2026-08-07 00:26:41.146 +02:00 [INF] Looping sessions
+2026-08-07 00:26:41.149 +02:00 [INF] Next session: Free Practice
+2026-08-07 00:26:41.149 +02:00 [INF] Switching session to id 0
+2026-08-07 01:16:41.639 +02:00 [INF] Looping sessions
+2026-08-07 01:16:41.640 +02:00 [INF] Next session: Free Practice
+2026-08-07 01:16:41.640 +02:00 [INF] Switching session to id 0
+2026-08-07 02:06:42.087 +02:00 [INF] Looping sessions
+2026-08-07 02:06:42.090 +02:00 [INF] Next session: Free Practice
+2026-08-07 02:06:42.091 +02:00 [INF] Switching session to id 0
+2026-08-07 02:56:42.441 +02:00 [INF] Looping sessions
+2026-08-07 02:56:42.442 +02:00 [INF] Next session: Free Practice
+2026-08-07 02:56:42.443 +02:00 [INF] Switching session to id 0
+2026-08-07 03:46:42.871 +02:00 [INF] Looping sessions
+2026-08-07 03:46:42.873 +02:00 [INF] Next session: Free Practice
+2026-08-07 03:46:42.873 +02:00 [INF] Switching session to id 0
+2026-08-07 04:36:43.059 +02:00 [INF] Looping sessions
+2026-08-07 04:36:43.059 +02:00 [INF] Next session: Free Practice
+2026-08-07 04:36:43.060 +02:00 [INF] Switching session to id 0
+2026-08-07 05:26:43.232 +02:00 [INF] Looping sessions
+2026-08-07 05:26:43.234 +02:00 [INF] Next session: Free Practice
+2026-08-07 05:26:43.234 +02:00 [INF] Switching session to id 0
+2026-08-07 06:16:43.442 +02:00 [INF] Looping sessions
+2026-08-07 06:16:43.448 +02:00 [INF] Next session: Free Practice
+2026-08-07 06:16:43.448 +02:00 [INF] Switching session to id 0
+2026-08-07 07:06:43.810 +02:00 [INF] Looping sessions
+2026-08-07 07:06:43.812 +02:00 [INF] Next session: Free Practice
+2026-08-07 07:06:43.813 +02:00 [INF] Switching session to id 0
+2026-08-07 07:56:44.230 +02:00 [INF] Looping sessions
+2026-08-07 07:56:44.235 +02:00 [INF] Next session: Free Practice
+2026-08-07 07:56:44.235 +02:00 [INF] Switching session to id 0
+2026-08-07 08:46:44.320 +02:00 [INF] Looping sessions
+2026-08-07 08:46:44.321 +02:00 [INF] Next session: Free Practice
+2026-08-07 08:46:44.321 +02:00 [INF] Switching session to id 0
+2026-08-07 09:36:44.447 +02:00 [INF] Looping sessions
+2026-08-07 09:36:44.452 +02:00 [INF] Next session: Free Practice
+2026-08-07 09:36:44.455 +02:00 [INF] Switching session to id 0
+2026-08-07 10:26:44.922 +02:00 [INF] Looping sessions
+2026-08-07 10:26:44.925 +02:00 [INF] Next session: Free Practice
+2026-08-07 10:26:44.926 +02:00 [INF] Switching session to id 0
+2026-08-07 11:16:44.998 +02:00 [INF] Looping sessions
+2026-08-07 11:16:45.002 +02:00 [INF] Next session: Free Practice
+2026-08-07 11:16:45.003 +02:00 [INF] Switching session to id 0
+2026-08-07 12:06:45.261 +02:00 [INF] Looping sessions
+2026-08-07 12:06:45.262 +02:00 [INF] Next session: Free Practice
+2026-08-07 12:06:45.262 +02:00 [INF] Switching session to id 0
+2026-08-07 12:56:45.673 +02:00 [INF] Looping sessions
+2026-08-07 12:56:45.675 +02:00 [INF] Next session: Free Practice
+2026-08-07 12:56:45.675 +02:00 [INF] Switching session to id 0
+2026-08-07 13:46:45.721 +02:00 [INF] Looping sessions
+2026-08-07 13:46:45.725 +02:00 [INF] Next session: Free Practice
+2026-08-07 13:46:45.727 +02:00 [INF] Switching session to id 0
+2026-08-07 14:36:45.889 +02:00 [INF] Looping sessions
+2026-08-07 14:36:45.890 +02:00 [INF] Next session: Free Practice
+2026-08-07 14:36:45.890 +02:00 [INF] Switching session to id 0
+2026-08-07 15:26:46.381 +02:00 [INF] Looping sessions
+2026-08-07 15:26:46.384 +02:00 [INF] Next session: Free Practice
+2026-08-07 15:26:46.384 +02:00 [INF] Switching session to id 0
+2026-08-07 16:16:46.875 +02:00 [INF] Looping sessions
+2026-08-07 16:16:46.876 +02:00 [INF] Next session: Free Practice
+2026-08-07 16:16:46.877 +02:00 [INF] Switching session to id 0
+2026-08-07 17:06:46.885 +02:00 [INF] Looping sessions
+2026-08-07 17:06:46.890 +02:00 [INF] Next session: Free Practice
+2026-08-07 17:06:46.890 +02:00 [INF] Switching session to id 0
+2026-08-07 17:56:47.260 +02:00 [INF] Looping sessions
+2026-08-07 17:56:47.260 +02:00 [INF] Next session: Free Practice
+2026-08-07 17:56:47.262 +02:00 [INF] Switching session to id 0
+2026-08-07 18:46:47.723 +02:00 [INF] Looping sessions
+2026-08-07 18:46:47.726 +02:00 [INF] Next session: Free Practice
+2026-08-07 18:46:47.727 +02:00 [INF] Switching session to id 0
+2026-08-07 19:36:48.166 +02:00 [INF] Looping sessions
+2026-08-07 19:36:48.166 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:36:48.168 +02:00 [INF] Switching session to id 0
+2026-08-07 19:44:40.779 +02:00 [INF] Server shutting down
+2026-08-07 19:44:44.118 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:44:44.201 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:44:44.233 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:44:44.252 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:44:45.359 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:44:45.397 +02:00 [INF] Starting server
+2026-08-07 19:44:45.493 +02:00 [WRN] No XML encryptor configured. Key {5f926350-799f-4bd3-a925-81de54ecc5eb} may be persisted to storage in unencrypted form.
+2026-08-07 19:44:45.793 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:44:45.801 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:44:45.801 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:44:45.805 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 19:44:45.806 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:44:45.818 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:44:45.818 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:44:45.820 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:44:45.827 +02:00 [DBG] Added checksum for j8_shelby_gt500_67
+2026-08-07 19:44:45.832 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:44:45.842 +02:00 [INF] Initialized 2 car checksums
+2026-08-07 19:44:45.846 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:44:45.847 +02:00 [INF] Switching session to id 0
+2026-08-07 19:44:46.161 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-07 19:44:46.209 +02:00 [INF] Starting TCP server on port 9666
+2026-08-07 19:44:46.211 +02:00 [INF] Starting UDP server on port 9666
+2026-08-07 19:44:46.223 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:44:46.230 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:44:46.325 +02:00 [INF] Lobby registration successful
+2026-08-07 19:46:00.519 +02:00 [INF] Server shutting down
+2026-08-07 19:46:03.347 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:46:03.392 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:46:03.415 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:46:03.421 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:46:04.036 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:46:04.064 +02:00 [INF] Starting server
+2026-08-07 19:46:04.235 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:46:04.243 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:46:04.243 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:46:04.246 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-07 19:46:04.248 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:46:04.256 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:46:04.256 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:46:04.256 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:46:04.258 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:46:04.261 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 19:46:04.264 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:46:04.265 +02:00 [INF] Switching session to id 0
+2026-08-07 19:46:04.522 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-07 19:46:04.561 +02:00 [INF] Starting TCP server on port 9600
+2026-08-07 19:46:04.564 +02:00 [INF] Starting UDP server on port 9600
+2026-08-07 19:46:04.572 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:46:04.577 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:46:04.672 +02:00 [INF] Lobby registration successful
+2026-08-07 19:46:14.730 +02:00 [INF] Server shutting down
+2026-08-07 19:46:18.814 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:46:18.856 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:46:18.883 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:46:18.890 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:46:19.479 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:46:19.506 +02:00 [INF] Starting server
+2026-08-07 19:46:19.665 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:46:19.669 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:46:19.669 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:46:19.672 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-07 19:46:19.673 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:46:19.681 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:46:19.681 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:46:19.681 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:46:19.683 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:46:19.685 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 19:46:19.688 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:46:19.689 +02:00 [INF] Switching session to id 0
+2026-08-07 19:46:19.917 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-07 19:46:19.952 +02:00 [INF] Starting TCP server on port 9600
+2026-08-07 19:46:19.955 +02:00 [INF] Starting UDP server on port 9600
+2026-08-07 19:46:19.962 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:46:19.967 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:46:20.034 +02:00 [ERR] Error during Kunos lobby registration
+AssettoServer.Server.KunosLobbyException: ERROR - TOO MANY REGISTRATION ATTEMPTS, SLOW DOWN
+   at AssettoServer.Server.KunosLobbyRegistration.RegisterToLobbyAsync(CancellationToken token) in AssettoServer/Server/KunosLobbyRegistration.cs:line 113
+   at AssettoServer.Server.KunosLobbyRegistration.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/KunosLobbyRegistration.cs:line 37
+2026-08-07 19:46:25.753 +02:00 [INF] Server shutting down
+2026-08-07 19:46:34.290 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:46:34.336 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:46:34.361 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:46:34.368 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:46:34.966 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:46:34.994 +02:00 [INF] Starting server
+2026-08-07 19:46:35.165 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:46:35.169 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:46:35.170 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:46:35.174 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-07 19:46:35.177 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:46:35.186 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:46:35.186 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:46:35.187 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:46:35.189 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:46:35.192 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 19:46:35.195 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:46:35.196 +02:00 [INF] Switching session to id 0
+2026-08-07 19:46:35.439 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-07 19:46:35.476 +02:00 [INF] Starting TCP server on port 9600
+2026-08-07 19:46:35.479 +02:00 [INF] Starting UDP server on port 9600
+2026-08-07 19:46:35.485 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:46:35.491 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:46:35.591 +02:00 [INF] Lobby registration successful
+2026-08-07 19:49:57.934 +02:00 [INF] Server shutting down
+2026-08-07 19:50:07.170 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:50:07.238 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:50:07.270 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:50:07.278 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:50:07.921 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:50:07.953 +02:00 [INF] Starting server
+2026-08-07 19:50:08.139 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:50:08.143 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:50:08.145 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:50:08.148 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-07 19:50:08.149 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:50:08.158 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:50:08.158 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:50:08.159 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:50:08.160 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:50:08.164 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 19:50:08.168 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:50:08.169 +02:00 [INF] Switching session to id 0
+2026-08-07 19:50:08.433 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-07 19:50:08.473 +02:00 [INF] Starting TCP server on port 9600
+2026-08-07 19:50:08.476 +02:00 [INF] Starting UDP server on port 9600
+2026-08-07 19:50:08.485 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:50:08.493 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:50:08.583 +02:00 [INF] Lobby registration successful
+2026-08-07 19:50:14.949 +02:00 [INF] Server shutting down
+2026-08-07 19:50:47.289 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:50:47.331 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:50:47.358 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:50:47.366 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:50:47.929 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:50:47.968 +02:00 [INF] Starting server
+2026-08-07 19:50:48.146 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:50:48.152 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:50:48.153 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:50:48.156 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-07 19:50:48.158 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:50:48.166 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:50:48.167 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:50:48.167 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:50:48.168 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:50:48.173 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 19:50:48.176 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:50:48.177 +02:00 [INF] Switching session to id 0
+2026-08-07 19:50:48.409 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-07 19:50:48.454 +02:00 [INF] Starting TCP server on port 9600
+2026-08-07 19:50:48.457 +02:00 [INF] Starting UDP server on port 9600
+2026-08-07 19:50:48.465 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:50:48.471 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:50:48.565 +02:00 [INF] Lobby registration successful
+2026-08-07 19:53:23.325 +02:00 [INF] Server shutting down
+2026-08-07 19:53:29.748 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 19:53:29.804 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 19:53:29.828 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 19:53:29.835 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 19:53:30.427 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 19:53:30.455 +02:00 [INF] Starting server
+2026-08-07 19:53:30.624 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 19:53:30.628 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 19:53:30.628 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 19:53:30.633 +02:00 [INF] Starting HTTP server on port 8081
+2026-08-07 19:53:30.635 +02:00 [INF] Loaded 5 cars
+2026-08-07 19:53:30.643 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 19:53:30.643 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 19:53:30.643 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 19:53:30.645 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 19:53:30.648 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 19:53:30.651 +02:00 [INF] Next session: Free Practice
+2026-08-07 19:53:30.652 +02:00 [INF] Switching session to id 0
+2026-08-07 19:53:30.898 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8081
+2026-08-07 19:53:30.938 +02:00 [INF] Starting TCP server on port 9600
+2026-08-07 19:53:30.941 +02:00 [INF] Starting UDP server on port 9600
+2026-08-07 19:53:30.956 +02:00 [INF] Registering server to lobby...
+2026-08-07 19:53:30.961 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 19:53:31.054 +02:00 [INF] Lobby registration successful
+2026-08-07 19:54:04.840 +02:00 [INF] Server shutting down
+2026-08-07 20:03:32.159 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 20:03:32.201 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 20:03:32.229 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 20:03:32.237 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 20:03:32.842 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 20:03:32.870 +02:00 [INF] Starting server
+2026-08-07 20:03:33.028 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 20:03:33.040 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 20:03:33.041 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 20:03:33.043 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 20:03:33.044 +02:00 [INF] Loaded 5 cars
+2026-08-07 20:03:33.052 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 20:03:33.052 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 20:03:33.053 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 20:03:33.054 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 20:03:33.058 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 20:03:33.061 +02:00 [INF] Next session: Free Practice
+2026-08-07 20:03:33.062 +02:00 [INF] Switching session to id 0
+2026-08-07 20:03:33.296 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-07 20:03:33.335 +02:00 [INF] Starting TCP server on port 9666
+2026-08-07 20:03:33.338 +02:00 [INF] Starting UDP server on port 9666
+2026-08-07 20:03:33.346 +02:00 [INF] Registering server to lobby...
+2026-08-07 20:03:33.351 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 20:03:33.446 +02:00 [INF] Lobby registration successful
+2026-08-07 20:04:04.029 +02:00 [INF] Coach Boule (76561198275999678 - 176.132.101.28:54626) is attempting to connect (ks_alfa_romeo_gta)
+2026-08-07 20:04:04.035 +02:00 [DBG] Coach Boule supports extra CSP features: ["STEAM_TICKET","CLIENT_MESSAGES","SPECTATING_AWARE","WEATHERFX_V1","WEATHERFX_V2","WEATHERFX_V3","BATCH_FIX_V2","CUSTOM_UPDATE","CUSTOM_UPDATE_V2","CLIENT_UDP_MESSAGES","BATCH_MESSAGES","EXPLICIT_ADMIN_STATE","3839"]
+2026-08-07 20:04:04.042 +02:00 [INF] Coach Boule (76561198275999678, 0 (ks_alfa_romeo_gta-0_rosso_alfa)) has connected
+2026-08-07 20:04:11.282 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:AQD/DgAAAQMBALExT8E0X/8g
+2026-08-07 20:04:12.716 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOoQwB57
+2026-08-07 20:04:28.307 +02:00 [DBG] Received clean exit from Coach Boule (0)
+2026-08-07 20:04:28.309 +02:00 [DBG] Disconnecting Coach Boule (176.132.101.28:54626)
+2026-08-07 20:04:28.311 +02:00 [INF] Coach Boule has disconnected
+2026-08-07 20:27:27.857 +02:00 [INF] Server shutting down
+2026-08-07 20:28:14.469 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 20:28:14.515 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 20:28:14.540 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 20:28:14.546 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 20:28:15.151 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 20:28:15.180 +02:00 [INF] Starting server
+2026-08-07 20:28:15.218 +02:00 [WRN] No XML encryptor configured. Key {0b82a8d5-2239-4e46-a2eb-7d70b8cc787c} may be persisted to storage in unencrypted form.
+2026-08-07 20:28:15.362 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 20:28:15.367 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 20:28:15.368 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 20:28:15.371 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 20:28:15.372 +02:00 [INF] Loaded 5 cars
+2026-08-07 20:28:15.381 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/full/data/surfaces.ini
+2026-08-07 20:28:15.381 +02:00 [DBG] Added checksum for content/tracks/ks_monza66/models_full.ini
+2026-08-07 20:28:15.383 +02:00 [INF] Initialized 2 track checksums
+2026-08-07 20:28:15.385 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-07 20:28:15.390 +02:00 [INF] Initialized 1 car checksums
+2026-08-07 20:28:15.393 +02:00 [INF] Next session: Free Practice
+2026-08-07 20:28:15.394 +02:00 [INF] Switching session to id 0
+2026-08-07 20:28:15.631 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-07 20:28:15.672 +02:00 [INF] Starting TCP server on port 9666
+2026-08-07 20:28:15.675 +02:00 [INF] Starting UDP server on port 9666
+2026-08-07 20:28:15.683 +02:00 [INF] Registering server to lobby...
+2026-08-07 20:28:15.689 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-07 20:28:15.778 +02:00 [INF] Lobby registration successful
+2026-08-07 20:34:51.451 +02:00 [INF] Coach Boule (76561198275999678 - 176.132.101.28:50744) is attempting to connect (ks_alfa_romeo_gta)
+2026-08-07 20:34:51.452 +02:00 [DBG] Coach Boule supports extra CSP features: ["STEAM_TICKET","CLIENT_MESSAGES","SPECTATING_AWARE","WEATHERFX_V1","WEATHERFX_V2","WEATHERFX_V3","BATCH_FIX_V2","CUSTOM_UPDATE","CUSTOM_UPDATE_V2","CLIENT_UDP_MESSAGES","BATCH_MESSAGES","EXPLICIT_ADMIN_STATE","3839"]
+2026-08-07 20:34:51.461 +02:00 [INF] Coach Boule (76561198275999678, 0 (ks_alfa_romeo_gta-0_rosso_alfa)) has connected
+2026-08-07 20:34:53.375 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:AQD/DgAAAQMBALExT8E0X/8g
+2026-08-07 20:35:18.705 +02:00 [DBG] Received clean exit from Coach Boule (0)
+2026-08-07 20:35:18.708 +02:00 [DBG] Disconnecting Coach Boule (176.132.101.28:50744)
+2026-08-07 20:35:18.710 +02:00 [INF] Coach Boule has disconnected
+2026-08-07 21:18:15.498 +02:00 [INF] Looping sessions
+2026-08-07 21:18:15.502 +02:00 [INF] Next session: Free Practice
+2026-08-07 21:18:15.504 +02:00 [INF] Switching session to id 0
+2026-08-07 22:08:15.993 +02:00 [INF] Looping sessions
+2026-08-07 22:08:15.996 +02:00 [INF] Next session: Free Practice
+2026-08-07 22:08:15.996 +02:00 [INF] Switching session to id 0
+2026-08-07 22:58:16.273 +02:00 [INF] Looping sessions
+2026-08-07 22:58:16.273 +02:00 [INF] Next session: Free Practice
+2026-08-07 22:58:16.273 +02:00 [INF] Switching session to id 0
+2026-08-07 23:48:16.572 +02:00 [INF] Looping sessions
+2026-08-07 23:48:16.574 +02:00 [INF] Next session: Free Practice
+2026-08-07 23:48:16.575 +02:00 [INF] Switching session to id 0
+2026-08-07 23:50:22.325 +02:00 [INF] Server shutting down
+2026-08-07 23:50:26.134 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:26.183 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:26.216 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:26.232 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:26.933 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:28.194 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:28.237 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:28.263 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:28.273 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:28.824 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:30.077 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:30.118 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:30.142 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:30.150 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:30.702 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:32.017 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:32.064 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:32.089 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:32.098 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:32.649 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:34.186 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:34.230 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:34.254 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:34.262 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:34.783 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:37.191 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:37.232 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:37.256 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:37.263 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:37.800 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:41.821 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:41.863 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:41.887 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:41.895 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:42.417 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:50:49.589 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:50:49.629 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:50:49.651 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:50:49.659 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:50:50.217 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:51:03.843 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:51:03.887 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:51:03.912 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:51:03.920 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:51:04.482 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:51:30.951 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:51:30.993 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:51:31.019 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:51:31.027 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:51:31.611 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:52:23.616 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:52:23.657 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:52:23.679 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:52:23.687 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:52:24.206 +02:00 [FTL] Error starting server
+Autofac.Core.DependencyResolutionException: An error occurred while attempting to automatically activate registration 'Autofac.Core.ServiceRegistration'. See the inner exception for information on the source of the failure.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while activating AssettoServer.Server.Ai.AiUpdater -> AssettoServer.Server.ACServer -> λ:AssettoServer.Server.Plugin.IAssettoServerAutostart[] -> AssettoServer.Server.Ai.AiBehavior -> λ:AssettoServer.Server.Ai.Splines.AiSpline.
+ ---> AssettoServer.Server.Configuration.ConfigurationException: No ai folder found. Please put at least one AI spline fast_lane.ai(p) into /data/content/tracks/shuto_revival_project_beta/ai/
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.GenerateCacheKey(String folder) in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 70
+   at AssettoServer.Server.Ai.Splines.AiSplineLocator.Locate() in AssettoServer/Server/Ai/Splines/AiSplineLocator.cs:line 35
+   at AssettoServer.Server.Ai.AiModule.<>c.<Load>b__2_0(AiSplineLocator locator) in AssettoServer/Server/Ai/AiModule.cs:line 37
+   at Autofac.Core.Resolving.DelegateInvokers.DelegateInvoker1`2.ResolveWithDelegate(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Builder.RegistrationBuilder.<>c__DisplayClass0_0`1.<ForDelegate>b__0(IComponentContext c, IEnumerable`1 p)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.<>c__DisplayClass5_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Container.ResolveComponent(ResolveRequest request)
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   --- End of inner exception stack trace ---
+   at Autofac.Builder.StartableManager.StartStartableComponents(IDictionary`2 properties, IComponentContext componentContext)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 91
+2026-08-07 23:53:25.013 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:53:25.061 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:53:25.088 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:53:25.097 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:53:25.675 +02:00 [INF] Cached AI spline not found. Generating cache...
+2026-08-07 23:53:25.680 +02:00 [INF] Loading from AI package content/tracks/shuto_revival_project_beta/ai/fast_lane.aip
+2026-08-07 23:53:25.696 +02:00 [INF] Loading AI spline by plot3sale & compiled by Lay Jeno, version 25
+2026-08-07 23:53:27.414 +02:00 [INF] Adjacent lane detection...
+2026-08-07 23:53:29.826 +02:00 [INF] Adjacent lane detection completed in 2411.5 ms
+2026-08-07 23:53:29.870 +02:00 [DBG] Writing cached AI spline to file
+2026-08-07 23:53:29.962 +02:00 [INF] Generating cache completed in 4285.8 ms
+2026-08-07 23:53:29.966 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-07 23:53:29.993 +02:00 [INF] Starting server
+2026-08-07 23:53:30.066 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 23:53:30.144 +02:00 [WRN] No XML encryptor configured. Key {dfec0456-1676-4951-aaf2-eedcb86d4fd2} may be persisted to storage in unencrypted form.
+2026-08-07 23:53:30.333 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 23:53:30.339 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 23:53:30.341 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 23:53:30.344 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 23:53:30.346 +02:00 [INF] Loaded 21 cars
+2026-08-07 23:53:30.355 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-07 23:53:30.356 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-07 23:53:30.357 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-07 23:53:30.357 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-07 23:53:31.241 +02:00 [ERR] Connection id "0HNNKPP9223JM", Request id "0HNNKPP9223JM:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-07 23:53:31.283 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-07 23:53:31.482 +02:00 [ERR] Connection id "0HNNKPP9223JN", Request id "0HNNKPP9223JN:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-07 23:53:31.601 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-07 23:53:31.602 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-07 23:53:31.990 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-07 23:53:31.991 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-07 23:53:31.997 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-07 23:53:31.998 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-07 23:53:31.998 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-07 23:53:31.999 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-07 23:53:32.000 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-07 23:53:32.101 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-07 23:53:32.109 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-07 23:53:32.640 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-07 23:53:32.641 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-07 23:53:32.671 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-07 23:53:32.678 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-07 23:53:32.679 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-07 23:53:32.868 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-07 23:53:32.882 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-07 23:53:33.351 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-07 23:53:33.961 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-07 23:53:33.962 +02:00 [INF] Initialized 25 track checksums
+2026-08-07 23:53:33.966 +02:00 [INF] Initialized 0 car checksums
+2026-08-07 23:53:33.969 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-07 23:53:34.004 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-07 23:54:34.774 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:54:34.816 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:54:34.835 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:54:34.841 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:54:35.403 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-07 23:54:35.425 +02:00 [INF] Starting server
+2026-08-07 23:54:35.473 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 23:54:35.647 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 23:54:35.654 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 23:54:35.656 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 23:54:35.659 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 23:54:35.660 +02:00 [INF] Loaded 21 cars
+2026-08-07 23:54:35.668 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-07 23:54:35.668 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-07 23:54:35.669 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-07 23:54:35.669 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-07 23:54:35.913 +02:00 [ERR] Connection id "0HNNKPPSAT87U", Request id "0HNNKPPSAT87U:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-07 23:54:36.552 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-07 23:54:36.837 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-07 23:54:36.837 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-07 23:54:37.203 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-07 23:54:37.204 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-07 23:54:37.209 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-07 23:54:37.209 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-07 23:54:37.209 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-07 23:54:37.210 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-07 23:54:37.210 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-07 23:54:37.307 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-07 23:54:37.314 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-07 23:54:37.825 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-07 23:54:37.826 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-07 23:54:37.854 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-07 23:54:37.860 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-07 23:54:37.861 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-07 23:54:38.036 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-07 23:54:38.049 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-07 23:54:38.492 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-07 23:54:39.070 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-07 23:54:39.071 +02:00 [INF] Initialized 25 track checksums
+2026-08-07 23:54:39.076 +02:00 [INF] Initialized 0 car checksums
+2026-08-07 23:54:39.078 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-07 23:54:39.101 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-07 23:55:39.841 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:55:39.885 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:55:39.910 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:55:39.918 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:55:40.474 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-07 23:55:40.497 +02:00 [INF] Starting server
+2026-08-07 23:55:40.542 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 23:55:40.706 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 23:55:40.710 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 23:55:40.711 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 23:55:40.713 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 23:55:40.714 +02:00 [INF] Loaded 21 cars
+2026-08-07 23:55:40.721 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-07 23:55:40.722 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-07 23:55:40.722 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-07 23:55:40.722 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-07 23:55:41.554 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-07 23:55:41.712 +02:00 [ERR] Connection id "0HNNKPQFU8RM4", Request id "0HNNKPQFU8RM4:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-07 23:55:41.844 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-07 23:55:41.844 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-07 23:55:42.210 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-07 23:55:42.211 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-07 23:55:42.215 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-07 23:55:42.216 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-07 23:55:42.216 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-07 23:55:42.217 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-07 23:55:42.217 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-07 23:55:42.311 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-07 23:55:42.318 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-07 23:55:42.817 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-07 23:55:42.817 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-07 23:55:42.845 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-07 23:55:42.850 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-07 23:55:42.850 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-07 23:55:43.022 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-07 23:55:43.036 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-07 23:55:43.446 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-07 23:55:43.985 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-07 23:55:43.986 +02:00 [INF] Initialized 25 track checksums
+2026-08-07 23:55:43.990 +02:00 [INF] Initialized 0 car checksums
+2026-08-07 23:55:43.993 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-07 23:55:44.016 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-07 23:56:44.898 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:56:44.944 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:56:44.970 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:56:44.980 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:56:45.608 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-07 23:56:45.634 +02:00 [INF] Starting server
+2026-08-07 23:56:45.693 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 23:56:45.886 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 23:56:45.892 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 23:56:45.892 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 23:56:45.895 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 23:56:45.898 +02:00 [INF] Loaded 21 cars
+2026-08-07 23:56:45.907 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-07 23:56:45.907 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-07 23:56:45.908 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-07 23:56:45.908 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-07 23:56:46.752 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-07 23:56:47.035 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-07 23:56:47.035 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-07 23:56:47.396 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-07 23:56:47.398 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-07 23:56:47.404 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-07 23:56:47.404 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-07 23:56:47.405 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-07 23:56:47.407 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-07 23:56:47.408 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-07 23:56:47.507 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-07 23:56:47.514 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-07 23:56:48.003 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-07 23:56:48.004 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-07 23:56:48.031 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-07 23:56:48.037 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-07 23:56:48.038 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-07 23:56:48.217 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-07 23:56:48.231 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-07 23:56:48.668 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-07 23:56:49.085 +02:00 [ERR] Connection id "0HNNKPR40S1LU", Request id "0HNNKPR40S1LU:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-07 23:56:49.218 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-07 23:56:49.219 +02:00 [INF] Initialized 25 track checksums
+2026-08-07 23:56:49.223 +02:00 [INF] Initialized 0 car checksums
+2026-08-07 23:56:49.226 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-07 23:56:49.253 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-07 23:57:50.216 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:57:50.267 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:57:50.294 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:57:50.305 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:57:50.908 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-07 23:57:50.932 +02:00 [INF] Starting server
+2026-08-07 23:57:50.985 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 23:57:51.185 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 23:57:51.191 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 23:57:51.192 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 23:57:51.196 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 23:57:51.198 +02:00 [INF] Loaded 21 cars
+2026-08-07 23:57:51.209 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-07 23:57:51.209 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-07 23:57:51.210 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-07 23:57:51.211 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-07 23:57:52.084 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-07 23:57:52.375 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-07 23:57:52.376 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-07 23:57:52.737 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-07 23:57:52.738 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-07 23:57:52.743 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-07 23:57:52.744 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-07 23:57:52.744 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-07 23:57:52.745 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-07 23:57:52.745 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-07 23:57:52.839 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-07 23:57:52.847 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-07 23:57:53.387 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-07 23:57:53.387 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-07 23:57:53.415 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-07 23:57:53.423 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-07 23:57:53.423 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-07 23:57:53.602 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-07 23:57:53.617 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-07 23:57:54.049 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-07 23:57:54.644 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-07 23:57:54.644 +02:00 [INF] Initialized 25 track checksums
+2026-08-07 23:57:54.649 +02:00 [INF] Initialized 0 car checksums
+2026-08-07 23:57:54.653 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-07 23:57:54.686 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
+2026-08-07 23:58:55.494 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-07 23:58:55.538 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-07 23:58:55.563 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-07 23:58:55.573 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-07 23:58:56.143 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-07 23:58:56.166 +02:00 [INF] Starting server
+2026-08-07 23:58:56.213 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-07 23:58:56.375 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-07 23:58:56.381 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-07 23:58:56.382 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-07 23:58:56.384 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-07 23:58:56.385 +02:00 [INF] Loaded 21 cars
+2026-08-07 23:58:56.392 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-07 23:58:56.392 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-07 23:58:56.393 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-07 23:58:56.393 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-07 23:58:57.239 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-07 23:58:57.535 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-07 23:58:57.535 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-07 23:58:57.907 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-07 23:58:57.909 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-07 23:58:57.914 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-07 23:58:57.914 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-07 23:58:57.914 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-07 23:58:57.915 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-07 23:58:57.915 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-07 23:58:58.008 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-07 23:58:58.016 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-07 23:58:58.538 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-07 23:58:58.538 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-07 23:58:58.567 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-07 23:58:58.573 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-07 23:58:58.573 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-07 23:58:58.747 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-07 23:58:58.761 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-07 23:58:59.180 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-07 23:58:59.760 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-07 23:58:59.761 +02:00 [INF] Initialized 25 track checksums
+2026-08-07 23:58:59.765 +02:00 [INF] Initialized 0 car checksums
+2026-08-07 23:58:59.768 +02:00 [ERR] Hosting failed to start
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-08-07 23:58:59.799 +02:00 [FTL] Error starting server
+AssettoServer.Server.Configuration.ConfigurationException: No data.acd found for ferrari_f40_92. This will allow players to cheat using modified data. More info: https://assettoserver.org/docs/common-configuration-errors#missing-car-checksums
+   at AssettoServer.Server.ChecksumManager.Initialize() in AssettoServer/Server/ChecksumManager.cs:line 46
+   at AssettoServer.Server.ACServer.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/ACServer.cs:line 144
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at AssettoServer.Program.RunServerAsync(String preset, String serverCfgPath, String entryListPath, Boolean loadPluginsFromWorkdir, CancellationToken token) in AssettoServer/Program.cs:line 103
