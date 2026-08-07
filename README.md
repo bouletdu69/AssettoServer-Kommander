@@ -1,15 +1,23 @@
-# 🏎️ AssettoServer-Kommander
+# AssettoServer-Kommander
 
-**AssettoServer-Kommander** est une interface d'administration moderne et complète, conçue sur-mesure pour [AssettoServer](https://assettoserver.org/). Développée avec un backend robuste en **Go** et un frontend ultra-réactif en **React (Vite)**, elle permet de gérer votre serveur de jeu directement depuis votre navigateur, sans jamais avoir à toucher manuellement aux fichiers `.ini` ou `.yml`.
+AssettoServer-Kommander is a comprehensive web administration interface designed specifically for [AssettoServer](https://assettoserver.org/). Built with a robust Go backend and a highly responsive React frontend (Vite), it provides server administrators with the ability to manage their game instances directly from a web browser, eliminating the need for manual `.ini` or `.yml` file editing.
 
-Que vous hébergiez un serveur de course classique ou un immense serveur Freeroam (comme *Shutoko Revival Project*), ce panel vous offre un contrôle total.
+Whether you are hosting a traditional track day or a large-scale freeroam environment (e.g., Shutoko Revival Project), this panel provides total control over your deployment.
 
-### ✨ Fonctionnalités principales :
-- 🚦 **Gestionnaire d'Événements (Presets) :** Créez, éditez et sauvegardez des configurations de courses en quelques clics.
-- 🤖 **Contrôle avancé du Trafic IA :** Configurez visuellement le trafic d'AssettoServer (véhicules, skins, quantité et distance de spawn) sans risquer d'erreurs de syntaxe YAML.
-- 📊 **Dashboard & Métriques en direct :** Suivez en temps réel l'état du serveur, le nombre de joueurs, leurs véhicules actuels et leurs meilleurs chronos de session.
-- 🔄 **Contrôle du serveur :** Démarrez, arrêtez et redémarrez votre instance AssettoServer d'un simple clic.
-- 📝 **Console de Logs en temps réel :** Surveillez l'activité du serveur directement depuis le Web Panel grâce au streaming de logs via WebSockets.
+## Features
+
+- **Event Presets Management:** Create, edit, and save racing configurations and conditions through an intuitive interface.
+- **Advanced AI Traffic Control:** Visually configure AssettoServer AI traffic (vehicles, skins, density, and spawn distance) without risking YAML syntax errors.
+- **Live Dashboard & Metrics:** Monitor the server status in real-time, including active players, current vehicles, and session best lap times.
+- **Server Lifecycle Control:** Start, stop, and restart the underlying AssettoServer Docker container directly from the web panel.
+- **Real-Time Log Console:** Monitor the server activity directly within the web interface via WebSocket-streamed logs.
+
+## Architecture
+
+The system relies on a unified Docker Compose architecture consisting of three primary services:
+1. `assettoserver`: The official game server image.
+2. `kommander-backend`: The Go API managing the container lifecycles and configuration files.
+3. `kommander-frontend`: An Nginx container serving the static React build and proxying API requests.
 
 ---
-*Ce projet est en cours de développement.*
+*Note: This project is currently under active development.*
