@@ -6,17 +6,21 @@ Whether you are hosting a traditional track day or a large-scale freeroam enviro
 
 ## Features
 
-- **Event Presets Management:** Create, edit, and save racing configurations and conditions through an intuitive interface.
-- **Advanced AI Traffic Control:** Visually configure AssettoServer AI traffic (vehicles, skins, density, and spawn distance) without risking YAML syntax errors.
 - **Live Dashboard & Metrics:** Monitor the server status in real-time, including active players, current vehicles, and session best lap times.
+- **Event Presets Management:** Create, edit, and save racing configurations and conditions through an intuitive visual interface.
+- **Smart Content Upload:** Drag and drop your `.zip`, `.rar`, `.7z` archives or uncompressed folders directly into the panel to install cars and tracks automatically.
+- **Advanced AI Traffic Control:** Visually configure AssettoServer AI traffic (vehicles, skins, density, and spawn distance). Upload `fast_lane.ai` trajectories directly via the track settings.
+- **Patreon Upgrade Support:** Automates the AssettoServer Premium/Patreon upgrade process. Import the official `.zip` archive or set your Docker image and enter your Patreon key straight from the dashboard.
+- **Plugin Management:** View, enable, and configure AssettoServer plugins directly from the web interface using an integrated JSON/YAML editor.
+- **User Roles & Security:** Add multiple admin or moderator accounts with secure login systems and role-based access.
 - **Server Lifecycle Control:** Start, stop, and restart the underlying AssettoServer Docker container directly from the web panel.
 - **Real-Time Log Console:** Monitor the server activity directly within the web interface via WebSocket-streamed logs.
 
 ## Architecture
 
 The system relies on a unified Docker Compose architecture consisting of three primary services:
-1. `assettoserver`: The official game server image.
-2. `kommander-backend`: The Go API managing the container lifecycles and configuration files.
+1. `assettoserver`: The official game server image (standard or patreon version).
+2. `kommander-backend`: The Go API managing the container lifecycles, configuration files, mod extraction, and plugin coordination.
 3. `kommander-frontend`: An Nginx container serving the static React build and proxying API requests.
 
 ---
