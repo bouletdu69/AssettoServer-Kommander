@@ -71,6 +71,7 @@ type EventPreset struct {
 	Traffic     []TrafficConfig `json:"traffic"`
 	AiMaxCars   int             `json:"aiMaxCars"`
 	AiMinDistance int           `json:"aiMinDistance"`
+	CspExtraOptions string      `json:"cspExtraOptions,omitempty"`
 	CreatedAt   time.Time       `json:"createdAt"`
 	UpdatedAt   time.Time       `json:"updatedAt"`
 }
@@ -355,6 +356,7 @@ RACE_EXTRA_LAP=0
 LOCKED_ENTRY_LIST=1
 LOOP_MODE=%d
 NUM_THREADS=2
+ALLOWED_TYRES_OUT=-1
 
 %s
 [DYNAMIC_TRACK]
@@ -470,6 +472,7 @@ AiParams:
   PlayerRadiusMeters: %d
 IgnoreConfigurationErrors:
   MissingCarChecksums: true
+  MissingTrackParams: true
 `, enableAiStr, targetPreset.AiMaxCars, targetPreset.AiMaxCars, targetPreset.AiMinDistance)
 		ioutil.WriteFile(extraCfgPath, []byte(extraCfgContent), 0644)
 	} else {
@@ -489,6 +492,15 @@ IgnoreConfigurationErrors:
 		contentStr = rePlayerRadius.ReplaceAllString(contentStr, fmt.Sprintf("  PlayerRadiusMeters: %d", targetPreset.AiMinDistance))
 		
 		ioutil.WriteFile(extraCfgPath, []byte(contentStr), 0644)
+	}
+	
+	// Write csp_extra_options.ini
+	cspOptionsPath := filepath.Join(filepath.Dir(cfgPath), "csp_extra_options.ini")
+	if targetPreset.CspExtraOptions != "" {
+		ioutil.WriteFile(cspOptionsPath, []byte(targetPreset.CspExtraOptions), 0644)
+	} else {
+		// If empty, we can just write empty or delete. Let's write empty to clear old settings.
+		ioutil.WriteFile(cspOptionsPath, []byte(""), 0644)
 	}
 
 	// 4. Restart Assetto Corsa docker server via process manager

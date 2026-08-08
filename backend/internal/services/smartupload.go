@@ -1,33 +1,26 @@
 package services
 
 import (
-	"archive/zip"
 	"fmt"
 	"io"
 	"mime/multipart"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
-	"os/exec"
-
-	"github.com/nwaples/rardecode"
 )
 
-// ProcessUpload gère un fichier d'archive (.zip, .rar) ou des fichiers bruts
+// ProcessUpload handles an archive file (.zip, .rar, .7z)
 func ProcessUpload(file multipart.File, header *multipart.FileHeader) error {
 	ext := strings.ToLower(filepath.Ext(header.Filename))
 
-	if ext == ".zip" {
-		return processZipStream(file)
-	} else if ext == ".rar" {
-		return processRarStream(file)
-	} else if ext == ".7z" {
-		return process7zStream(file)
+	if ext == ".zip" || ext == ".rar" || ext == ".7z" {
+		return processArchiveUniversal(file, ext)
 	}
-	return fmt.Errorf("format non supporté: %s", ext)
+	return fmt.Errorf("unsupported format: %s", ext)
 }
 
-// ProcessRawFiles gère les arborescences glissées nativement (un array de headers avec chemin)
+// ProcessRawFiles handles dropped folder structures
 func ProcessRawFiles(headers []*multipart.FileHeader) error {
 	for _, header := range headers {
 		if shouldIgnore(header.Filename) {
@@ -39,8 +32,6 @@ func ProcessRawFiles(headers []*multipart.FileHeader) error {
 			return err
 		}
 		
-		// Le frontend envoie souvent le chemin relatif dans un champ caché ou on peut l'avoir si on customise l'upload
-		// Pour simplifier, on suppose que header.Filename contient le chemin relatif si uploadé via dropzone webkit
 		err = saveFile(header.Filename, file)
 		file.Close()
 		if err != nil {
@@ -50,79 +41,9 @@ func ProcessRawFiles(headers []*multipart.FileHeader) error {
 	return nil
 }
 
-func processZipStream(file multipart.File) error {
-	// archive/zip a besoin d'un io.ReaderAt. 
-	// On copie l'upload dans un fichier temporaire
-	tmpFile, err := os.CreateTemp("", "upload-*.zip")
-	if err != nil {
-		return err
-	}
-	defer os.Remove(tmpFile.Name())
-
-	_, err = io.Copy(tmpFile, file)
-	if err != nil {
-		tmpFile.Close()
-		return err
-	}
-	tmpFile.Close()
-
-	r, err := zip.OpenReader(tmpFile.Name())
-	if err != nil {
-		return err
-	}
-	defer r.Close()
-
-	for _, f := range r.File {
-		if f.FileInfo().IsDir() {
-			continue
-		}
-		if shouldIgnore(f.Name) {
-			continue
-		}
-
-		rc, err := f.Open()
-		if err != nil {
-			return err
-		}
-		
-		err = saveFile(f.Name, rc)
-		rc.Close()
-		if err != nil {
-			return err
-		}
-	}
-	return nil
-}
-
-func processRarStream(file multipart.File) error {
-	r, err := rardecode.NewReader(file, "")
-	if err != nil {
-		return err
-	}
-
-	for {
-		header, err := r.Next()
-		if err == io.EOF {
-			break
-		}
-		if err != nil {
-			return err
-		}
-		if header.IsDir {
-			continue
-		}
-		if shouldIgnore(header.Name) {
-			continue
-		}
-		if err := saveFile(header.Name, r); err != nil {
-			return err
-		}
-	}
-	return nil
-}
-
-func process7zStream(file multipart.File) error {
-	tmpFile, err := os.CreateTemp("", "upload-*.7z")
+func processArchiveUniversal(file multipart.File, ext string) error {
+	// 1. Write the uploaded stream to a temporary archive file
+	tmpFile, err := os.CreateTemp("", "upload-*"+ext)
 	if err != nil {
 		return err
 	}
@@ -134,49 +55,87 @@ func process7zStream(file multipart.File) error {
 	}
 	tmpFile.Close()
 
-	basePath := os.Getenv("AC_CONTENT_PATH")
-	if basePath == "" {
-		basePath = "/home/rs/docker/acsm/server/assetto/content"
-	}
-
+	// 2. Create a temporary extraction directory
 	extractPath, err := os.MkdirTemp("", "extract-*")
 	if err != nil {
 		return err
 	}
 	defer os.RemoveAll(extractPath)
 
+	// 3. Extract the archive using 7z (which supports zip, rar, 7z)
 	cmd := exec.Command("7z", "x", "-y", "-o"+extractPath, tmpFile.Name())
 	if output, err := cmd.CombinedOutput(); err != nil {
 		return fmt.Errorf("7z extract failed: %v, output: %s", err, string(output))
 	}
 
-	script := fmt.Sprintf(`
-		if [ -d "%[1]s/content/tracks" ]; then
-			rsync -a "%[1]s/content/tracks/" "%[2]s/tracks/"
-		fi
-		if [ -d "%[1]s/content/cars" ]; then
-			rsync -a "%[1]s/content/cars/" "%[2]s/cars/"
-		fi
-		if [ -d "%[1]s/content/weather" ]; then
-			rsync -a "%[1]s/content/weather/" "%[2]s/weather/"
-		fi
-		
-		if [ -d "%[1]s/tracks" ]; then
-			rsync -a "%[1]s/tracks/" "%[2]s/tracks/"
-		fi
-		if [ -d "%[1]s/cars" ]; then
-			rsync -a "%[1]s/cars/" "%[2]s/cars/"
-		fi
-		if [ -d "%[1]s/weather" ]; then
-			rsync -a "%[1]s/weather/" "%[2]s/weather/"
-		fi
+	// 4. Run a robust bash script to automatically find cars, tracks, and weather
+	// We search for known signature files (ui_track.json, ui_car.json) to locate the root of the mod.
+	basePath := os.Getenv("AC_CONTENT_PATH")
+	if basePath == "" {
+		basePath = "/home/rs/docker/acsm/server/assetto/content"
+	}
 
-		find "%[2]s" -type f \( -iname "*.kn5" -o -iname "*.dds" \) -delete
+	script := fmt.Sprintf(`
+		export EXTRACT_PATH="%[1]s"
+		export BASE_PATH="%[2]s"
+
+		# Remove heavy graphical assets to save space, since the server doesn't need them
+		find "$EXTRACT_PATH" -type f \( -iname "*.kn5" -o -iname "*.dds" \) -delete
+
+		# 1. Discover Tracks (look for ui_track.json)
+		# The structure is usually tracks/<track_name>/ui/ui_track.json or tracks/<track_name>/ui/<layout>/ui_track.json
+		find "$EXTRACT_PATH" -type f -iname "ui_track.json" | while read -r uifile; do
+			# Get the directory containing ui_track.json
+			ui_dir=$(dirname "$uifile")
+			
+			# If the directory is named 'ui', the track root is one level up.
+			# If the directory is inside 'ui', the track root is two levels up.
+			ui_dirname=$(basename "$ui_dir")
+			
+			if [ "$ui_dirname" = "ui" ]; then
+				track_dir=$(dirname "$ui_dir")
+			else
+				parent_dir=$(dirname "$ui_dir")
+				if [ "$(basename "$parent_dir")" = "ui" ]; then
+					track_dir=$(dirname "$parent_dir")
+				else
+					continue
+				fi
+			fi
+			
+			track_name=$(basename "$track_dir")
+			echo "Found track: $track_name at $track_dir"
+			
+			mkdir -p "$BASE_PATH/tracks/$track_name"
+			rsync -a "$track_dir/" "$BASE_PATH/tracks/$track_name/"
+		done
+
+		# 2. Discover Cars (look for ui_car.json)
+		# The structure is cars/<car_name>/ui/ui_car.json
+		find "$EXTRACT_PATH" -type f -iname "ui_car.json" | while read -r uifile; do
+			ui_dir=$(dirname "$uifile")
+			if [ "$(basename "$ui_dir")" = "ui" ]; then
+				car_dir=$(dirname "$ui_dir")
+				car_name=$(basename "$car_dir")
+				echo "Found car: $car_name at $car_dir"
+				
+				mkdir -p "$BASE_PATH/cars/$car_name"
+				rsync -a "$car_dir/" "$BASE_PATH/cars/$car_name/"
+			fi
+		done
+
+		# 3. Discover Weather (fallback for typical weather mod structure)
+		if [ -d "$EXTRACT_PATH/content/weather" ]; then
+			rsync -a "$EXTRACT_PATH/content/weather/" "$BASE_PATH/weather/"
+		fi
+		if [ -d "$EXTRACT_PATH/weather" ]; then
+			rsync -a "$EXTRACT_PATH/weather/" "$BASE_PATH/weather/"
+		fi
 	`, extractPath, basePath)
 
 	cmd = exec.Command("sh", "-c", script)
 	if output, err := cmd.CombinedOutput(); err != nil {
-		return fmt.Errorf("move failed: %v, output: %s", err, string(output))
+		return fmt.Errorf("mod discovery and move failed: %v, output: %s", err, string(output))
 	}
 
 	return nil
@@ -191,7 +150,6 @@ func shouldIgnore(filename string) bool {
 }
 
 func saveFile(relPath string, r io.Reader) error {
-	// Normaliser les chemins qui contiennent déjà "content/"
 	relPath = strings.TrimPrefix(relPath, "content/")
 	relPath = strings.TrimPrefix(relPath, "content\\")
 
@@ -202,11 +160,10 @@ func saveFile(relPath string, r io.Reader) error {
 
 	fullPath := filepath.Join(basePath, relPath)
 	
-	// Empêcher le path traversal (Zip Slip vulnerability)
 	cleanBasePath := filepath.Clean(basePath)
 	cleanFullPath := filepath.Clean(fullPath)
 	if !strings.HasPrefix(cleanFullPath, cleanBasePath+string(os.PathSeparator)) {
-		return fmt.Errorf("chemin invalide (zip slip): %s", relPath)
+		return fmt.Errorf("invalid path (zip slip): %s", relPath)
 	}
 
 	if err := os.MkdirAll(filepath.Dir(fullPath), 0755); err != nil {

@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"os/exec"
 	"strings"
 )
@@ -25,11 +26,19 @@ func GetAvailablePluginsHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Read custom plugins to filter them out
+	customPluginsDir := getCustomPluginsDir()
+	customFiles, _ := os.ReadDir(customPluginsDir)
+	customPluginMap := make(map[string]bool)
+	for _, cf := range customFiles {
+		customPluginMap[cf.Name()] = true
+	}
+
 	lines := strings.Split(strings.TrimSpace(string(output)), "\n")
 	var plugins []PluginInfo
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
-		if line != "" {
+		if line != "" && !customPluginMap[line] {
 			plugins = append(plugins, PluginInfo{Name: line})
 		}
 	}

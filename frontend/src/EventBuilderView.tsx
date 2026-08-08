@@ -54,6 +54,7 @@ interface EventPreset {
   traffic: TrafficConfig[];
   aiMaxCars?: number;
   aiMinDistance?: number;
+  cspExtraOptions?: string;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -402,6 +403,31 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                   </div>
                 </div>
               </div>
+              
+              <div style={{ marginTop: '20px' }}>
+                <label style={{ display: 'block', marginBottom: '5px' }}>CSP Extra Options (csp_extra_options.ini)</label>
+                <div style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
+                  <button 
+                    onClick={() => setEditingPreset({...editingPreset, cspExtraOptions: (editingPreset.cspExtraOptions || '') + "\n[EXTRA_RULES]\nALLOW_WRONG_WAY = 1\n"})}
+                    style={{ padding: '5px 10px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white', cursor: 'pointer', fontSize: '0.85rem' }}
+                  >
+                    + Disable Wrong Way
+                  </button>
+                  <button 
+                    onClick={() => setEditingPreset({...editingPreset, cspExtraOptions: (editingPreset.cspExtraOptions || '') + "\n[PITS]\nALLOW_SPEEDING = 1\n"})}
+                    style={{ padding: '5px 10px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white', cursor: 'pointer', fontSize: '0.85rem' }}
+                  >
+                    + Disable Pit Limit
+                  </button>
+                </div>
+                <textarea 
+                  value={editingPreset.cspExtraOptions || ''} 
+                  onChange={e => setEditingPreset({...editingPreset, cspExtraOptions: e.target.value})} 
+                  style={{ width: '100%', height: '120px', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white', fontFamily: 'monospace' }}
+                  placeholder="[EXTRA_RULES]&#10;ALLOW_WRONG_WAY = 1"
+                />
+              </div>
+
             </div>
           </div>
 
