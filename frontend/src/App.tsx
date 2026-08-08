@@ -50,7 +50,7 @@ function GeneralConfigView() {
         tcpPort: data.tcpPort || '',
         udpPort: data.udpPort || '',
       }))
-      .catch(err => setMsg({ type: 'error', text: 'Erreur de chargement: ' + err.message }))
+      .catch(err => setMsg({ type: 'error', text: 'Loading error: ' + err.message }))
   }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -68,12 +68,12 @@ function GeneralConfigView() {
         body: JSON.stringify(config)
       })
       if (res.ok) {
-        setMsg({ type: 'success', text: 'Configuration sauvegardée avec succès.' })
+        setMsg({ type: 'success', text: 'Configuration saved successfully.' })
       } else {
-        setMsg({ type: 'error', text: 'Erreur lors de la sauvegarde.' })
+        setMsg({ type: 'error', text: 'Error saving configuration.' })
       }
     } catch (err: any) {
-      setMsg({ type: 'error', text: 'Erreur réseau: ' + err.message })
+      setMsg({ type: 'error', text: 'Network error: ' + err.message })
     } finally {
       setSaving(false)
     }
@@ -81,7 +81,7 @@ function GeneralConfigView() {
 
   return (
     <div className="card form-card">
-      <h2 style={{ marginTop: 0 }}>Configuration Générale</h2>
+      <h2 style={{ marginTop: 0 }}>General Configuration</h2>
       
       {msg.text && (
         <div className={msg.type === 'success' ? 'msg-success' : 'msg-error'}>
@@ -91,34 +91,34 @@ function GeneralConfigView() {
 
       <form onSubmit={handleSave}>
         <div className="form-group">
-          <label>Nom du Serveur</label>
+          <label>Server Name</label>
           <input type="text" name="serverName" value={config.serverName} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Mot de passe Serveur (optionnel)</label>
+          <label>Server Password (optional)</label>
           <input type="text" name="serverPassword" value={config.serverPassword} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Mot de passe Admin</label>
+          <label>Admin Password</label>
           <input type="text" name="adminPassword" value={config.adminPassword} onChange={handleChange} />
         </div>
         
-        <h3 style={{ margin: '24px 0 12px', fontSize: '1.1rem' }}>Ports Réseau</h3>
+        <h3 style={{ margin: '24px 0 12px', fontSize: '1.1rem' }}>Network Ports</h3>
         <div className="form-group">
-          <label>Port HTTP</label>
+          <label>HTTP Port</label>
           <input type="number" name="httpPort" value={config.httpPort} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Port TCP</label>
+          <label>TCP Port</label>
           <input type="number" name="tcpPort" value={config.tcpPort} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Port UDP</label>
+          <label>UDP Port</label>
           <input type="number" name="udpPort" value={config.udpPort} onChange={handleChange} />
         </div>
 
         <button type="submit" className="btn-save" disabled={saving}>
-          {saving ? 'Sauvegarde...' : 'Sauvegarder'}
+          {saving ? 'Saving...' : 'Save'}
         </button>
       </form>
     </div>
@@ -148,7 +148,7 @@ function EventConfigView() {
         qualifyTime: data.qualifyTime || '',
         raceLaps: data.raceLaps || '',
       }))
-      .catch(err => setMsg({ type: 'error', text: 'Erreur de chargement: ' + err.message }))
+      .catch(err => setMsg({ type: 'error', text: 'Loading error: ' + err.message }))
   }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -166,12 +166,12 @@ function EventConfigView() {
         body: JSON.stringify(config)
       })
       if (res.ok) {
-        setMsg({ type: 'success', text: 'Événement sauvegardé avec succès.' })
+        setMsg({ type: 'success', text: 'Event saved successfully.' })
       } else {
-        setMsg({ type: 'error', text: 'Erreur lors de la sauvegarde.' })
+        setMsg({ type: 'error', text: 'Error saving configuration.' })
       }
     } catch (err: any) {
-      setMsg({ type: 'error', text: 'Erreur réseau: ' + err.message })
+      setMsg({ type: 'error', text: 'Network error: ' + err.message })
     } finally {
       setSaving(false)
     }
@@ -179,7 +179,7 @@ function EventConfigView() {
 
   return (
     <div className="card form-card">
-      <h2 style={{ marginTop: 0 }}>Configuration de l'Événement</h2>
+      <h2 style={{ marginTop: 0 }}>Event Configuration</h2>
       
       {msg.text && (
         <div className={msg.type === 'success' ? 'msg-success' : 'msg-error'}>
@@ -189,11 +189,11 @@ function EventConfigView() {
 
       <form onSubmit={handleSave}>
         <div className="form-group">
-          <label>Piste (ex: ks_monza)</label>
+          <label>Track (e.g., ks_monza)</label>
           <input type="text" name="track" value={config.track} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Layout Piste (ex: gp)</label>
+          <label>Track Layout (e.g., gp)</label>
           <input type="text" name="trackLayout" value={config.trackLayout} onChange={handleChange} />
         </div>
         <div className="form-group">
@@ -203,20 +203,20 @@ function EventConfigView() {
         
         <h3 style={{ margin: '24px 0 12px', fontSize: '1.1rem' }}>Sessions</h3>
         <div className="form-group">
-          <label>Essais Libres (Minutes)</label>
+          <label>Practice (Minutes)</label>
           <input type="number" name="practiceTime" value={config.practiceTime} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Qualifications (Minutes)</label>
+          <label>Qualifying (Minutes)</label>
           <input type="number" name="qualifyTime" value={config.qualifyTime} onChange={handleChange} />
         </div>
         <div className="form-group">
-          <label>Course (Tours)</label>
+          <label>Race (Laps)</label>
           <input type="number" name="raceLaps" value={config.raceLaps} onChange={handleChange} />
         </div>
 
         <button type="submit" className="btn-save" disabled={saving}>
-          {saving ? 'Sauvegarde...' : 'Sauvegarder'}
+          {saving ? 'Saving...' : 'Save'}
         </button>
       </form>
     </div>
@@ -279,9 +279,9 @@ function PublicModeConfigView() {
         body: JSON.stringify({ key: 'public_live_timing', value: isPublic ? 'true' : 'false' })
       })
       if (res.ok) {
-        setMsg({ type: 'success', text: 'Paramètre sauvegardé avec succès.' })
+        setMsg({ type: 'success', text: 'Setting saved successfully.' })
       } else {
-        setMsg({ type: 'error', text: 'Erreur lors de la sauvegarde.' })
+        setMsg({ type: 'error', text: 'Error saving configuration.' })
       }
     } catch (err: any) {
       setMsg({ type: 'error', text: err.message })
@@ -290,9 +290,9 @@ function PublicModeConfigView() {
 
   return (
     <div className="card form-card">
-      <h2 style={{ marginTop: 0 }}>Accès Public Live Timing</h2>
+      <h2 style={{ marginTop: 0 }}>Public Live Timing Access</h2>
       <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
-        Activer cette option permettra à n'importe qui de consulter le Live Timing sans avoir besoin de se connecter, en naviguant vers l'URL avec <code>?live=true</code>.
+        Enabling this option allows anyone to view Live Timing without logging in, by navigating to the URL with <code>?live=true</code>.
       </p>
 
       {msg.text && (
@@ -310,11 +310,11 @@ function PublicModeConfigView() {
             id="publicLiveTimingToggle"
             style={{ width: '20px', height: '20px' }}
           />
-          <label htmlFor="publicLiveTimingToggle" style={{ margin: 0, cursor: 'pointer' }}>Activer le mode public pour le Live Timing</label>
+          <label htmlFor="publicLiveTimingToggle" style={{ margin: 0, cursor: 'pointer' }}>Enable public mode for Live Timing</label>
         </div>
 
         <button type="submit" className="btn-save" style={{ marginTop: '12px' }}>
-          Sauvegarder
+          Save
         </button>
       </form>
     </div>
@@ -389,7 +389,7 @@ function SystemUpgradeView() {
         setUpdateMsg({ type: 'error', text: data.error || 'Erreur lors de la vérification.' })
       }
     } catch (err: any) {
-      setUpdateMsg({ type: 'error', text: 'Erreur réseau: ' + err.message })
+      setUpdateMsg({ type: 'error', text: 'Network error: ' + err.message })
     } finally {
       setCheckingUpdate(false)
     }
@@ -398,7 +398,7 @@ function SystemUpgradeView() {
   const handleUpgrade = async (e: React.FormEvent) => {
     e.preventDefault()
     setUpgrading(true)
-    setPatreonMsg({ type: 'info', text: 'Configuration appliquée. Redémarrage en cours...' })
+    setPatreonMsg({ type: 'info', text: 'Configuration appliquée. Restarting...' })
     try {
       if (mode === 'archive') {
         if (!zipFile) {
@@ -424,7 +424,7 @@ function SystemUpgradeView() {
               const statData = await statRes.json()
               if (statData.status === 'Running') {
                 clearInterval(poll)
-                setPatreonMsg({ type: 'success', text: 'Archive Patreon installée et Serveur en ligne !' })
+                setPatreonMsg({ type: 'success', text: 'Archive Patreon installée et Server en ligne !' })
               }
             } catch(e) {}
             if (attempts > 30) {
@@ -455,7 +455,7 @@ function SystemUpgradeView() {
               const statData = await statRes.json()
               if (statData.status === 'Running') {
                 clearInterval(poll)
-                setPatreonMsg({ type: 'success', text: 'Configuration sauvegardée et Serveur en ligne !' })
+                setPatreonMsg({ type: 'success', text: 'Configuration sauvegardée et Server en ligne !' })
               }
             } catch(e) {}
             if (attempts > 15) {
@@ -468,7 +468,7 @@ function SystemUpgradeView() {
         }
       }
     } catch (err: any) {
-      setPatreonMsg({ type: 'error', text: 'Erreur réseau: ' + err.message })
+      setPatreonMsg({ type: 'error', text: 'Network error: ' + err.message })
     } finally {
       setUpgrading(false)
     }
@@ -477,15 +477,15 @@ function SystemUpgradeView() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       
-      {/* -------------------- Mises à jour du Serveur -------------------- */}
+      {/* -------------------- Server Updates -------------------- */}
       <div className="card form-card">
-        <h2 style={{ marginTop: 0 }}>Mises à jour du Serveur</h2>
+        <h2 style={{ marginTop: 0 }}>Server Updates</h2>
         
         <p style={{ color: 'var(--text-color)', marginBottom: '15px' }}>
-          <strong>Version de l'image :</strong> <code>{image}</code>
+          <strong>Image Version:</strong> <code>{image}</code>
           <br/>
           <a href="https://github.com/compujuckel/AssettoServer/releases" target="_blank" rel="noreferrer" style={{ color: '#8a2be2', textDecoration: 'none', fontSize: '0.9rem', display: 'inline-block', marginTop: '5px' }}>
-            🔗 Voir les Changelogs officiels
+            🔗 View official Changelogs
           </a>
         </p>
 
@@ -498,9 +498,9 @@ function SystemUpgradeView() {
         
       </div>
 
-      {/* -------------------- Configuration Patreon / GitHub -------------------- */}
+      {/* -------------------- Patreon / GitHub Configuration -------------------- */}
       <div className="card form-card">
-        <h2 style={{ marginTop: 0 }}>Configuration Patreon / GitHub</h2>
+        <h2 style={{ marginTop: 0 }}>Patreon / GitHub Configuration</h2>
       
       <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
         <button 
@@ -511,7 +511,7 @@ function SystemUpgradeView() {
             color: 'white', border: 'none', fontWeight: 'bold'
           }}
         >
-          Mode Archive (.zip)
+          Archive Mode (.zip)
         </button>
         <button 
           onClick={() => setMode('manual')}
@@ -521,14 +521,14 @@ function SystemUpgradeView() {
             color: 'white', border: 'none', fontWeight: 'bold'
           }}
         >
-          Mode Manuel
+          Manual Mode
         </button>
       </div>
 
       <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
         {mode === 'archive' 
-          ? "Importez l'archive .zip de la version Patreon. Le serveur s'occupera d'extraire les fichiers et de construire l'image Docker avec vos plugins." 
-          : "Entrez manuellement le nom de l'image Docker de la version Premium si vous l'avez déjà téléchargée ou construite localement."}
+          ? "Import the Patreon version .zip archive. The server will extract the files and build the Docker image with your plugins." 
+          : "Manually enter the Premium version Docker image name if you have already downloaded or built it locally."}
       </p>
 
       {patreonMsg.text && (
@@ -544,9 +544,9 @@ function SystemUpgradeView() {
         {mode === 'archive' ? (
           <>
             <div className="form-group">
-              <label>Archive Patreon (.zip)</label>
+              <label>Patreon Archive (.zip)</label>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-5px', marginBottom: '10px' }}>
-                Téléchargez le fichier <code>assetto-server-patreon-*-linux-x64.zip</code> sur <a href="https://patreon.assettoserver.org/key" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>la page Patreon</a>, puis sélectionnez-le ici.
+                Download the file <code>assetto-server-patreon-*-linux-x64.zip</code> on <a href="https://patreon.assettoserver.org/key" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>the Patreon page</a>, then select it here.
               </p>
               <input 
                 type="file" 
@@ -557,15 +557,15 @@ function SystemUpgradeView() {
                 }}
                 style={{ padding: '10px', background: 'rgba(0,0,0,0.2)', borderRadius: '6px', width: '100%', cursor: 'pointer' }}
               />
-              {zipFile && <span style={{ color: '#4ade80', fontSize: '0.9rem', display: 'block', marginTop: '5px' }}>Fichier sélectionné : {zipFile.name}</span>}
+              {zipFile && <span style={{ color: '#4ade80', fontSize: '0.9rem', display: 'block', marginTop: '5px' }}>Selected file: {zipFile.name}</span>}
             </div>
           </>
         ) : (
           <>
             <div className="form-group">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <label>Image Docker AssettoServer</label>
-                <a href="#" onClick={(e) => { e.preventDefault(); setShowManualModal(true); }} style={{ fontSize: '0.85rem', color: '#8a2be2' }}>Comment faire en manuel ?</a>
+                <label>AssettoServer Docker Image</label>
+                <a href="#" onClick={(e) => { e.preventDefault(); setShowManualModal(true); }} style={{ fontSize: '0.85rem', color: '#8a2be2' }}>How to do it manually?</a>
               </div>
               <input 
                 type="text" 
@@ -579,25 +579,25 @@ function SystemUpgradeView() {
 
         <div className="form-group">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <label>Clé Patreon (PatreonHubPlugin)</label>
+            <label>Patreon Key (PatreonHubPlugin)</label>
             <div style={{ display: 'flex', gap: '10px' }}>
               <label style={{ cursor: 'pointer', fontSize: '0.85rem', color: '#8a2be2', display: 'flex', alignItems: 'center', gap: '5px' }}>
                 <input type="file" accept=".txt,.key" style={{ display: 'none' }} onChange={handleKeyUpload} />
-                📂 Importer un fichier
+                📂 Import a file
               </label>
-              <a href="#" onClick={(e) => { e.preventDefault(); setShowPatreonModal(true); }} style={{ fontSize: '0.85rem', color: '#8a2be2' }}>Où trouver ma Clé Patreon ?</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); setShowPatreonModal(true); }} style={{ fontSize: '0.85rem', color: '#8a2be2' }}>Where to find my Patreon Key?</a>
             </div>
           </div>
           <input 
             type="password" 
             value={patreonKey} 
             onChange={(e) => setPatreonKey(e.target.value)} 
-            placeholder="Collez votre clé Patreon ici, ou importez le fichier..."
+            placeholder="Paste your Patreon key here, or import the file..."
           />
         </div>
 
         <button type="submit" className="btn-save" disabled={upgrading || checkingUpdate} style={{ width: '100%', backgroundColor: '#8a2be2' }}>
-          {upgrading ? 'Configuration en cours...' : 'Sauvegarder & Appliquer la Config'}
+          {upgrading ? 'Configuring...' : 'Save & Apply Config'}
         </button>
       </form>
 
@@ -605,19 +605,19 @@ function SystemUpgradeView() {
         <div className="modal-overlay" onClick={() => setShowManualModal(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '600px' }}>
             <button className="modal-close" onClick={() => setShowManualModal(false)}>×</button>
-            <h2 style={{ marginTop: 0 }}>Comment utiliser le mode Manuel ?</h2>
+            <h2 style={{ marginTop: 0 }}>How to use Manual mode?</h2>
             <p style={{ color: 'var(--text-muted)' }}>
-              Si vous ne souhaitez pas ou ne pouvez pas utiliser la connexion GitHub automatique, voici comment procéder :
+              If you do not want or cannot use the automatic GitHub connection, here is how to proceed:
             </p>
             <ol style={{ color: 'var(--text-color)', lineHeight: '1.6', paddingLeft: '20px' }}>
-              <li>Allez sur le site de Patreon et téléchargez le fichier <strong>.zip</strong> de la dernière version (ex: v0.0.39).</li>
-              <li>Envoyez ce fichier `.zip` sur votre serveur (par exemple via SFTP ou FTP).</li>
-              <li>Décompressez le `.zip` dans un dossier.</li>
-              <li>Dans ce dossier, ouvrez un terminal et tapez la commande Docker pour construire l'image :<br/>
+              <li>Go to the Patreon website and download the <strong>.zip</strong> file of the latest version (e.g. v0.0.39).</li>
+              <li>Upload this `.zip` to your server (for example via SFTP or FTP).</li>
+              <li>Unzip the `.zip` in a folder.</li>
+              <li>In this folder, open a terminal and run the Docker command to build the image:<br/>
                 <code style={{ background: 'var(--main-bg)', border: '1px solid var(--border-color)', padding: '4px 8px', borderRadius: '4px', display: 'inline-block', margin: '8px 0' }}>docker build -t assettoserver-patreon:latest .</code>
               </li>
-              <li>Revenez sur ce panel Web, et entrez <strong>assettoserver-patreon:latest</strong> dans le champ Image Docker.</li>
-              <li>Entrez votre clé Patreon, puis cliquez sur <strong>Sauvegarder & Appliquer la Config</strong>.</li>
+              <li>Return to this Web panel, and enter <strong>assettoserver-patreon:latest</strong> in the Docker Image field.</li>
+              <li>Enter your Patreon key, then click <strong>Save & Apply Config</strong>.</li>
             </ol>
           </div>
         </div>
@@ -629,17 +629,17 @@ function SystemUpgradeView() {
         <div className="modal-overlay" onClick={() => setShowPatreonModal(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '600px' }}>
             <button className="modal-close" onClick={() => setShowPatreonModal(false)}>×</button>
-            <h2 style={{ marginTop: 0 }}>Où trouver ma Clé Patreon ?</h2>
+            <h2 style={{ marginTop: 0 }}>Where to find my Patreon Key?</h2>
             <p style={{ color: 'var(--text-muted)' }}>
-              La clé sert de licence pour débloquer les fonctionnalités payantes sur votre serveur.
+              The key serves as a license to unlock paid features on your server.
             </p>
             <ol style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
-              <li>Allez sur le site de <a href="https://www.patreon.com/settings/apps" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>Patreon</a> et vérifiez que votre compte Discord y est connecté.</li>
-              <li>Rejoignez le Discord d'AssettoServer et vérifiez que vous avez bien le rôle <strong>Contributor Tier 2</strong> (ou supérieur).</li>
-              <li>Visitez le site d'authentification officiel : <a href="https://patreon.assettoserver.org/connect" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>patreon.assettoserver.org</a></li>
-              <li>Connectez-vous avec Discord sur ce site.</li>
-              <li>Cliquez sur le gros bouton rouge <strong>Download Key</strong>.</li>
-              <li>Vous pouvez ensuite soit <strong>copier/coller</strong> le contenu du fichier dans le champ, soit utiliser le bouton <strong>Importer un fichier</strong>.</li>
+              <li>Go to the <a href="https://www.patreon.com/settings/apps" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>Patreon</a> website and ensure your Discord account is connected.</li>
+              <li>Join the AssettoServer Discord and verify you have the <strong>Contributor Tier 2</strong> (or higher) role.</li>
+              <li>Visit the official authentication site: <a href="https://patreon.assettoserver.org/connect" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>patreon.assettoserver.org</a></li>
+              <li>Login with Discord on this site.</li>
+              <li>Click on the big red button <strong>Download Key</strong>.</li>
+              <li>You can then either <strong>copy/paste</strong> the file contents into the field, or use the <strong>Import a file</strong>.</li>
             </ol>
           </div>
         </div>
@@ -703,7 +703,7 @@ function ContentConfigView() {
   const uploadFiles = (formData: FormData) => {
     setUploading(true)
     setUploadProgress(0)
-    setMsg({ type: 'info', text: 'Envoi en cours (0%)...' })
+    setMsg({ type: 'info', text: 'Uploading (0%)...' })
     
     const xhr = new XMLHttpRequest()
     xhr.open('POST', '/api/content/upload', true)
@@ -713,9 +713,9 @@ function ContentConfigView() {
         const percent = Math.round((e.loaded / e.total) * 100)
         setUploadProgress(percent)
         if (percent >= 100) {
-          setMsg({ type: 'info', text: 'Envoi terminé. Extraction et installation en cours (cela peut prendre quelques minutes pour les gros fichiers)...' })
+          setMsg({ type: 'info', text: 'Upload complete. Extracting and installing (this may take a few minutes for large files)...' })
         } else {
-          setMsg({ type: 'info', text: `Envoi en cours (${percent}%)...` })
+          setMsg({ type: 'info', text: `Uploading (${percent}%)...` })
         }
       }
     }
@@ -725,17 +725,17 @@ function ContentConfigView() {
       if (xhr.status >= 200 && xhr.status < 300) {
         let data: any = {}
         try { data = JSON.parse(xhr.responseText) } catch (e) {}
-        setMsg({ type: 'success', text: data.message || 'Upload réussi !' })
+        setMsg({ type: 'success', text: data.message || 'Upload successful!' })
       } else {
         let data: any = {}
         try { data = JSON.parse(xhr.responseText) } catch (e) {}
-        setMsg({ type: 'error', text: data.message || 'Erreur lors de l\'upload' })
+        setMsg({ type: 'error', text: data.message || 'Error during upload' })
       }
     }
     
     xhr.onerror = () => {
       setUploading(false)
-      setMsg({ type: 'error', text: 'Erreur réseau lors de l\'upload.' })
+      setMsg({ type: 'error', text: 'Network error during upload.' })
     }
     
     xhr.send(formData)
@@ -829,7 +829,7 @@ function ContentConfigView() {
             <div style={{ marginLeft: 'auto', padding: '10px' }}>
                 <input 
                   type="search" 
-                  placeholder="Rechercher..." 
+                  placeholder="Search..." 
                   value={searchTerm}
                   onChange={e => setSearchTerm(e.target.value)}
                   style={{ padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }}
@@ -841,10 +841,10 @@ function ContentConfigView() {
       <div style={{ padding: '30px' }}>
         {contentTab === 'upload' && (
           <>
-            <h2 style={{ marginTop: 0 }}>Gestion de Contenu (Smart Upload)</h2>
+            <h2 style={{ marginTop: 0 }}>Content Management (Smart Upload)</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
-              Glissez-déposez vos archives (.zip, .rar) ou des dossiers complets de mods ici. 
-              Le serveur extraira automatiquement les fichiers utiles et ignorera les assets graphiques lourds (.kn5, .dds).
+              Drag and drop your archives (.zip, .rar) or complete mod folders here. 
+              The server will automatically extract useful files and ignore heavy graphical assets (.kn5, .dds).
             </p>
 
             {msg.text && (
@@ -865,7 +865,7 @@ function ContentConfigView() {
               {uploading ? (
                 <div className="dropzone-content">
                   <div className="spinner"></div>
-                  <p>{uploadProgress >= 100 ? "Extraction en cours, veuillez patienter..." : `Envoi en cours (${uploadProgress}%), veuillez patienter...`}</p>
+                  <p>{uploadProgress >= 100 ? "Extraction in progress, please wait..." : `Uploading (${uploadProgress}%), please wait...`}</p>
                 </div>
               ) : (
                 <div className="dropzone-content">
@@ -874,7 +874,7 @@ function ContentConfigView() {
                     <polyline points="17 8 12 3 7 8"></polyline>
                     <line x1="12" y1="3" x2="12" y2="15"></line>
                   </svg>
-                  <p>Glissez vos mods ici (.zip, .rar, ou dossier)</p>
+                  <p>Drag your mods here (.zip, .rar, or folder)</p>
                 </div>
               )}
             </div>
@@ -975,13 +975,13 @@ function StandaloneCarView({ carId }: { carId: string }) {
       });
   }, [carId]);
 
-  if (!car) return <div style={{ color: 'var(--text-color)', padding: '20px', textAlign: 'center', marginTop: '50px' }}>Chargement...</div>;
+  if (!car) return <div style={{ color: 'var(--text-color)', padding: '20px', textAlign: 'center', marginTop: '50px' }}>Loading...</div>;
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-color)', padding: '40px', color: 'var(--text-color)' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <button onClick={() => window.close()} style={{ background: 'var(--sidebar-bg)', border: '1px solid var(--border-color)', color: 'var(--text-color)', padding: '10px 20px', borderRadius: '6px', cursor: 'pointer', marginBottom: '30px', fontWeight: 'bold' }}>
-          &larr; Fermer l'onglet
+          &larr; Close the tab
         </button>
         
         <h1 style={{ marginTop: 0, marginBottom: '10px', fontSize: '2.5rem' }}>{car.name || car.id}</h1>
@@ -1004,7 +1004,7 @@ function StandaloneCarView({ carId }: { carId: string }) {
             
             {car.skins && car.skins.length > 0 && (
               <div style={{ marginTop: '20px' }}>
-                <h3 style={{ marginBottom: '15px' }}>Skins disponibles ({car.skins.length})</h3>
+                <h3 style={{ marginBottom: '15px' }}>Available skins ({car.skins.length})</h3>
                 <div className="skin-slider" style={{ display: 'flex', overflowX: 'auto', gap: '15px', paddingBottom: '15px' }}>
                   {car.skins.map(skin => (
                     <div 
@@ -1041,22 +1041,22 @@ function StandaloneCarView({ carId }: { carId: string }) {
           </div>
           
           <div style={{ flex: '1 1 300px', backgroundColor: 'var(--sidebar-bg)', padding: '30px', borderRadius: '12px', height: 'fit-content', border: '1px solid var(--border-color)' }}>
-            <h2 style={{ marginTop: 0, borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Spécifications</h2>
+            <h2 style={{ marginTop: 0, borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Specifications</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Puissance</span>
+                <span style={{ color: 'var(--text-muted)' }}>Power</span>
                 <strong>{car.specs?.bhp || '?'}</strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Couple</span>
+                <span style={{ color: 'var(--text-muted)' }}>Torque</span>
                 <strong>{car.specs?.torque || '?'}</strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Poids</span>
+                <span style={{ color: 'var(--text-muted)' }}>Weight</span>
                 <strong>{car.specs?.weight || '?'}</strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Vitesse Max</span>
+                <span style={{ color: 'var(--text-muted)' }}>Top Speed</span>
                 <strong>{car.specs?.topspeed || '?'}</strong>
               </div>
             </div>
@@ -1095,13 +1095,13 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
       });
   }, [trackId]);
 
-  if (!track) return <div style={{ color: 'var(--text-color)', padding: '20px', textAlign: 'center', marginTop: '50px' }}>Chargement...</div>;
+  if (!track) return <div style={{ color: 'var(--text-color)', padding: '20px', textAlign: 'center', marginTop: '50px' }}>Loading...</div>;
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-color)', padding: '40px', color: 'var(--text-color)' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <button onClick={() => window.close()} style={{ background: 'var(--sidebar-bg)', border: '1px solid var(--border-color)', color: 'var(--text-color)', padding: '10px 20px', borderRadius: '6px', cursor: 'pointer', marginBottom: '30px', fontWeight: 'bold' }}>
-          &larr; Fermer l'onglet
+          &larr; Close the tab
         </button>
         
         <h1 style={{ marginTop: 0, marginBottom: '10px', fontSize: '2.5rem' }}>
@@ -1128,7 +1128,7 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
 
             {track.layouts && track.layouts.length > 0 && (
               <div style={{ marginTop: '20px' }}>
-                <h3 style={{ marginBottom: '15px' }}>Layouts disponibles ({track.layouts.length})</h3>
+                <h3 style={{ marginBottom: '15px' }}>Available Layouts ({track.layouts.length})</h3>
                 <div className="skin-slider" style={{ display: 'flex', overflowX: 'auto', gap: '15px', paddingBottom: '15px' }}>
                   {track.layouts.map(layout => (
                     <div 
@@ -1168,10 +1168,10 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
           </div>
           
           <div style={{ backgroundColor: 'var(--sidebar-bg)', padding: '30px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-            <h2 style={{ marginTop: 0, borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Informations</h2>
+            <h2 style={{ marginTop: 0, borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Information</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Longueur</span>
+                <span style={{ color: 'var(--text-muted)' }}>Length</span>
                 <strong>{track.layouts?.find(l => l.id === selectedLayout)?.length || track.length || '?'}</strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
@@ -1194,9 +1194,9 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
 
           {/* fast_lane.ai upload section */}
           <div style={{ backgroundColor: 'var(--sidebar-bg)', padding: '30px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-            <h2 style={{ marginTop: 0, borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Trafic IA (fast_lane.ai)</h2>
+            <h2 style={{ marginTop: 0, borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>AI Traffic (fast_lane.ai)</h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '20px' }}>
-              Ajoutez ou mettez à jour la trajectoire IA pour que le trafic puisse rouler sur ce circuit.
+              Add or update the AI trajectory so traffic can run on this track.
             </p>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
@@ -1217,7 +1217,7 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
                 onClick={async () => {
                   const file = fileInputRef.current?.files?.[0];
                   if (!file) {
-                    setUploadMsg({ text: 'Veuillez sélectionner un fichier .ai ou .aip d\'abord', type: 'error' });
+                    setUploadMsg({ text: 'Please select an .ai or .aip file first', type: 'error' });
                     return;
                   }
 
@@ -1243,7 +1243,7 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
                       setUploadMsg({ text: data.message, type: 'error' });
                     }
                   } catch (err: any) {
-                    setUploadMsg({ text: 'Erreur réseau : ' + err.message, type: 'error' });
+                    setUploadMsg({ text: 'Network error : ' + err.message, type: 'error' });
                   } finally {
                     setUploading(false);
                   }
@@ -1260,7 +1260,7 @@ function StandaloneTrackView({ trackId }: { trackId: string }) {
                   opacity: uploading ? 0.7 : 1
                 }}
               >
-                {uploading ? 'Envoi en cours...' : 'Uploader fast_lane.ai'}
+                {uploading ? 'Uploading...' : 'Upload fast_lane.ai'}
               </button>
               
               {uploadMsg.text && (
@@ -1293,7 +1293,7 @@ function App() {
   if (viewLive) return <LiveTiming />;
 
   const [activeTab, setActiveTab] = useState<'status' | 'config' | 'content' | 'events' | 'users'>('status')
-  const [apiStatus, setApiStatus] = useState<string>("En attente...")
+  const [apiStatus, setApiStatus] = useState<string>("Waiting...")
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false)
   const [username, setUsername] = useState<string>("")
   const [password, setPassword] = useState<string>("")
@@ -1332,7 +1332,7 @@ function App() {
       fetch('/api/health')
         .then(res => res.json())
         .then(data => setApiStatus(data.message))
-        .catch(err => setApiStatus("Erreur de connexion au backend : " + err.message))
+        .catch(err => setApiStatus("Backend connection error: " + err.message))
     }
   }, [isAuthenticated])
 
@@ -1346,7 +1346,7 @@ function App() {
           setServerStatus(data.status)
           setIsStatusLoading(false)
         })
-        .catch(() => setServerStatus("Erreur"))
+        .catch(() => setServerStatus("Error"))
     }
 
     fetchStatus()
@@ -1427,11 +1427,11 @@ function App() {
         if (response.status === 403 && data.require_password_change) {
           setRequirePasswordChange(true)
         } else {
-          setError(data.message || "Mot de passe incorrect")
+          setError(data.message || "Password incorrect")
         }
       }
     } catch (err: any) {
-      setError("Erreur de connexion : " + err.message)
+      setError("Connection error: " + err.message)
     }
   }
 
@@ -1457,10 +1457,10 @@ function App() {
           setIsAuthenticated(true)
         }
       } else {
-        setError(data.message || "Erreur")
+        setError(data.message || "Error")
       }
     } catch (err: any) {
-      setError("Erreur : " + err.message)
+      setError("Error : " + err.message)
     }
   }
 
@@ -1522,19 +1522,19 @@ function App() {
     if (serverStatus === "Running") {
       return (
         <div className="status-badge status-online">
-          <div className="status-dot"></div> En ligne
+          <div className="status-dot"></div> Online
         </div>
       )
     } else if (serverStatus === "Stopped") {
       return (
         <div className="status-badge status-offline">
-          <div className="status-dot"></div> Hors ligne
+          <div className="status-dot"></div> Offline
         </div>
       )
     } else {
       return (
         <div className="status-badge status-unknown">
-          <div className="status-dot"></div> Inconnu
+          <div className="status-dot"></div> Unknown
         </div>
       )
     }
@@ -1549,7 +1549,7 @@ function App() {
   }
 
   if (loading) {
-    return <div className="login-container">Chargement...</div>
+    return <div className="login-container">Loading...</div>
   }
 
   if (!isAuthenticated) {
@@ -1557,22 +1557,22 @@ function App() {
       return (
         <div className="login-container">
           <div className="login-box">
-            <h2>Nouveau mot de passe</h2>
+            <h2>New password</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
-              Pour des raisons de sécurité, veuillez définir votre mot de passe personnel.
+              For security reasons, please set your personal password.
             </p>
             <form onSubmit={handleChangePassword}>
               <div className="input-group">
                 <input 
                   type="password" 
-                  placeholder="Nouveau mot de passe" 
+                  placeholder="New password" 
                   value={newPassword}
                   onChange={e => setNewPassword(e.target.value)}
                   autoFocus
                 />
               </div>
               {error && <p className="error-msg">{error}</p>}
-              <button type="submit" className="login-btn">Enregistrer</button>
+              <button type="submit" className="login-btn">Save</button>
             </form>
           </div>
         </div>
@@ -1587,7 +1587,7 @@ function App() {
             <div className="input-group" style={{ marginBottom: '15px' }}>
               <input 
                 type="text" 
-                placeholder="Nom d'utilisateur" 
+                placeholder="Username" 
                 value={username}
                 onChange={e => setUsername(e.target.value)}
                 autoFocus
@@ -1596,13 +1596,13 @@ function App() {
             <div className="input-group">
               <input 
                 type="password" 
-                placeholder="Mot de passe" 
+                placeholder="Password" 
                 value={password}
                 onChange={e => setPassword(e.target.value)}
               />
             </div>
             {error && <p className="error-msg">{error}</p>}
-            <button type="submit" className="login-btn">Se connecter</button>
+            <button type="submit" className="login-btn">Login</button>
           </form>
         </div>
       </div>
@@ -1626,7 +1626,7 @@ function App() {
             className={`nav-item ${activeTab === 'events' ? 'active' : ''}`}
             onClick={(e) => { e.preventDefault(); setActiveTab('events') }}
           >
-            Événements
+            Events
           </a>
           <a 
             href="#" 
@@ -1643,7 +1643,7 @@ function App() {
                 style={{ fontSize: '0.9rem', padding: '8px 16px', opacity: 0.8 }}
                 onClick={(e) => { e.preventDefault(); setActiveTab('users') }}
               >
-                ↳ Utilisateurs
+                ↳ Users
               </a>
             )}
             <a 
@@ -1660,7 +1660,7 @@ function App() {
               style={{ fontSize: '0.9rem', padding: '8px 16px', opacity: 0.8 }}
               onClick={(e) => { e.preventDefault(); setActiveTab('logs') }}
             >
-              ↳ Logs Globaux
+              ↳ Global Logs
             </a>
           </div>
           <a 
@@ -1686,20 +1686,20 @@ function App() {
             {activeTab === 'status' && 'Dashboard'}
             {activeTab === 'events' && 'Event Builder'}
             {activeTab === 'config' && 'Configuration'}
-            {activeTab === 'users' && 'Gestion Utilisateurs'}
-            {activeTab === 'plugins' && 'Gestion des Plugins'}
-            {activeTab === 'logs' && 'Logs Globaux'}
+            {activeTab === 'users' && 'User Management'}
+            {activeTab === 'plugins' && 'Plugin Management'}
+            {activeTab === 'logs' && 'Global Logs'}
             {activeTab === 'content' && 'Content Management'}
           </h1>
           <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <div style={{ color: 'var(--text-muted)' }}>
-              Connecté : <strong style={{ color: 'var(--primary-color)' }}>{username}</strong>
+              Logged in as: <strong style={{ color: 'var(--primary-color)' }}>{username}</strong>
             </div>
             <button 
               className="logout-btn" 
               onClick={handleLogout}
             >
-              Déconnexion
+              Logout
             </button>
           </div>
         </header>
@@ -1708,7 +1708,7 @@ function App() {
           {activeTab === 'status' && (
             <div className="card" style={{ maxWidth: '800px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                <h2 style={{ margin: 0 }}>Statut du Serveur</h2>
+                <h2 style={{ margin: 0 }}>Server Status</h2>
                 {getStatusBadge()}
               </div>
               
@@ -1719,7 +1719,7 @@ function App() {
                     onClick={() => handleServerAction('start')}
                     disabled={actionLoading}
                   >
-                    {actionLoading ? "Chargement..." : "Démarrer"}
+                    {actionLoading ? "Loading..." : "Start"}
                   </button>
                 )}
                 {serverStatus === "Running" && (
@@ -1729,14 +1729,14 @@ function App() {
                       onClick={() => handleServerAction('stop')}
                       disabled={actionLoading}
                     >
-                      {actionLoading ? "Chargement..." : "Arrêter"}
+                      {actionLoading ? "Loading..." : "Stop"}
                     </button>
                     <button 
                       className="btn-restart" 
                       onClick={handleRestart}
                       disabled={actionLoading}
                     >
-                      {actionLoading ? "Chargement..." : "Redémarrer"}
+                      {actionLoading ? "Loading..." : "Restart"}
                     </button>
                   </>
                 )}
@@ -1750,35 +1750,35 @@ function App() {
               </div>
 
               <div className="card" style={{ marginTop: '20px', backgroundColor: '#1a1d24', border: '1px solid #2d313a' }}>
-                <h3 style={{ marginTop: 0 }}>Métriques en direct</h3>
+                <h3 style={{ marginTop: 0 }}>Live Metrics</h3>
                 {serverStatus === 'Running' && liveMetrics ? (
                   <div>
                     <div style={{ display: 'flex', gap: '20px', marginBottom: '20px' }}>
                       <div style={{ background: '#22262e', padding: '16px', borderRadius: '8px', flex: 1 }}>
-                        <div style={{ fontSize: '0.9rem', color: '#8b949e', marginBottom: '4px' }}>Pilotes Connectés</div>
+                        <div style={{ fontSize: '0.9rem', color: '#8b949e', marginBottom: '4px' }}>Connected Drivers</div>
                         <div style={{ fontSize: '1.5rem', fontWeight: 600 }}>{liveMetrics.info.clients} / {liveMetrics.info.maxclients}</div>
                       </div>
                       <div style={{ background: '#22262e', padding: '16px', borderRadius: '8px', flex: 1 }}>
-                        <div style={{ fontSize: '0.9rem', color: '#8b949e', marginBottom: '4px' }}>Accès Rapide</div>
+                        <div style={{ fontSize: '0.9rem', color: '#8b949e', marginBottom: '4px' }}>Quick Access</div>
                         <div>
                           <a href={`https://acstuff.ru/s/q:race/online/join?ip=${liveMetrics.info.ip}&httpPort=${liveMetrics.info.cport}`}
                              target="_blank"
                              rel="noopener noreferrer"
                              className="btn-save" 
                              style={{ padding: '6px 12px', textDecoration: 'none', display: 'inline-block', marginTop: '4px' }}>
-                            Rejoindre (Content Manager)
+                            Join (Content Manager)
                           </a>
                         </div>
                       </div>
                     </div>
                     
-                    <h4 style={{ marginBottom: '12px', borderBottom: '1px solid #2d313a', paddingBottom: '8px' }}>Leaderboard / Piste</h4>
+                    <h4 style={{ marginBottom: '12px', borderBottom: '1px solid #2d313a', paddingBottom: '8px' }}>Leaderboard / Track</h4>
                     <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                       <thead>
                         <tr style={{ color: '#8b949e', borderBottom: '1px solid #2d313a' }}>
-                          <th style={{ padding: '8px 4px' }}>Pilote</th>
-                          <th style={{ padding: '8px 4px' }}>Voiture</th>
-                          <th style={{ padding: '8px 4px' }}>Meilleur Tour</th>
+                          <th style={{ padding: '8px 4px' }}>Driver</th>
+                          <th style={{ padding: '8px 4px' }}>Car</th>
+                          <th style={{ padding: '8px 4px' }}>Best Lap</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1787,19 +1787,19 @@ function App() {
                            .sort((a, b) => (a.bestLap || 99999999) - (b.bestLap || 99999999))
                            .map((car, idx) => (
                             <tr key={idx} style={{ borderBottom: '1px solid #2d313a' }}>
-                              <td style={{ padding: '10px 4px' }}>{car.driverName || 'Inconnu'} {car.driverTeam ? `(${car.driverTeam})` : ''}</td>
+                              <td style={{ padding: '10px 4px' }}>{car.driverName || 'Unknown'} {car.driverTeam ? `(${car.driverTeam})` : ''}</td>
                               <td style={{ padding: '10px 4px', fontSize: '0.9rem' }}>{car.model}</td>
                               <td style={{ padding: '10px 4px', fontFamily: 'monospace', fontSize: '1rem' }}>{formatTime(car.bestLap || 0)}</td>
                             </tr>
                           ))
                         ) : (
-                          <tr><td colSpan={3} style={{textAlign: 'center', opacity: 0.6, padding: '20px'}}>Aucun pilote en piste</td></tr>
+                          <tr><td colSpan={3} style={{textAlign: 'center', opacity: 0.6, padding: '20px'}}>No driver on track</td></tr>
                         )}
                       </tbody>
                     </table>
                   </div>
                 ) : (
-                  <p style={{ opacity: 0.6, margin: 0 }}>Le serveur doit être en ligne pour afficher les métriques.</p>
+                  <p style={{ opacity: 0.6, margin: 0 }}>The server must be online to display metrics.</p>
                 )}
               </div>
             </div>

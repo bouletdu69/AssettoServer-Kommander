@@ -64,7 +64,7 @@ export default function LiveTiming() {
           <h1 style={{ margin: 0, color: '#f39c12', textTransform: 'uppercase', letterSpacing: '2px' }}>Live Timing</h1>
           {info && (
             <div style={{ marginTop: '10px', color: '#aaa', fontSize: '0.9rem' }}>
-              <span>{info.name}</span> • <span>{info.track}</span> • <span style={{color: '#4ade80'}}>{info.clients} / {info.maxclients} Pilotes</span>
+              <span>{info.name}</span> • <span>{info.track}</span> • <span style={{color: '#4ade80'}}>{info.clients} / {info.maxclients} Drivers</span>
             </div>
           )}
         </div>
@@ -86,7 +86,7 @@ export default function LiveTiming() {
               transition: 'background-color 0.2s'
             }}
           >
-            Rejoindre (Content Manager)
+            Join (Content Manager)
           </a>
         </div>
       </header>
@@ -101,9 +101,9 @@ export default function LiveTiming() {
             <thead>
               <tr style={{ backgroundColor: '#222', borderBottom: '2px solid #f39c12', color: '#ccc' }}>
                 <th style={{ padding: '12px' }}>Pos</th>
-                <th style={{ padding: '12px' }}>Pilote</th>
-                <th style={{ padding: '12px' }}>Voiture</th>
-                <th style={{ padding: '12px' }}>Meilleur Tour</th>
+                <th style={{ padding: '12px' }}>Driver</th>
+                <th style={{ padding: '12px' }}>Car</th>
+                <th style={{ padding: '12px' }}>Best Lap</th>
               </tr>
             </thead>
             <tbody>
@@ -120,7 +120,7 @@ export default function LiveTiming() {
               {connectedCars.length === 0 && (
                 <tr>
                   <td colSpan={4} style={{ padding: '20px', textAlign: 'center', color: '#555' }}>
-                    Aucun pilote en piste.
+                    No driver on track.
                   </td>
                 </tr>
               )}

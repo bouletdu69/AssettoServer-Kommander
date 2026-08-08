@@ -22,7 +22,7 @@ export default function UsersView() {
         const data = await res.json()
         setUsers(data)
       } else {
-        setError("Erreur lors de la récupération des utilisateurs.")
+        setError("Error retrieving users.")
       }
     } catch (err: any) {
       setError(err.message)
@@ -45,13 +45,13 @@ export default function UsersView() {
       })
       if (res.ok) {
         const data = await res.json()
-        setSuccess('Utilisateur créé avec succès !')
+        setSuccess('User created successfully!')
         setGeneratedPassphrase(data.passphrase)
         setNewUsername('')
         fetchUsers()
       } else {
         const data = await res.json()
-        setError(data.error || 'Erreur lors de la création')
+        setError(data.error || 'Error during creation')
       }
     } catch (err: any) {
       setError(err.message)
@@ -59,17 +59,17 @@ export default function UsersView() {
   }
 
   const handleDelete = async (id: number) => {
-    if (!window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?")) return
+    if (!window.confirm("Are you sure you want to delete this user?")) return
     setError('')
     setSuccess('')
     try {
       const res = await fetch(`/api/users?id=${id}`, { method: 'DELETE' })
       if (res.ok) {
-        setSuccess('Utilisateur supprimé !')
+        setSuccess('User deleted!')
         fetchUsers()
       } else {
         const data = await res.json()
-        setError(data.error || 'Erreur lors de la suppression')
+        setError(data.error || 'Error deleting')
       }
     } catch (err: any) {
       setError(err.message)
@@ -77,7 +77,7 @@ export default function UsersView() {
   }
 
   const handleResetPassword = async (id: number, username: string) => {
-    if (!window.confirm(`Voulez-vous vraiment réinitialiser le mot de passe de ${username} ?\nUn nouveau mot de passe aléatoire sera généré.`)) return
+    if (!window.confirm(`Do you really want to reset the password for ${username}?\nA new random password will be generated.`)) return
     setError('')
     setSuccess('')
     setGeneratedPassphrase('')
@@ -85,11 +85,11 @@ export default function UsersView() {
       const res = await fetch(`/api/users?id=${id}`, { method: 'PUT' })
       if (res.ok) {
         const data = await res.json()
-        setSuccess(`Mot de passe réinitialisé pour ${username} !`)
+        setSuccess(`Password reset for ${username}!`)
         setGeneratedPassphrase(data.passphrase)
       } else {
         const data = await res.json()
-        setError(data.error || 'Erreur lors de la réinitialisation')
+        setError(data.error || 'Error during reset')
       }
     } catch (err: any) {
       setError(err.message)
@@ -98,7 +98,7 @@ export default function UsersView() {
 
   return (
     <div className="card form-card">
-      <h2 style={{ marginTop: 0 }}>Gestion des Utilisateurs (Admin)</h2>
+      <h2 style={{ marginTop: 0 }}>User Management (Admin)</h2>
       
       {error && <div className="msg-error">{error}</div>}
       {success && <div className="msg-success">{success}</div>}
@@ -108,8 +108,8 @@ export default function UsersView() {
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border-color)', color: 'var(--text-muted)' }}>
               <th style={{ padding: '10px 0' }}>ID</th>
-              <th style={{ padding: '10px 0' }}>Nom d'utilisateur</th>
-              <th style={{ padding: '10px 0' }}>Rôle</th>
+              <th style={{ padding: '10px 0' }}>Username</th>
+              <th style={{ padding: '10px 0' }}>Role</th>
               <th style={{ padding: '10px 0', textAlign: 'right' }}>Action</th>
             </tr>
           </thead>
@@ -125,10 +125,10 @@ export default function UsersView() {
                 </td>
                 <td style={{ padding: '10px 0', textAlign: 'right' }}>
                   <button onClick={() => handleResetPassword(u.id, u.username)} style={{ backgroundColor: '#f39c12', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '4px', cursor: 'pointer', marginRight: '8px' }}>
-                    Réinitialiser MDP
+                    Reset PWD
                   </button>
                   <button onClick={() => handleDelete(u.id)} style={{ backgroundColor: '#e74c3c', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '4px', cursor: 'pointer' }}>
-                    Supprimer
+                    Delete
                   </button>
                 </td>
               </tr>
@@ -137,26 +137,26 @@ export default function UsersView() {
         </table>
       </div>
 
-      <h3 style={{ marginTop: '30px' }}>Créer un utilisateur</h3>
+      <h3 style={{ marginTop: '30px' }}>Create a user</h3>
       <form onSubmit={handleCreate}>
         <div className="form-group">
-          <label>Nom d'utilisateur</label>
+          <label>Username</label>
           <input type="text" value={newUsername} onChange={e => setNewUsername(e.target.value)} required />
         </div>
         <div className="form-group">
-          <label>Rôle</label>
+          <label>Role</label>
           <select value={newRole} onChange={e => setNewRole(e.target.value)} style={{ width: '100%', padding: '10px', backgroundColor: 'var(--main-bg)', border: '1px solid var(--border-color)', color: 'var(--text-color)', borderRadius: '6px' }}>
-            <option value="admin">Admin (Accès Total)</option>
+            <option value="admin">Admin (Full Access)</option>
             {/* <option value="moderator">Modérateur (Future usage)</option> */}
           </select>
         </div>
-        <button type="submit" className="btn-save">Générer le compte</button>
+        <button type="submit" className="btn-save">Generate account</button>
       </form>
 
       {generatedPassphrase && (
         <div style={{ marginTop: '20px', padding: '20px', backgroundColor: '#2d3748', borderLeft: '4px solid #4ade80', borderRadius: '4px' }}>
-          <h4 style={{ margin: '0 0 10px 0', color: '#4ade80' }}>Nouveau compte créé</h4>
-          <p style={{ margin: '0 0 10px 0' }}>Veuillez transmettre cette phrase secrète à l'utilisateur. Il devra la modifier à sa première connexion.</p>
+          <h4 style={{ margin: '0 0 10px 0', color: '#4ade80' }}>New account created</h4>
+          <p style={{ margin: '0 0 10px 0' }}>Please give this secret phrase to the user. They will need to change it on their first login.</p>
           <div style={{ padding: '15px', backgroundColor: '#1a202c', fontFamily: 'monospace', fontSize: '1.2rem', textAlign: 'center', color: '#f6ad55', letterSpacing: '1px', borderRadius: '4px', userSelect: 'all' }}>
             {generatedPassphrase}
           </div>

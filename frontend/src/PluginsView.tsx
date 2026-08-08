@@ -46,7 +46,7 @@ export function PluginsView() {
       }
     } catch (err) {
       console.error(err);
-      setMsg({ type: 'error', text: 'Erreur lors du chargement des plugins.' });
+      setMsg({ type: 'error', text: 'Error loading plugins.' });
     } finally {
       setLoading(false);
     }
@@ -61,8 +61,8 @@ export function PluginsView() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ yamlContent: yamlConfig })
       });
-      if (!res.ok) throw new Error('Erreur lors de la sauvegarde');
-      setMsg({ type: 'success', text: 'Configuration sauvegardée ! (Nécessite un redémarrage du serveur)' });
+      if (!res.ok) throw new Error('Error saving');
+      setMsg({ type: 'success', text: 'Configuration saved! (Requires server restart)' });
     } catch (err: any) {
       setMsg({ type: 'error', text: err.message });
     } finally {
@@ -72,13 +72,13 @@ export function PluginsView() {
 
   const handleInstall = (pluginName: string) => {
     if (yamlConfig.includes(pluginName + ':')) {
-      setMsg({ type: 'error', text: `Le plugin ${pluginName} est déjà présent dans la configuration !` });
+      setMsg({ type: 'error', text: `The plugin ${pluginName} is already present in the configuration!` });
       return;
     }
     
     const newYaml = yamlConfig + `\n\n${pluginName}:\n  Enabled: true\n`;
     setYamlConfig(newYaml);
-    setMsg({ type: 'success', text: `Bloc ajouté pour ${pluginName}. N'oubliez pas de sauvegarder !` });
+    setMsg({ type: 'success', text: `Block added for ${pluginName}. Do not forget to save!` });
   };
 
   const handleUploadCustomPlugin = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -86,7 +86,7 @@ export function PluginsView() {
     if (!file) return;
 
     if (!file.name.toLowerCase().endsWith('.dll') && !file.name.toLowerCase().endsWith('.zip')) {
-      setMsg({ type: 'error', text: 'Seuls les fichiers .dll et .zip sont autorisés' });
+      setMsg({ type: 'error', text: 'Only .dll and .zip files are allowed' });
       return;
     }
 
@@ -101,9 +101,9 @@ export function PluginsView() {
         body: formData
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Erreur lors de l\'envoi');
+      if (!res.ok) throw new Error(data.message || 'Error uploading');
       
-      setMsg({ type: 'success', text: 'Plugin uploadé avec succès ! (Prendra effet au prochain démarrage)' });
+      setMsg({ type: 'success', text: 'Plugin uploaded successfully! (Will take effect on next restart)' });
       fetchData(); // Refresh list
     } catch (err: any) {
       setMsg({ type: 'error', text: err.message });
@@ -114,29 +114,29 @@ export function PluginsView() {
   };
 
   const handleDeleteCustomPlugin = async (name: string) => {
-    if (!window.confirm(`Supprimer le plugin ${name} ?`)) return;
+    if (!window.confirm(`Delete the plugin ${name}?`)) return;
 
     try {
       const res = await fetch(`/api/plugins/custom/${name}`, {
         method: 'DELETE'
       });
-      if (!res.ok) throw new Error('Erreur lors de la suppression');
+      if (!res.ok) throw new Error('Error deleting');
       fetchData();
     } catch (err: any) {
       setMsg({ type: 'error', text: err.message });
     }
   };
 
-  if (loading) return <div style={{ padding: '20px' }}>Chargement...</div>;
+  if (loading) return <div style={{ padding: '20px' }}>Loading...</div>;
 
   return (
     <div style={{ padding: '20px', display: 'flex', gap: '20px', height: '100%' }}>
       
       {/* Left side: List of plugins */}
       <div style={{ flex: '1', backgroundColor: 'var(--card-bg)', padding: '20px', borderRadius: '8px', overflowY: 'auto', maxHeight: 'calc(100vh - 120px)' }}>
-        <h2 style={{ marginTop: 0, marginBottom: '20px', color: 'var(--primary-color)' }}>Plugins Disponibles</h2>
+        <h2 style={{ marginTop: 0, marginBottom: '20px', color: 'var(--primary-color)' }}>Available Plugins</h2>
         <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
-          Ces plugins sont directement inclus dans votre version d'AssettoServer. Cliquez sur "Ajouter" pour insérer leur configuration de base dans le fichier.
+          These plugins are included directly in your version of AssettoServer. Click on "Add" to insert their base configuration into the file.
         </p>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -157,18 +157,18 @@ export function PluginsView() {
                   fontWeight: 'bold'
                 }}
               >
-                + Ajouter
+                + Add
               </button>
             </div>
           ))}
           {plugins.length === 0 && (
-            <div style={{ color: 'var(--text-muted)' }}>Aucun plugin détecté.</div>
+            <div style={{ color: 'var(--text-muted)' }}>No plugins detected.</div>
           )}
         </div>
 
-        <h2 style={{ marginTop: '40px', marginBottom: '20px', color: '#f39c12' }}>Plugins Personnalisés (.dll / .zip)</h2>
+        <h2 style={{ marginTop: '40px', marginBottom: '20px', color: '#f39c12' }}>Custom Plugins (.dll / .zip)</h2>
         <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
-          Importez ici vos propres plugins. Les <strong>.dll</strong> simples et les <strong>.zip</strong> (avec dossiers) sont supportés.
+          Import your own plugins here. The <strong>.dll</strong> files and the <strong>.zip</strong> (with folders) are supported.
         </p>
 
         <div style={{ marginBottom: '20px' }}>
@@ -181,7 +181,7 @@ export function PluginsView() {
             cursor: uploading ? 'not-allowed' : 'pointer',
             fontWeight: 'bold'
           }}>
-            {uploading ? 'Upload en cours...' : '⬆️ Uploader un plugin (.dll / .zip)'}
+            {uploading ? 'Uploading...' : '⬆️ Upload a plugin (.dll / .zip)'}
             <input 
               type="file" 
               accept=".dll,.zip" 
@@ -215,12 +215,12 @@ export function PluginsView() {
                   fontWeight: 'bold'
                 }}
               >
-                🗑️ Supprimer
+                🗑️ Delete
               </button>
             </div>
           ))}
           {customPlugins.length === 0 && (
-            <div style={{ color: 'var(--text-muted)' }}>Aucun plugin personnalisé installé.</div>
+            <div style={{ color: 'var(--text-muted)' }}>No custom plugins installed.</div>
           )}
         </div>
 
@@ -244,7 +244,7 @@ export function PluginsView() {
               fontSize: '1rem'
             }}
           >
-            {saving ? 'Sauvegarde...' : '💾 Sauvegarder Config'}
+            {saving ? 'Saving...' : '💾 Save Config'}
           </button>
         </div>
 

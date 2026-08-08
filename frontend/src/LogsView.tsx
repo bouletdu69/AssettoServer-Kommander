@@ -74,7 +74,7 @@ export function LogsView() {
 
         {/* Audit Box */}
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', minWidth: 0 }}>
-          <h3 style={{ margin: '0 0 8px 0', fontSize: '1rem', color: 'var(--primary-color)' }}>Audit (Historique d'Actions)</h3>
+          <h3 style={{ margin: '0 0 8px 0', fontSize: '1rem', color: 'var(--primary-color)' }}>Audit (Action History)</h3>
           <div className="console-widget" style={{ margin: 0, height: '400px', width: '100%', boxSizing: 'border-box' }}>
             {auditLogs.map((log, i) => (
               <p key={i} className="console-line" style={{ color: '#ffb86c' }}>{log}</p>

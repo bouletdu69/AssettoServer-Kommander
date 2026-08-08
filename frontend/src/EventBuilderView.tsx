@@ -115,7 +115,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
 
   const handleCreateNew = () => {
     setEditingPreset({
-      name: 'Nouvel Événement',
+      name: 'New Event',
       description: '',
       track: '',
       trackLayout: '',
@@ -166,7 +166,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
   };
 
   const handleDelete = (id: string) => {
-    if (!confirm("Voulez-vous vraiment supprimer cet événement ?")) return;
+    if (!confirm("Are you sure you want to delete this event?")) return;
     fetch(`/api/presets/${id}`, { method: 'DELETE' })
       .then(() => fetchPresets());
   };
@@ -189,12 +189,12 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
   };
 
   const handleLaunch = (id: string) => {
-    if (!confirm("Attention: Le lancement de cet événement va écraser la configuration actuelle du serveur et le redémarrer. Continuer ?")) return;
+    if (!confirm("Warning: Launching this event will overwrite the current server configuration and restart it. Continue?")) return;
     
     fetch(`/api/presets/${id}/launch`, { method: 'POST' })
       .then(res => {
-        if (!res.ok) throw new Error('Erreur de lancement');
-        setMsg({ type: 'success', text: "L'événement a été lancé avec succès ! Le serveur est en train de redémarrer..." });
+        if (!res.ok) throw new Error('Launch error');
+        setMsg({ type: 'success', text: "The event has been launched successfully! The server is restarting..." });
         if (onLaunch) onLaunch();
       })
       .catch(err => {
@@ -288,26 +288,26 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
     return (
       <div style={{ padding: '30px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
-          <h1 style={{ margin: 0 }}>Éditer l'événement</h1>
+          <h1 style={{ margin: 0 }}>Edit Event</h1>
           <div>
-            <button onClick={() => setEditingPreset(null)} style={{ marginRight: '10px', padding: '10px 20px', borderRadius: '8px', border: '1px solid var(--border-color)', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}>Annuler</button>
-            <button onClick={handleSave} style={{ padding: '10px 20px', borderRadius: '8px', border: 'none', backgroundColor: 'var(--primary-color)', color: 'white', fontWeight: 'bold', cursor: 'pointer' }}>Enregistrer</button>
+            <button onClick={() => setEditingPreset(null)} style={{ marginRight: '10px', padding: '10px 20px', borderRadius: '8px', border: '1px solid var(--border-color)', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}>Cancel</button>
+            <button onClick={handleSave} style={{ padding: '10px 20px', borderRadius: '8px', border: 'none', backgroundColor: 'var(--primary-color)', color: 'white', fontWeight: 'bold', cursor: 'pointer' }}>Save</button>
           </div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
           <div style={{ gridColumn: '1 / -1', backgroundColor: 'var(--sidebar-bg)', padding: '20px', borderRadius: '12px' }}>
-            <h2>Général</h2>
+            <h2>General</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <div>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Nom de l'événement</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Event Name</label>
                 <input type="text" value={editingPreset.name} onChange={e => setEditingPreset({...editingPreset, name: e.target.value})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
               </div>
               
               <div>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Circuit</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Track</label>
                 <select value={editingPreset.track} onChange={e => setEditingPreset({...editingPreset, track: e.target.value, trackLayout: ''})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }}>
-                  <option value="">-- Choisir un circuit --</option>
+                  <option value="">-- Choose a track --</option>
                   {tracks.map(t => <option key={t.id} value={t.id}>{t.name || t.id} ({t.pitboxes || '??'} pits)</option>)}
                 </select>
               </div>
@@ -316,7 +316,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                 <div>
                   <label style={{ display: 'block', marginBottom: '5px' }}>Layout</label>
                   <select value={editingPreset.trackLayout} onChange={e => setEditingPreset({...editingPreset, trackLayout: e.target.value})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }}>
-                    <option value="">-- Choisir un layout --</option>
+                    <option value="">-- Choose a layout --</option>
                     {layouts.map(l => <option key={l.id} value={l.id}>{l.name || l.id} ({l.pitboxes || '??'} pits)</option>)}
                   </select>
                 </div>
@@ -328,17 +328,17 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                   <input type="number" value={editingPreset.maxClients} onChange={e => setEditingPreset({...editingPreset, maxClients: parseInt(e.target.value)})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
                 </div>
                 <div style={{ flex: 1 }}>
-                  <label style={{ display: 'block', marginBottom: '5px' }}>Mot de passe (optionnel)</label>
+                  <label style={{ display: 'block', marginBottom: '5px' }}>Password (optionnel)</label>
                   <input type="text" value={editingPreset.password} onChange={e => setEditingPreset({...editingPreset, password: e.target.value})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
                 </div>
               </div>
 
               <div style={{ marginTop: '10px', padding: '15px', backgroundColor: 'var(--bg-color)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <label style={{ display: 'block', marginBottom: '10px', fontWeight: 'bold' }}>Voitures Autorisées (Modèles de base)</label>
+                <label style={{ display: 'block', marginBottom: '10px', fontWeight: 'bold' }}>Allowed Cars (Base Models)</label>
                 
                 <input 
                   type="text" 
-                  placeholder="🔍 Rechercher une voiture..." 
+                  placeholder="🔍 Search a car..." 
                   value={carSearch}
                   onChange={e => setCarSearch(e.target.value)}
                   style={{ width: '100%', marginBottom: '15px', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }}
@@ -348,7 +348,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                   {/* Left list: Available to add */}
                   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', border: '1px solid var(--border-color)', borderRadius: '6px', backgroundColor: 'var(--sidebar-bg)', overflow: 'hidden' }}>
                     <div style={{ padding: '10px', backgroundColor: 'rgba(255,255,255,0.05)', fontWeight: 'bold', borderBottom: '1px solid var(--border-color)' }}>
-                      Toutes les voitures
+                      All cars
                     </div>
                     <div style={{ flex: 1, overflowY: 'auto' }}>
                       {cars
@@ -377,11 +377,11 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                   {/* Right list: Selected */}
                   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', border: '1px solid var(--primary-color)', borderRadius: '6px', backgroundColor: 'var(--sidebar-bg)', overflow: 'hidden' }}>
                     <div style={{ padding: '10px', backgroundColor: 'rgba(64, 112, 244, 0.2)', fontWeight: 'bold', borderBottom: '1px solid var(--primary-color)', color: 'var(--primary-color)' }}>
-                      Voitures sélectionnées ({editingPreset.availableCars.length})
+                      Selected cars ({editingPreset.availableCars.length})
                     </div>
                     <div style={{ flex: 1, overflowY: 'auto' }}>
                       {editingPreset.availableCars.length === 0 ? (
-                        <div style={{ padding: '20px', textAlign: 'center', color: 'var(--text-muted)' }}>Aucune voiture sélectionnée</div>
+                        <div style={{ padding: '20px', textAlign: 'center', color: 'var(--text-muted)' }}>No car selected</div>
                       ) : (
                         editingPreset.availableCars.map(carId => {
                           const carName = cars.find(c => c.id === carId)?.name || carId;
@@ -412,8 +412,8 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               <div style={{ padding: '15px', backgroundColor: 'var(--primary-color)', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '15px' }}>
                 <input type="checkbox" checked={editingPreset.loopMode} onChange={e => setEditingPreset({...editingPreset, loopMode: e.target.checked})} style={{ transform: 'scale(1.5)', cursor: 'pointer' }} />
                 <div style={{ flex: 1, color: 'white' }}>
-                  <h3 style={{ margin: 0, fontSize: '1.2rem' }}>Tourner en boucle (Loop Mode)</h3>
-                  <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.9 }}>Recommence automatiquement l'événement une fois terminé (Idéal pour Time Attack / Trackday)</p>
+                  <h3 style={{ margin: 0, fontSize: '1.2rem' }}>Loop Mode</h3>
+                  <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.9 }}>Automatically restarts the event once finished (Ideal for Time Attack / Trackday)</p>
                 </div>
               </div>
 
@@ -421,11 +421,11 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               <div style={{ padding: '15px', backgroundColor: 'var(--bg-color)', borderRadius: '8px', border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: '15px' }}>
                 <input type="checkbox" checked={editingPreset.sessions.practice.enabled} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, practice: {...editingPreset.sessions.practice, enabled: e.target.checked}}})} style={{ transform: 'scale(1.5)', cursor: 'pointer' }} />
                 <div style={{ flex: 1 }}>
-                  <h3 style={{ margin: 0 }}>Essais Libres (Practice)</h3>
+                  <h3 style={{ margin: 0 }}>Practice</h3>
                 </div>
                 {editingPreset.sessions.practice.enabled && (
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <label style={{ color: 'var(--text-muted)' }}>Temps (min) :</label>
+                    <label style={{ color: 'var(--text-muted)' }}>Time (min):</label>
                     <input type="number" min="1" value={editingPreset.sessions.practice.time} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, practice: {...editingPreset.sessions.practice, time: parseInt(e.target.value) || 0}}})} style={{ width: '70px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} />
                   </div>
                 )}
@@ -435,11 +435,11 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               <div style={{ padding: '15px', backgroundColor: 'var(--bg-color)', borderRadius: '8px', border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: '15px' }}>
                 <input type="checkbox" checked={editingPreset.sessions.qualify.enabled} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, qualify: {...editingPreset.sessions.qualify, enabled: e.target.checked}}})} style={{ transform: 'scale(1.5)', cursor: 'pointer' }} />
                 <div style={{ flex: 1 }}>
-                  <h3 style={{ margin: 0 }}>Qualifications</h3>
+                  <h3 style={{ margin: 0 }}>Qualifying</h3>
                 </div>
                 {editingPreset.sessions.qualify.enabled && (
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <label style={{ color: 'var(--text-muted)' }}>Temps (min) :</label>
+                    <label style={{ color: 'var(--text-muted)' }}>Time (min):</label>
                     <input type="number" min="1" value={editingPreset.sessions.qualify.time} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, qualify: {...editingPreset.sessions.qualify, time: parseInt(e.target.value) || 0}}})} style={{ width: '70px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} />
                   </div>
                 )}
@@ -449,15 +449,15 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               <div style={{ padding: '15px', backgroundColor: 'var(--bg-color)', borderRadius: '8px', border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: '15px' }}>
                 <input type="checkbox" checked={editingPreset.sessions.race.enabled} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, race: {...editingPreset.sessions.race, enabled: e.target.checked}}})} style={{ transform: 'scale(1.5)', cursor: 'pointer' }} />
                 <div style={{ flex: 1 }}>
-                  <h3 style={{ margin: 0 }}>Course</h3>
+                  <h3 style={{ margin: 0 }}>Race</h3>
                 </div>
                 {editingPreset.sessions.race.enabled && (
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <label style={{ color: 'var(--text-muted)' }}>Tours :</label>
-                    <input type="number" min="0" value={editingPreset.sessions.race.laps} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, race: {...editingPreset.sessions.race, laps: parseInt(e.target.value) || 0}}})} style={{ width: '70px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} title="Mettre 0 pour une course au temps" />
+                    <label style={{ color: 'var(--text-muted)' }}>Laps:</label>
+                    <input type="number" min="0" value={editingPreset.sessions.race.laps} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, race: {...editingPreset.sessions.race, laps: parseInt(e.target.value) || 0}}})} style={{ width: '70px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} title="Set 0 for a timed race" />
                     
-                    <label style={{ color: 'var(--text-muted)', marginLeft: '10px' }}>Temps (min) :</label>
-                    <input type="number" min="0" value={editingPreset.sessions.race.time} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, race: {...editingPreset.sessions.race, time: parseInt(e.target.value) || 0}}})} style={{ width: '70px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} title="Utilisé si Tours = 0" />
+                    <label style={{ color: 'var(--text-muted)', marginLeft: '10px' }}>Time (min):</label>
+                    <input type="number" min="0" value={editingPreset.sessions.race.time} onChange={e => setEditingPreset({...editingPreset, sessions: {...editingPreset.sessions, race: {...editingPreset.sessions.race, time: parseInt(e.target.value) || 0}}})} style={{ width: '70px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} title="Used if Laps = 0" />
                   </div>
                 )}
               </div>
@@ -465,10 +465,10 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
           </div>
 
           <div style={{ backgroundColor: 'var(--sidebar-bg)', padding: '20px', borderRadius: '12px' }}>
-            <h2>Météo (Avancée)</h2>
+            <h2>Weather (Advanced)</h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
               <div style={{ gridColumn: '1 / -1' }}>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Type de Météo (Graphics)</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Weather Type (Graphics)</label>
                 <select value={editingPreset.weather.graphics} onChange={e => setEditingPreset({...editingPreset, weather: {...editingPreset.weather, graphics: e.target.value}})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }}>
                   <option value="Clear">Clear</option>
                   <option value="Mid Clear">Mid Clear</option>
@@ -480,22 +480,22 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               </div>
               
               <div>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Temp. Ambiante (°C)</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Ambient Temp (°C)</label>
                 <input type="number" value={editingPreset.weather.baseTemperatureAmbient} onChange={e => setEditingPreset({...editingPreset, weather: {...editingPreset.weather, baseTemperatureAmbient: parseInt(e.target.value)}})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
               </div>
               
               <div>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Temp. Piste (°C)</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Track Temp (°C)</label>
                 <input type="number" value={editingPreset.weather.baseTemperatureRoad} onChange={e => setEditingPreset({...editingPreset, weather: {...editingPreset.weather, baseTemperatureRoad: parseInt(e.target.value)}})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
               </div>
 
               <div>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Vent Min (km/h)</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Min Wind (km/h)</label>
                 <input type="number" value={editingPreset.weather.windBaseSpeedMin} onChange={e => setEditingPreset({...editingPreset, weather: {...editingPreset.weather, windBaseSpeedMin: parseInt(e.target.value)}})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
               </div>
 
               <div>
-                <label style={{ display: 'block', marginBottom: '5px' }}>Vent Max (km/h)</label>
+                <label style={{ display: 'block', marginBottom: '5px' }}>Max Wind (km/h)</label>
                 <input type="number" value={editingPreset.weather.windBaseSpeedMax} onChange={e => setEditingPreset({...editingPreset, weather: {...editingPreset.weather, windBaseSpeedMax: parseInt(e.target.value)}})} style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
               </div>
             </div>
@@ -504,18 +504,18 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
 
         <div style={{ backgroundColor: 'var(--sidebar-bg)', padding: '20px', borderRadius: '12px', marginTop: '30px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-            <h2>Entry List (Joueurs) <span style={{ fontSize: '1rem', color: pitsExceeded ? '#ff6b6b' : 'var(--text-muted)' }}>- Total slots (Joueurs + IA) : {totalSlots} / {maxPits > 0 ? maxPits : '?'} pits</span></h2>
-            <button onClick={addSlot} disabled={editingPreset.entryList.length >= editingPreset.maxClients} style={{ padding: '8px 15px', borderRadius: '6px', border: 'none', backgroundColor: '#2d3436', color: 'white', cursor: 'pointer' }}>+ Ajouter un pilote</button>
+            <h2>Entry List (Players) <span style={{ fontSize: '1rem', color: pitsExceeded ? '#ff6b6b' : 'var(--text-muted)' }}>- Total slots (Players + AI) : {totalSlots} / {maxPits > 0 ? maxPits : '?'} pits</span></h2>
+            <button onClick={addSlot} disabled={editingPreset.entryList.length >= editingPreset.maxClients} style={{ padding: '8px 15px', borderRadius: '6px', border: 'none', backgroundColor: '#2d3436', color: 'white', cursor: 'pointer' }}>+ Add a driver</button>
           </div>
           
           {pitsExceeded && (
             <div style={{ backgroundColor: 'rgba(255, 107, 107, 0.1)', border: '1px solid #ff6b6b', padding: '15px', borderRadius: '8px', marginBottom: '20px', color: '#ff6b6b' }}>
-              ⚠️ <strong>Attention :</strong> Le nombre total de slots (Joueurs + Trafic IA) dépasse le nombre de pit boxes disponibles sur ce circuit. Le serveur plantera au démarrage. Veuillez réduire le nombre de pilotes ou d'IA.
+              ⚠️ <strong>Attention :</strong> Le nombre total de slots (Joueurs + AI Traffic) dépasse le nombre de pit boxes disponibles on ce circuit. Le serveur plantera au démarrage. Veuillez réduire le nombre de pilotes ou d'IA.
             </div>
           )}
           
           {editingPreset.entryList.length === 0 ? (
-            <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '20px' }}>Aucune voiture dans l'Entry List. Ajoutez des emplacements !</p>
+            <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '20px' }}>No car in the Entry List. Add some slots!</p>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {editingPreset.entryList.map((slot, i) => {
@@ -525,7 +525,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                     <div style={{ width: '30px', textAlign: 'center', color: 'var(--text-muted)', fontWeight: 'bold' }}>#{i+1}</div>
                     
                     <select value={slot.car} onChange={e => updateSlot(i, 'car', e.target.value)} style={{ flex: 2, padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }}>
-                      <option value="">-- Voiture --</option>
+                      <option value="">-- Car --</option>
                       {availableCarsObjects.map(c => <option key={c.id} value={c.id}>{c.name || c.id}</option>)}
                     </select>
 
@@ -534,8 +534,8 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                       {currentCar?.skins?.map(s => <option key={s} value={s}>{s}</option>)}
                     </select>
 
-                    <input type="text" placeholder="Nom du pilote (opt)" value={slot.name} onChange={e => updateSlot(i, 'name', e.target.value)} style={{ flex: 1.5, padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} />
-                    <input type="text" placeholder="GUID Steam (opt)" value={slot.guid} onChange={e => updateSlot(i, 'guid', e.target.value)} style={{ flex: 1.5, padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} />
+                    <input type="text" placeholder="Driver Name (opt)" value={slot.name} onChange={e => updateSlot(i, 'name', e.target.value)} style={{ flex: 1.5, padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} />
+                    <input type="text" placeholder="Steam GUID (opt)" value={slot.guid} onChange={e => updateSlot(i, 'guid', e.target.value)} style={{ flex: 1.5, padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }} />
                     
                     <button onClick={() => removeSlot(i)} style={{ padding: '8px', borderRadius: '4px', border: 'none', backgroundColor: 'var(--danger-color, #e74c3c)', color: 'white', cursor: 'pointer' }}>✖</button>
                   </div>
@@ -543,7 +543,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               })}
               
               {editingPreset.entryList.length === 0 && (
-                <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '20px' }}>Aucun pilote configuré. Ajoutez-en un ou laissez le serveur ouvert.</p>
+                <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '20px' }}>No driver configured. Add one or leave the server open.</p>
               )}
             </div>
           )}
@@ -551,8 +551,8 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
 
         <div style={{ backgroundColor: 'var(--sidebar-bg)', padding: '20px', borderRadius: '12px', marginTop: '30px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-            <h2>Trafic IA <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>- AssettoServer (AI=fixed)</span></h2>
-            <button onClick={addTrafficSlot} style={{ padding: '8px 15px', borderRadius: '6px', border: 'none', backgroundColor: '#2d3436', color: 'white', cursor: 'pointer' }}>+ Ajouter du trafic</button>
+            <h2>AI Traffic <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>- AssettoServer (AI=fixed)</span></h2>
+            <button onClick={addTrafficSlot} style={{ padding: '8px 15px', borderRadius: '6px', border: 'none', backgroundColor: '#2d3436', color: 'white', cursor: 'pointer' }}>+ Add traffic</button>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -561,7 +561,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                 <div style={{ width: '40px', textAlign: 'center', color: 'var(--text-muted)' }}>#{i + 1}</div>
                 
                 <select value={tSlot.car} onChange={e => updateTrafficSlot(i, 'car', e.target.value)} style={{ flex: 2, padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--sidebar-bg)', color: 'white' }}>
-                  <option value="">-- Voiture --</option>
+                  <option value="">-- Car --</option>
                   {availableCarsObjects.map(c => <option key={c.id} value={c.id}>{c.name || c.id}</option>)}
                 </select>
 
@@ -571,7 +571,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                 </select>
 
                 <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <label style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Quantité :</label>
+                  <label style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Quantity:</label>
                   <input type="number" min="1" value={tSlot.count || 1} onChange={e => updateTrafficSlot(i, 'count', parseInt(e.target.value) || 1)} style={{ width: '60px', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', color: 'white' }} />
                 </div>
 
@@ -580,13 +580,13 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
             ))}
             
             {(editingPreset.traffic || []).length === 0 && (
-              <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '20px' }}>Aucun trafic IA. Cliquez sur le bouton pour ajouter des voitures (AI=fixed).</p>
+              <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '20px' }}>No AI traffic. Click the button to add cars (AI=fixed).</p>
             )}
 
             {(editingPreset.traffic || []).length > 0 && (
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '20px', paddingTop: '20px', borderTop: '1px solid var(--border-color)' }}>
                 <div>
-                  <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Nombre maximum de véhicules affichés simultanément</label>
+                  <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Maximum number of vehicles displayed simultaneously</label>
                   <input 
                     type="number" 
                     min="1" 
@@ -596,7 +596,7 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
                   />
                 </div>
                 <div>
-                  <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Distance minimum de spawn (mètres)</label>
+                  <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Minimum spawn distance (meters)</label>
                   <input 
                     type="number" 
                     min="10" 
@@ -633,21 +633,21 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
       )}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
         <div>
-          <h1 style={{ margin: 0, marginBottom: '10px' }}>Événements & Presets</h1>
-          <p style={{ color: 'var(--text-muted)' }}>Gérez vos configurations de courses et lancez-les en un clic.</p>
+          <h1 style={{ margin: 0, marginBottom: '10px' }}>Events & Presets</h1>
+          <p style={{ color: 'var(--text-muted)' }}>Manage your race configurations and launch them in one click.</p>
         </div>
         <button onClick={handleCreateNew} style={{ padding: '12px 24px', backgroundColor: 'var(--primary-color)', color: 'white', border: 'none', borderRadius: '8px', fontWeight: 'bold', fontSize: '1.1rem', cursor: 'pointer' }}>
-          + Créer un Événement
+          + Create Event
         </button>
       </div>
 
       {loading ? (
-        <p>Chargement des événements...</p>
+        <p>Loading events...</p>
       ) : presets.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '100px 20px', backgroundColor: 'var(--sidebar-bg)', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-          <h2 style={{ color: 'var(--text-muted)' }}>Aucun événement configuré</h2>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '30px' }}>Commencez par créer votre premier preset d'événement.</p>
-          <button onClick={handleCreateNew} style={{ padding: '10px 20px', backgroundColor: 'var(--primary-color)', color: 'white', border: 'none', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>Créer un événement</button>
+          <h2 style={{ color: 'var(--text-muted)' }}>No event configured</h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '30px' }}>Start by creating your first event preset.</p>
+          <button onClick={handleCreateNew} style={{ padding: '10px 20px', backgroundColor: 'var(--primary-color)', color: 'white', border: 'none', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>Create Event</button>
         </div>
       ) : (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px' }}>
@@ -658,13 +658,13 @@ export const EventBuilderView: React.FC<EventBuilderViewProps> = ({ onLaunch }) 
               </div>
               <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ margin: 0, marginBottom: '5px', fontSize: '1.4rem' }}>{preset.name}</h3>
-                <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '20px' }}>{preset.entryList.length} voitures • Circuit: {preset.track}</p>
+                <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '20px' }}>{preset.entryList.length} cars • Track: {preset.track}</p>
                 
                 <div style={{ marginTop: 'auto', display: 'flex', gap: '10px' }}>
-                  <button onClick={() => handleEdit(preset)} style={{ flex: 1, padding: '10px', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>Éditer</button>
-                  <button onClick={() => preset.id && handleDelete(preset.id)} style={{ padding: '10px', backgroundColor: 'rgba(255,0,0,0.2)', color: '#ff6b6b', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>Supprimer</button>
+                  <button onClick={() => handleEdit(preset)} style={{ flex: 1, padding: '10px', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>Edit</button>
+                  <button onClick={() => preset.id && handleDelete(preset.id)} style={{ padding: '10px', backgroundColor: 'rgba(255,0,0,0.2)', color: '#ff6b6b', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>Delete</button>
                 </div>
-                <button onClick={() => preset.id && handleLaunch(preset.id)} style={{ width: '100%', marginTop: '10px', padding: '12px', backgroundColor: 'var(--primary-color)', color: 'white', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '1.1rem' }}>▶ LANCER L'ÉVÉNEMENT</button>
+                <button onClick={() => preset.id && handleLaunch(preset.id)} style={{ width: '100%', marginTop: '10px', padding: '12px', backgroundColor: 'var(--primary-color)', color: 'white', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '1.1rem' }}>▶ LAUNCH EVENT</button>
               </div>
             </div>
           ))}
