@@ -41,9 +41,9 @@ func UploadContentHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Max 5 GB upload (mostly needed for big zip parsing, but stored in /tmp)
-	// For streaming, multipart reader is better.
-	err = r.ParseMultipartForm(5 << 30) // 5 GB max memory/disk buffer
+	// For streaming, multipart reader is better, but ParseMultipartForm works if memory limit is low.
+	// We use 32 MB max in-memory buffer. The rest will be written to temporary files on disk.
+	err = r.ParseMultipartForm(32 << 20)
 	if err != nil {
 		http.Error(w, `{"message": "Error parsing form: `+err.Error()+`"}`, http.StatusBadRequest)
 		return
@@ -163,7 +163,7 @@ func UploadFastLaneHandler(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(UploadResponse{
-		Message: "Fichier IA uploadé avec succès (" + header.Filename + ")",
+		Message: "AI file uploaded successfully (" + header.Filename + ")",
 	})
 }
 
