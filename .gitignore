@@ -13,3 +13,4 @@ frontend/.env.local
 *.log
 backend/runtime/data/
 .env
+plugins_export/
