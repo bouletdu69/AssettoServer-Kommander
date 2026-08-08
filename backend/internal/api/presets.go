@@ -14,6 +14,7 @@ import (
 	"web-gui-acserver/internal/process"
 	"web-gui-acserver/internal/db"
 	"web-gui-acserver/internal/configparser"
+	"regexp"
 )
 
 type WeatherPreset struct {
@@ -433,14 +434,17 @@ AI=fixed
 		return
 	}
 
-	// 3. Generate extra_cfg.yml
+	// 3. Generate extra_cfg.yml safely (without overwriting plugins)
 	extraCfgPath := filepath.Join(filepath.Dir(cfgPath), "extra_cfg.yml")
 	enableAiStr := "false"
 	if len(targetPreset.Traffic) > 0 {
 		enableAiStr = "true"
 	}
 
-	extraCfgContent := fmt.Sprintf(`EnableSteamAuth: false
+	existingExtraCfg, err := ioutil.ReadFile(extraCfgPath)
+	if err != nil {
+		// If file doesn't exist, write the default one
+		extraCfgContent := fmt.Sprintf(`EnableSteamAuth: false
 ValidateDlcOwnership: []
 MandatoryClientSecurityLevel: 0
 EnableAntiAfk: false
@@ -467,10 +471,24 @@ AiParams:
 IgnoreConfigurationErrors:
   MissingCarChecksums: true
 `, enableAiStr, targetPreset.AiMaxCars, targetPreset.AiMaxCars, targetPreset.AiMinDistance)
-	err = ioutil.WriteFile(extraCfgPath, []byte(extraCfgContent), 0644)
-	if err != nil {
-		http.Error(w, "Failed to write extra_cfg.yml: "+err.Error(), http.StatusInternalServerError)
-		return
+		ioutil.WriteFile(extraCfgPath, []byte(extraCfgContent), 0644)
+	} else {
+		// Use regex to update AI settings while preserving plugins and comments
+		contentStr := string(existingExtraCfg)
+		
+		reEnable := regexp.MustCompile(`(?m)^EnableAi:\s*(true|false)`)
+		contentStr = reEnable.ReplaceAllString(contentStr, fmt.Sprintf("EnableAi: %s", enableAiStr))
+		
+		reMaxAi := regexp.MustCompile(`(?m)^\s*MaxAiTargetCount:\s*\d+`)
+		contentStr = reMaxAi.ReplaceAllString(contentStr, fmt.Sprintf("  MaxAiTargetCount: %d", targetPreset.AiMaxCars))
+		
+		reAiPerPlayer := regexp.MustCompile(`(?m)^\s*AiPerPlayerTargetCount:\s*\d+`)
+		contentStr = reAiPerPlayer.ReplaceAllString(contentStr, fmt.Sprintf("  AiPerPlayerTargetCount: %d", targetPreset.AiMaxCars))
+		
+		rePlayerRadius := regexp.MustCompile(`(?m)^\s*PlayerRadiusMeters:\s*\d+`)
+		contentStr = rePlayerRadius.ReplaceAllString(contentStr, fmt.Sprintf("  PlayerRadiusMeters: %d", targetPreset.AiMinDistance))
+		
+		ioutil.WriteFile(extraCfgPath, []byte(contentStr), 0644)
 	}
 
 	// 4. Restart Assetto Corsa docker server via process manager

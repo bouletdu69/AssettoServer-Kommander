@@ -1,3 +1,5 @@
+EnablePlugins:
+  - FastTravelPlugin
 EnableSteamAuth: false
 ValidateDlcOwnership: []
 MandatoryClientSecurityLevel: 0
@@ -24,3 +26,21 @@ AiParams:
   PlayerRadiusMeters: 100
 IgnoreConfigurationErrors:
   MissingCarChecksums: true
+---
+!FastTravelConfiguration
+MapZoomValues:
+  - 100
+  - 1000
+  - 4000
+  - 15000
+MapMoveSpeeds:
+  - 1
+  - 5
+  - 20
+  - 0
+ShowMapImage: true
+MapFixedTargetPosition:
+  - -2100
+  - 0
+  - 3200
+RequireCollisionDisable: true

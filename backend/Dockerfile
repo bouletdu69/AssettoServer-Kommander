@@ -1,7 +1,7 @@
 FROM golang:alpine
 WORKDIR /app
 
-RUN apk add --no-cache docker-cli
+RUN apk add --no-cache docker-cli docker-cli-compose
 
 COPY go.mod go.sum ./
 RUN go mod download

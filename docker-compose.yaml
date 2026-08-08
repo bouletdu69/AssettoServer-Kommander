@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   assettoserver:
-    image: compujuckel/assettoserver:latest
+    image: ${ASSETTOSERVER_IMAGE:-compujuckel/assettoserver:latest}
     container_name: AssettoServer
     ports:
       - "9666:9666"
@@ -30,6 +30,7 @@ services:
       - ./backend/runtime/data:/app/data
       - /home/rs/docker/acsm/server/assetto/content:/data/content
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/app/host
     restart: always
 
   kommander-frontend:

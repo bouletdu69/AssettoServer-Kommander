@@ -2,6 +2,9 @@ import { useEffect, useState, useRef } from 'react'
 import './index.css'
 import { EventBuilderView } from './EventBuilderView'
 import { LogsView } from './LogsView'
+import LiveTiming from './LiveTiming'
+import UsersView from './UsersView'
+import { PluginsView } from './PluginsView'
 
 interface CarMetric {
   model: string;
@@ -253,6 +256,400 @@ interface Track {
   pitboxes: string
   layouts?: TrackLayout[]
 }
+
+function PublicModeConfigView() {
+  const [isPublic, setIsPublic] = useState(false)
+  const [msg, setMsg] = useState({ type: '', text: '' })
+
+  useEffect(() => {
+    fetch('/api/settings?key=public_live_timing')
+      .then(res => res.json())
+      .then(data => {
+        setIsPublic(data.value === 'true')
+      })
+  }, [])
+
+  const handleSave = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setMsg({ type: '', text: '' })
+    try {
+      const res = await fetch('/api/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: 'public_live_timing', value: isPublic ? 'true' : 'false' })
+      })
+      if (res.ok) {
+        setMsg({ type: 'success', text: 'Paramètre sauvegardé avec succès.' })
+      } else {
+        setMsg({ type: 'error', text: 'Erreur lors de la sauvegarde.' })
+      }
+    } catch (err: any) {
+      setMsg({ type: 'error', text: err.message })
+    }
+  }
+
+  return (
+    <div className="card form-card">
+      <h2 style={{ marginTop: 0 }}>Accès Public Live Timing</h2>
+      <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
+        Activer cette option permettra à n'importe qui de consulter le Live Timing sans avoir besoin de se connecter, en naviguant vers l'URL avec <code>?live=true</code>.
+      </p>
+
+      {msg.text && (
+        <div className={msg.type === 'success' ? 'msg-success' : 'msg-error'}>
+          {msg.text}
+        </div>
+      )}
+
+      <form onSubmit={handleSave}>
+        <div className="form-group" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <input 
+            type="checkbox" 
+            checked={isPublic} 
+            onChange={(e) => setIsPublic(e.target.checked)} 
+            id="publicLiveTimingToggle"
+            style={{ width: '20px', height: '20px' }}
+          />
+          <label htmlFor="publicLiveTimingToggle" style={{ margin: 0, cursor: 'pointer' }}>Activer le mode public pour le Live Timing</label>
+        </div>
+
+        <button type="submit" className="btn-save" style={{ marginTop: '12px' }}>
+          Sauvegarder
+        </button>
+      </form>
+    </div>
+  )
+}
+
+function SystemUpgradeView() {
+  const [mode, setMode] = useState<'archive' | 'manual'>('archive')
+  const [showManualModal, setShowManualModal] = useState(false)
+  const [showPatreonModal, setShowPatreonModal] = useState(false)
+  const [zipFile, setZipFile] = useState<File | null>(null)
+  const [image, setImage] = useState('compujuckel/assettoserver:latest')
+  const [patreonKey, setPatreonKey] = useState('')
+  const [updateMsg, setUpdateMsg] = useState({ type: '', text: '' })
+  const [patreonMsg, setPatreonMsg] = useState({ type: '', text: '' })
+  const [upgrading, setUpgrading] = useState(false)
+
+  const handleKeyUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        if (event.target?.result) {
+          setPatreonKey((event.target.result as string).trim());
+        }
+      };
+      reader.readAsText(file);
+    }
+  }
+  const [checkingUpdate, setCheckingUpdate] = useState(false)
+  const [autoUpdateEnabled, setAutoUpdateEnabled] = useState(false)
+
+  useEffect(() => {
+    fetch('/api/settings?key=auto_update_enabled')
+      .then(res => res.json())
+      .then(data => {
+        if (data.value === 'true') setAutoUpdateEnabled(true)
+      })
+      .catch(err => console.error(err))
+
+    fetch('/api/server/upgrade')
+      .then(res => res.json())
+      .then(data => {
+        
+        if (data.patreonKey) setPatreonKey(data.patreonKey)
+      })
+      .catch(err => console.error(err))
+  }, [])
+
+  const handleToggleAutoUpdate = async (enabled: boolean) => {
+    setAutoUpdateEnabled(enabled)
+    try {
+      await fetch('/api/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: 'auto_update_enabled', value: enabled ? 'true' : 'false' })
+      })
+    } catch (err) {
+      console.error("Failed to save auto update setting", err)
+    }
+  }
+
+  const handleCheckUpdate = async () => {
+    setCheckingUpdate(true)
+    setUpdateMsg({ type: '', text: '' })
+    try {
+      const res = await fetch('/api/upgrade/check', { method: 'POST' })
+      const data = await res.json()
+      if (res.ok) {
+        setUpdateMsg({ type: data.updated ? 'success' : 'success', text: data.message })
+      } else {
+        setUpdateMsg({ type: 'error', text: data.error || 'Erreur lors de la vérification.' })
+      }
+    } catch (err: any) {
+      setUpdateMsg({ type: 'error', text: 'Erreur réseau: ' + err.message })
+    } finally {
+      setCheckingUpdate(false)
+    }
+  }
+
+  const handleUpgrade = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setUpgrading(true)
+    setPatreonMsg({ type: 'info', text: 'Configuration appliquée. Redémarrage en cours...' })
+    try {
+      if (mode === 'archive') {
+        if (!zipFile) {
+          setPatreonMsg({ type: 'error', text: 'Veuillez sélectionner un fichier .zip Patreon.' })
+          setUpgrading(false)
+          return
+        }
+        const formData = new FormData()
+        formData.append('zipfile', zipFile)
+        formData.append('patreonKey', patreonKey)
+
+        const res = await fetch('/api/server/upgrade/zip', {
+          method: 'POST',
+          body: formData
+        })
+        const data = await res.json()
+        if (res.ok) {
+          let attempts = 0
+          const poll = setInterval(async () => {
+            attempts++
+            try {
+              const statRes = await fetch('/api/server/status')
+              const statData = await statRes.json()
+              if (statData.status === 'Running') {
+                clearInterval(poll)
+                setPatreonMsg({ type: 'success', text: 'Archive Patreon installée et Serveur en ligne !' })
+              }
+            } catch(e) {}
+            if (attempts > 30) {
+              clearInterval(poll)
+              setPatreonMsg({ type: 'error', text: 'Le serveur met du temps à répondre. Vérifiez les logs.' })
+            }
+          }, 2000)
+        } else {
+          setPatreonMsg({ type: 'error', text: data.message || 'Erreur lors de la mise à niveau.' })
+        }
+      } else {
+        const res = await fetch('/api/server/upgrade', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ 
+            isAutoMode: false,
+            image, 
+            patreonKey 
+          })
+        })
+        const data = await res.json()
+        if (res.ok) {
+          let attempts = 0
+          const poll = setInterval(async () => {
+            attempts++
+            try {
+              const statRes = await fetch('/api/server/status')
+              const statData = await statRes.json()
+              if (statData.status === 'Running') {
+                clearInterval(poll)
+                setPatreonMsg({ type: 'success', text: 'Configuration sauvegardée et Serveur en ligne !' })
+              }
+            } catch(e) {}
+            if (attempts > 15) {
+              clearInterval(poll)
+              setPatreonMsg({ type: 'error', text: 'Le serveur met du temps à répondre. Vérifiez les logs.' })
+            }
+          }, 2000)
+        } else {
+          setPatreonMsg({ type: 'error', text: data.message || 'Erreur lors de la mise à niveau.' })
+        }
+      }
+    } catch (err: any) {
+      setPatreonMsg({ type: 'error', text: 'Erreur réseau: ' + err.message })
+    } finally {
+      setUpgrading(false)
+    }
+  }
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      
+      {/* -------------------- Mises à jour du Serveur -------------------- */}
+      <div className="card form-card">
+        <h2 style={{ marginTop: 0 }}>Mises à jour du Serveur</h2>
+        
+        <p style={{ color: 'var(--text-color)', marginBottom: '15px' }}>
+          <strong>Version de l'image :</strong> <code>{image}</code>
+          <br/>
+          <a href="https://github.com/compujuckel/AssettoServer/releases" target="_blank" rel="noreferrer" style={{ color: '#8a2be2', textDecoration: 'none', fontSize: '0.9rem', display: 'inline-block', marginTop: '5px' }}>
+            🔗 Voir les Changelogs officiels
+          </a>
+        </p>
+
+        {updateMsg.text && (
+          <div className={updateMsg.type === 'success' ? 'msg-success' : 'msg-error'}>
+            {updateMsg.text}
+          </div>
+        )}
+
+        
+      </div>
+
+      {/* -------------------- Configuration Patreon / GitHub -------------------- */}
+      <div className="card form-card">
+        <h2 style={{ marginTop: 0 }}>Configuration Patreon / GitHub</h2>
+      
+      <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
+        <button 
+          onClick={() => setMode('archive')}
+          style={{
+            flex: 1, padding: '10px', borderRadius: '6px', cursor: 'pointer',
+            backgroundColor: mode === 'archive' ? '#8a2be2' : 'var(--sidebar-bg)',
+            color: 'white', border: 'none', fontWeight: 'bold'
+          }}
+        >
+          Mode Archive (.zip)
+        </button>
+        <button 
+          onClick={() => setMode('manual')}
+          style={{
+            flex: 1, padding: '10px', borderRadius: '6px', cursor: 'pointer',
+            backgroundColor: mode === 'manual' ? '#8a2be2' : 'var(--sidebar-bg)',
+            color: 'white', border: 'none', fontWeight: 'bold'
+          }}
+        >
+          Mode Manuel
+        </button>
+      </div>
+
+      <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
+        {mode === 'archive' 
+          ? "Importez l'archive .zip de la version Patreon. Le serveur s'occupera d'extraire les fichiers et de construire l'image Docker avec vos plugins." 
+          : "Entrez manuellement le nom de l'image Docker de la version Premium si vous l'avez déjà téléchargée ou construite localement."}
+      </p>
+
+      {patreonMsg.text && (
+        <div 
+          className={patreonMsg.type === 'success' ? 'msg-success' : (patreonMsg.type === 'error' ? 'msg-error' : '')}
+          style={patreonMsg.type === 'info' ? { backgroundColor: 'rgba(56, 189, 248, 0.1)', color: '#38bdf8', padding: '12px', borderRadius: '6px', marginBottom: '16px', border: '1px solid rgba(56, 189, 248, 0.2)' } : {}}
+        >
+          {patreonMsg.text}
+        </div>
+      )}
+
+      <form onSubmit={handleUpgrade}>
+        {mode === 'archive' ? (
+          <>
+            <div className="form-group">
+              <label>Archive Patreon (.zip)</label>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-5px', marginBottom: '10px' }}>
+                Téléchargez le fichier <code>assetto-server-patreon-*-linux-x64.zip</code> sur <a href="https://patreon.assettoserver.org/key" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>la page Patreon</a>, puis sélectionnez-le ici.
+              </p>
+              <input 
+                type="file" 
+                accept=".zip" 
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) setZipFile(file);
+                }}
+                style={{ padding: '10px', background: 'rgba(0,0,0,0.2)', borderRadius: '6px', width: '100%', cursor: 'pointer' }}
+              />
+              {zipFile && <span style={{ color: '#4ade80', fontSize: '0.9rem', display: 'block', marginTop: '5px' }}>Fichier sélectionné : {zipFile.name}</span>}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="form-group">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <label>Image Docker AssettoServer</label>
+                <a href="#" onClick={(e) => { e.preventDefault(); setShowManualModal(true); }} style={{ fontSize: '0.85rem', color: '#8a2be2' }}>Comment faire en manuel ?</a>
+              </div>
+              <input 
+                type="text" 
+                value={image} 
+                onChange={(e) => setImage(e.target.value)} 
+                placeholder="ex: assettoserver-patreon:latest"
+              />
+            </div>
+          </>
+        )}
+
+        <div className="form-group">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <label>Clé Patreon (PatreonHubPlugin)</label>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <label style={{ cursor: 'pointer', fontSize: '0.85rem', color: '#8a2be2', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <input type="file" accept=".txt,.key" style={{ display: 'none' }} onChange={handleKeyUpload} />
+                📂 Importer un fichier
+              </label>
+              <a href="#" onClick={(e) => { e.preventDefault(); setShowPatreonModal(true); }} style={{ fontSize: '0.85rem', color: '#8a2be2' }}>Où trouver ma Clé Patreon ?</a>
+            </div>
+          </div>
+          <input 
+            type="password" 
+            value={patreonKey} 
+            onChange={(e) => setPatreonKey(e.target.value)} 
+            placeholder="Collez votre clé Patreon ici, ou importez le fichier..."
+          />
+        </div>
+
+        <button type="submit" className="btn-save" disabled={upgrading || checkingUpdate} style={{ width: '100%', backgroundColor: '#8a2be2' }}>
+          {upgrading ? 'Configuration en cours...' : 'Sauvegarder & Appliquer la Config'}
+        </button>
+      </form>
+
+      {showManualModal && (
+        <div className="modal-overlay" onClick={() => setShowManualModal(false)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '600px' }}>
+            <button className="modal-close" onClick={() => setShowManualModal(false)}>×</button>
+            <h2 style={{ marginTop: 0 }}>Comment utiliser le mode Manuel ?</h2>
+            <p style={{ color: 'var(--text-muted)' }}>
+              Si vous ne souhaitez pas ou ne pouvez pas utiliser la connexion GitHub automatique, voici comment procéder :
+            </p>
+            <ol style={{ color: 'var(--text-color)', lineHeight: '1.6', paddingLeft: '20px' }}>
+              <li>Allez sur le site de Patreon et téléchargez le fichier <strong>.zip</strong> de la dernière version (ex: v0.0.39).</li>
+              <li>Envoyez ce fichier `.zip` sur votre serveur (par exemple via SFTP ou FTP).</li>
+              <li>Décompressez le `.zip` dans un dossier.</li>
+              <li>Dans ce dossier, ouvrez un terminal et tapez la commande Docker pour construire l'image :<br/>
+                <code style={{ background: 'var(--main-bg)', border: '1px solid var(--border-color)', padding: '4px 8px', borderRadius: '4px', display: 'inline-block', margin: '8px 0' }}>docker build -t assettoserver-patreon:latest .</code>
+              </li>
+              <li>Revenez sur ce panel Web, et entrez <strong>assettoserver-patreon:latest</strong> dans le champ Image Docker.</li>
+              <li>Entrez votre clé Patreon, puis cliquez sur <strong>Sauvegarder & Appliquer la Config</strong>.</li>
+            </ol>
+          </div>
+        </div>
+      )}
+
+      
+
+      {showPatreonModal && (
+        <div className="modal-overlay" onClick={() => setShowPatreonModal(false)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '600px' }}>
+            <button className="modal-close" onClick={() => setShowPatreonModal(false)}>×</button>
+            <h2 style={{ marginTop: 0 }}>Où trouver ma Clé Patreon ?</h2>
+            <p style={{ color: 'var(--text-muted)' }}>
+              La clé sert de licence pour débloquer les fonctionnalités payantes sur votre serveur.
+            </p>
+            <ol style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
+              <li>Allez sur le site de <a href="https://www.patreon.com/settings/apps" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>Patreon</a> et vérifiez que votre compte Discord y est connecté.</li>
+              <li>Rejoignez le Discord d'AssettoServer et vérifiez que vous avez bien le rôle <strong>Contributor Tier 2</strong> (ou supérieur).</li>
+              <li>Visitez le site d'authentification officiel : <a href="https://patreon.assettoserver.org/connect" target="_blank" rel="noreferrer" style={{ color: '#8a2be2' }}>patreon.assettoserver.org</a></li>
+              <li>Connectez-vous avec Discord sur ce site.</li>
+              <li>Cliquez sur le gros bouton rouge <strong>Download Key</strong>.</li>
+              <li>Vous pouvez ensuite soit <strong>copier/coller</strong> le contenu du fichier dans le champ, soit utiliser le bouton <strong>Importer un fichier</strong>.</li>
+            </ol>
+          </div>
+        </div>
+      )}
+    </div>
+    </div>
+  )
+}
+
+
 
 function ContentConfigView() {
   const [contentTab, setContentTab] = useState<'cars' | 'tracks' | 'upload'>('cars')
@@ -889,14 +1286,20 @@ function App() {
   const urlParams = new URLSearchParams(window.location.search);
   const viewCarId = urlParams.get('car');
   const viewTrackId = urlParams.get('track');
+  const viewLive = urlParams.get('live') === 'true';
 
   if (viewCarId) return <StandaloneCarView carId={viewCarId} />;
   if (viewTrackId) return <StandaloneTrackView trackId={viewTrackId} />;
+  if (viewLive) return <LiveTiming />;
 
-  const [activeTab, setActiveTab] = useState<'status' | 'config' | 'content' | 'events'>('status')
+  const [activeTab, setActiveTab] = useState<'status' | 'config' | 'content' | 'events' | 'users'>('status')
   const [apiStatus, setApiStatus] = useState<string>("En attente...")
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false)
+  const [username, setUsername] = useState<string>("")
   const [password, setPassword] = useState<string>("")
+  const [newPassword, setNewPassword] = useState<string>("")
+  const [requirePasswordChange, setRequirePasswordChange] = useState<boolean>(false)
+  const [userRole, setUserRole] = useState<string>("")
   const [error, setError] = useState<string>("")
   const [loading, setLoading] = useState<boolean>(true)
   
@@ -910,9 +1313,15 @@ function App() {
 
   useEffect(() => {
     fetch('/api/auth/verify')
-      .then(res => {
-        if (res.ok) setIsAuthenticated(true)
-        else setIsAuthenticated(false)
+      .then(res => res.json().then(data => ({ status: res.status, ok: res.ok, data })))
+      .then(({ ok, data }) => {
+        if (ok) {
+          setIsAuthenticated(true)
+          setUsername(data.username)
+          setUserRole(data.role)
+        } else {
+          setIsAuthenticated(false)
+        }
       })
       .catch(() => setIsAuthenticated(false))
       .finally(() => setLoading(false))
@@ -930,22 +1339,18 @@ function App() {
   useEffect(() => {
     if (!isAuthenticated || activeTab !== 'status') return
 
-    const fetchStatus = async () => {
-      try {
-        const res = await fetch('/api/server/status')
-        if (res.ok) {
-          const data = await res.json()
+    const fetchStatus = () => {
+      fetch('/api/server/status')
+        .then(res => res.json())
+        .then(data => {
           setServerStatus(data.status)
-        }
-      } catch (err) {
-        console.error(err)
-      } finally {
-        setIsStatusLoading(false)
-      }
+          setIsStatusLoading(false)
+        })
+        .catch(() => setServerStatus("Erreur"))
     }
 
     fetchStatus()
-    const interval = setInterval(fetchStatus, 3000)
+    const interval = setInterval(fetchStatus, 5000)
     return () => clearInterval(interval)
   }, [isAuthenticated, activeTab])
 
@@ -1013,16 +1418,49 @@ function App() {
       const response = await fetch('/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password })
+        body: JSON.stringify({ username, password })
       })
       const data = await response.json()
       if (response.ok) {
         setIsAuthenticated(true)
       } else {
-        setError(data.message || "Mot de passe incorrect")
+        if (response.status === 403 && data.require_password_change) {
+          setRequirePasswordChange(true)
+        } else {
+          setError(data.message || "Mot de passe incorrect")
+        }
       }
     } catch (err: any) {
       setError("Erreur de connexion : " + err.message)
+    }
+  }
+
+  const handleChangePassword = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setError("")
+    try {
+      const response = await fetch('/api/change-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, old_password: password, new_password: newPassword })
+      })
+      const data = await response.json()
+      if (response.ok) {
+        setRequirePasswordChange(false)
+        setPassword(newPassword)
+        const loginRes = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password: newPassword })
+        })
+        if (loginRes.ok) {
+          setIsAuthenticated(true)
+        }
+      } else {
+        setError(data.message || "Erreur")
+      }
+    } catch (err: any) {
+      setError("Erreur : " + err.message)
     }
   }
 
@@ -1043,6 +1481,18 @@ function App() {
     } finally {
       setActionLoading(false)
     }
+  }
+
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/logout', { method: 'POST' })
+    } catch (e) {
+      console.error(e)
+    }
+    setIsAuthenticated(false)
+    setUsername("")
+    setUserRole("")
+    window.location.reload()
   }
 
   const handleRestart = async () => {
@@ -1103,18 +1553,52 @@ function App() {
   }
 
   if (!isAuthenticated) {
+    if (requirePasswordChange) {
+      return (
+        <div className="login-container">
+          <div className="login-box">
+            <h2>Nouveau mot de passe</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>
+              Pour des raisons de sécurité, veuillez définir votre mot de passe personnel.
+            </p>
+            <form onSubmit={handleChangePassword}>
+              <div className="input-group">
+                <input 
+                  type="password" 
+                  placeholder="Nouveau mot de passe" 
+                  value={newPassword}
+                  onChange={e => setNewPassword(e.target.value)}
+                  autoFocus
+                />
+              </div>
+              {error && <p className="error-msg">{error}</p>}
+              <button type="submit" className="login-btn">Enregistrer</button>
+            </form>
+          </div>
+        </div>
+      )
+    }
+
     return (
       <div className="login-container">
         <div className="login-box">
           <h2>Web GUI ACServer</h2>
           <form onSubmit={handleLogin}>
+            <div className="input-group" style={{ marginBottom: '15px' }}>
+              <input 
+                type="text" 
+                placeholder="Nom d'utilisateur" 
+                value={username}
+                onChange={e => setUsername(e.target.value)}
+                autoFocus
+              />
+            </div>
             <div className="input-group">
               <input 
                 type="password" 
-                placeholder="Mot de passe admin" 
+                placeholder="Mot de passe" 
                 value={password}
                 onChange={e => setPassword(e.target.value)}
-                autoFocus
               />
             </div>
             {error && <p className="error-msg">{error}</p>}
@@ -1152,6 +1636,24 @@ function App() {
             Configuration
           </a>
           <div style={{ marginLeft: '16px', display: 'flex', flexDirection: 'column' }}>
+            {userRole === 'admin' && (
+              <a 
+                href="#" 
+                className={`nav-item ${activeTab === 'users' ? 'active' : ''}`}
+                style={{ fontSize: '0.9rem', padding: '8px 16px', opacity: 0.8 }}
+                onClick={(e) => { e.preventDefault(); setActiveTab('users') }}
+              >
+                ↳ Utilisateurs
+              </a>
+            )}
+            <a 
+              href="#" 
+              className={`nav-item ${activeTab === 'plugins' ? 'active' : ''}`}
+              style={{ fontSize: '0.9rem', padding: '8px 16px', opacity: 0.8 }}
+              onClick={(e) => { e.preventDefault(); setActiveTab('plugins') }}
+            >
+              ↳ Plugins
+            </a>
             <a 
               href="#" 
               className={`nav-item ${activeTab === 'logs' ? 'active' : ''}`}
@@ -1168,6 +1670,14 @@ function App() {
           >
             Content
           </a>
+          <a 
+            href="?live=true" 
+            target="_blank"
+            className="nav-item"
+            style={{ marginTop: '20px', color: '#f39c12' }}
+          >
+            Live Timing ↗
+          </a>
         </nav>
       </aside>
       <main className="main-content">
@@ -1176,15 +1686,22 @@ function App() {
             {activeTab === 'status' && 'Dashboard'}
             {activeTab === 'events' && 'Event Builder'}
             {activeTab === 'config' && 'Configuration'}
+            {activeTab === 'users' && 'Gestion Utilisateurs'}
+            {activeTab === 'plugins' && 'Gestion des Plugins'}
             {activeTab === 'logs' && 'Logs Globaux'}
             {activeTab === 'content' && 'Content Management'}
           </h1>
-          <button 
-            className="logout-btn" 
-            onClick={() => window.location.reload()}
-          >
-            Déconnexion (WIP)
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            <div style={{ color: 'var(--text-muted)' }}>
+              Connecté : <strong style={{ color: 'var(--primary-color)' }}>{username}</strong>
+            </div>
+            <button 
+              className="logout-btn" 
+              onClick={handleLogout}
+            >
+              Déconnexion
+            </button>
+          </div>
         </header>
         
         <div className="content-area">
@@ -1298,8 +1815,15 @@ function App() {
         {activeTab === 'config' && (
           <>
             <GeneralConfigView />
-            <EventConfigView />
+            {userRole === 'admin' && <PublicModeConfigView />}
+            <SystemUpgradeView />
           </>
+        )}
+
+        {activeTab === 'users' && <UsersView />}
+        
+        {activeTab === 'plugins' && (
+          <PluginsView />
         )}
         
         {activeTab === 'logs' && (

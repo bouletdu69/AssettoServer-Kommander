@@ -1,7 +1,29 @@
-HTTP_PORT: 8081
-TCP_PORT: 9600
-UDP_PORT: 9600
-AI_TRAFFIC:
-    ENABLED: false
-    MAX_CARS: 10
-    MIN_DISTANCE: 100
+EnableSteamAuth: false
+ValidateDlcOwnership: []
+MandatoryClientSecurityLevel: 0
+EnableAntiAfk: false
+MaxAfkTimeMinutes: 10
+AfkKickBehavior: PlayerInput
+MaxPing: 500
+MaxPingSeconds: 10
+ForceLights: false
+NetworkBubbleDistance: 500
+OutsideNetworkBubbleRefreshRateHz: 4
+EnableServerDetails: true
+ServerDescription: 'Web GUI Generated Server'
+EnableRealTime: false
+EnableWeatherFx: true
+EnableClientMessages: true
+EnableUdpClientMessages: false
+DebugClientMessages: false
+EnableCustomUpdate: false
+EnableAi: true
+AiParams:
+    MaxAiTargetCount: 20
+    AiPerPlayerTargetCount: 20
+    PlayerRadiusMeters: 100
+IgnoreConfigurationErrors:
+    MissingCarChecksums: true
+PatreonHubPlugin:
+    Key: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF5bW9uODc3QGdtYWlsLmNvbSIsImlzcyI6IkFzc2V0dG9TZXJ2ZXIifQ.AMkcpKswizr_tgVFcwT2r6VZUiZWOl7QH3Jk09PbXN2PtCaBwt9VY8VPx0RVq4tw-3-S-o5usestUX9gan2hx4YAAU5YBxHIE8BJQBwB8WUQvu3XNptKz8uppePSaCcpRQG-qW_EDfYD_ifDa44BQvn85DTIKh96Gc_rUA33C-zyTg6S
+    Enable: true

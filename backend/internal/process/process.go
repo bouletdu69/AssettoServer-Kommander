@@ -6,6 +6,7 @@ import (
 	"io"
 	"os"
 	"os/exec"
+	"strings"
 	"sync"
 )
 
@@ -41,7 +42,49 @@ func InitManager() {
 func (m *ServerManager) GetStatus() ServerStatus {
 	m.mu.Lock()
 	defer m.mu.Unlock()
+	
+	cmd := exec.Command("docker", "inspect", "-f", "{{.State.Status}}", m.container)
+	out, err := cmd.CombinedOutput()
+	if err == nil {
+		statusStr := string(out)
+		if strings.Contains(statusStr, "running") {
+			m.status = StatusRunning
+			if m.logCmd == nil {
+				m.startLogStream()
+			}
+		} else if strings.Contains(statusStr, "exited") || strings.Contains(statusStr, "dead") {
+			m.status = StatusStopped
+		}
+	}
+	
 	return m.status
+}
+
+func (m *ServerManager) injectCustomPlugins() {
+	// Attempt to copy custom plugins into the container before starting
+	// Note: We use the shell to glob files inside the container or from host.
+	// Since backend runs in Docker and maps /app/data, we can just run:
+	// docker cp /app/data/custom_plugins/. AssettoServer:/app/plugins/
+	// BUT docker cp with /. is a bit tricky if the folder is empty, it might fail.
+	
+	pluginsDir := "/app/data/custom_plugins"
+	if _, err := os.Stat(pluginsDir); os.IsNotExist(err) {
+		return
+	}
+	
+	files, err := os.ReadDir(pluginsDir)
+	if err != nil || len(files) == 0 {
+		return
+	}
+
+	m.broadcastLog("--- Injecting custom plugins ---")
+	for _, f := range files {
+		if f.IsDir() || strings.HasSuffix(strings.ToLower(f.Name()), ".dll") {
+			src := pluginsDir + "/" + f.Name()
+			dest := m.container + ":/app/plugins/" + f.Name()
+			exec.Command("docker", "cp", src, dest).Run()
+		}
+	}
 }
 
 func (m *ServerManager) SubscribeLogs() (chan string, []string) {
@@ -79,6 +122,9 @@ func (m *ServerManager) broadcastLog(line string) {
 func (m *ServerManager) Start() error {
 	m.mu.Lock()
 	defer m.mu.Unlock()
+
+	// Inject custom plugins before starting
+	m.injectCustomPlugins()
 
 	// Start container
 	startCmd := exec.Command("docker", "start", m.container)
@@ -131,6 +177,9 @@ func (m *ServerManager) Restart() error {
 	defer m.mu.Unlock()
 	
 	m.broadcastLog("--- Restarting server ---")
+	
+	// Inject custom plugins before restarting
+	m.injectCustomPlugins()
 	
 	restartCmd := exec.Command("docker", "restart", m.container)
 	if err := restartCmd.Run(); err != nil {

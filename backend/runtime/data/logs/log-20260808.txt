@@ -1710,3 +1710,1400 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2026-08-08 01:36:34.179 +02:00 [DBG] Car 4 reached spline end, despawning
 2026-08-08 01:36:48.187 +02:00 [DBG] Car 7 reached spline end, despawning
 2026-08-08 01:36:48.688 +02:00 [DBG] Car 15 reached spline end, despawning
+2026-08-08 01:37:37.714 +02:00 [DBG] Car 20 reached spline end, despawning
+2026-08-08 01:37:45.219 +02:00 [DBG] Car 6 reached spline end, despawning
+2026-08-08 01:38:04.239 +02:00 [DBG] Car 5 reached spline end, despawning
+2026-08-08 01:38:04.739 +02:00 [DBG] Car 2 reached spline end, despawning
+2026-08-08 01:38:51.260 +02:00 [DBG] Car 8 reached spline end, despawning
+2026-08-08 01:39:00.264 +02:00 [DBG] Car 9 reached spline end, despawning
+2026-08-08 01:39:03.268 +02:00 [DBG] Car 19 reached spline end, despawning
+2026-08-08 01:45:07.457 +02:00 [DBG] Car 17 reached spline end, despawning
+2026-08-08 01:46:17.991 +02:00 [DBG] Car 13 reached spline end, despawning
+2026-08-08 01:46:51.007 +02:00 [DBG] Car 18 reached spline end, despawning
+2026-08-08 02:30:00.599 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 02:30:00.681 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 02:30:00.718 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 02:30:00.731 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 02:30:02.510 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 02:30:02.732 +02:00 [INF] Starting server
+2026-08-08 02:30:02.897 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 02:30:03.102 +02:00 [WRN] No XML encryptor configured. Key {a7e33eef-6e3f-4abe-9a8c-2614346969e6} may be persisted to storage in unencrypted form.
+2026-08-08 02:30:03.536 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 02:30:03.545 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 02:30:03.545 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 02:30:03.554 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 02:30:03.557 +02:00 [INF] Loaded 21 cars
+2026-08-08 02:30:03.567 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 02:30:03.569 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 02:30:03.574 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 02:30:03.576 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 02:30:04.711 +02:00 [ERR] Connection id "0HNNKSGOFNO1A", Request id "0HNNKSGOFNO1A:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 02:30:04.709 +02:00 [ERR] Connection id "0HNNKSGOFNO19", Request id "0HNNKSGOFNO19:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 02:30:05.393 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 02:30:05.705 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 02:30:05.705 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 02:30:06.085 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 02:30:06.086 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 02:30:06.091 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 02:30:06.092 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 02:30:06.092 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 02:30:06.093 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 02:30:06.094 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 02:30:06.208 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 02:30:06.221 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 02:30:06.807 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 02:30:06.808 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 02:30:06.837 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 02:30:06.843 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 02:30:06.844 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 02:30:07.030 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 02:30:07.053 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 02:30:07.530 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 02:30:08.069 +02:00 [ERR] Connection id "0HNNKSGOFNO1B", Request id "0HNNKSGOFNO1B:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 02:30:08.079 +02:00 [ERR] Connection id "0HNNKSGOFNO1C", Request id "0HNNKSGOFNO1C:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 02:30:08.213 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 02:30:08.214 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 02:30:08.226 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 02:30:08.226 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 02:30:08.231 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 02:30:08.235 +02:00 [INF] Next session: Free Practice
+2026-08-08 02:30:08.236 +02:00 [INF] Switching session to id 0
+2026-08-08 02:30:08.520 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 02:30:08.555 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 02:30:08.558 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 02:30:08.568 +02:00 [INF] Registering server to lobby...
+2026-08-08 02:30:08.575 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 02:30:08.676 +02:00 [INF] Lobby registration successful
+2026-08-08 12:07:57.092 +02:00 [INF] Server shutting down
+2026-08-08 12:10:52.620 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 12:10:52.666 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 12:10:52.691 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 12:10:52.707 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 12:10:53.805 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 12:10:54.349 +02:00 [INF] Starting server
+2026-08-08 12:10:54.411 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 12:10:54.526 +02:00 [WRN] No XML encryptor configured. Key {aed5fc90-7d7d-4a46-862a-6ff50c05867c} may be persisted to storage in unencrypted form.
+2026-08-08 12:10:54.753 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 12:10:54.760 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 12:10:54.761 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 12:10:54.765 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 12:10:54.767 +02:00 [INF] Loaded 21 cars
+2026-08-08 12:10:54.775 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 12:10:54.777 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 12:10:54.778 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 12:10:54.778 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 12:10:56.365 +02:00 [ERR] Connection id "0HNNL6LB43IHO", Request id "0HNNL6LB43IHO:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:10:56.827 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:10:58.823 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:00.828 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000003": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:02.837 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000004": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:03.712 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 12:11:04.333 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 12:11:04.334 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 12:11:04.846 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000005": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:06.851 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000006": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:08.779 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 12:11:08.790 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 12:11:08.866 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000007": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:08.868 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 12:11:08.869 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 12:11:08.870 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 12:11:08.893 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 12:11:08.894 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 12:11:10.427 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 12:11:10.537 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 12:11:11.058 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000008": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:12.877 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000009": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:14.893 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:0000000A": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:16.449 +02:00 [ERR] Connection id "0HNNL6LB43IHQ", Request id "0HNNL6LB43IHQ:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:16.899 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:0000000B": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:18.906 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:0000000C": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:19.020 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 12:11:19.021 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 12:11:19.487 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 12:11:19.583 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 12:11:19.585 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 12:11:20.910 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:0000000D": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:22.493 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 12:11:22.734 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 12:11:22.912 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:0000000E": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:24.920 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:0000000F": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:26.931 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000010": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:28.263 +02:00 [ERR] Connection id "0HNNL6LB43IHR", Request id "0HNNL6LB43IHR:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:28.948 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000011": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:30.526 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 12:11:30.955 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000012": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:32.971 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000013": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:34.975 +02:00 [ERR] Connection id "0HNNL6LB43IHP", Request id "0HNNL6LB43IHP:00000014": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:35.279 +02:00 [ERR] Connection id "0HNNL6LB43IHS", Request id "0HNNL6LB43IHS:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 12:11:40.964 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 12:11:40.965 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 12:11:40.970 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 12:11:40.976 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 12:11:40.981 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 12:11:40.986 +02:00 [INF] Next session: Free Practice
+2026-08-08 12:11:40.987 +02:00 [INF] Switching session to id 0
+2026-08-08 12:11:41.317 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 12:11:41.439 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 12:11:41.452 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 12:11:41.476 +02:00 [INF] Registering server to lobby...
+2026-08-08 12:11:41.481 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 12:11:41.572 +02:00 [INF] Lobby registration successful
+2026-08-08 16:56:46.015 +02:00 [INF] Server shutting down
+2026-08-08 16:56:48.529 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 16:56:48.604 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 16:56:48.632 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 16:56:48.643 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 16:56:49.597 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 16:56:49.666 +02:00 [INF] Starting server
+2026-08-08 16:56:49.737 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 16:56:49.818 +02:00 [WRN] No XML encryptor configured. Key {a0cad88f-23fc-4fc1-939c-989087b4c2ed} may be persisted to storage in unencrypted form.
+2026-08-08 16:56:50.120 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 16:56:50.126 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 16:56:50.127 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 16:56:50.130 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 16:56:50.132 +02:00 [INF] Loaded 21 cars
+2026-08-08 16:56:50.142 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 16:56:50.142 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 16:56:50.143 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 16:56:50.144 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 16:56:51.207 +02:00 [ERR] Connection id "0HNNLBL3L9TI8", Request id "0HNNLBL3L9TI8:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:00.594 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 16:57:02.897 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 16:57:02.898 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 16:57:04.205 +02:00 [ERR] Connection id "0HNNLBL3L9TI9", Request id "0HNNLBL3L9TI9:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:06.407 +02:00 [ERR] Connection id "0HNNLBL3L9TIA", Request id "0HNNLBL3L9TIA:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:07.043 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 16:57:07.059 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 16:57:07.134 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 16:57:07.136 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 16:57:07.136 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 16:57:07.161 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 16:57:07.162 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 16:57:08.198 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 16:57:08.280 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 16:57:10.393 +02:00 [ERR] Connection id "0HNNLBL3L9TIB", Request id "0HNNLBL3L9TIB:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:12.671 +02:00 [ERR] Connection id "0HNNLBL3L9TIC", Request id "0HNNLBL3L9TIC:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:13.456 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 16:57:13.456 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 16:57:13.762 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 16:57:13.837 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 16:57:13.840 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 16:57:15.686 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 16:57:15.813 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 16:57:18.399 +02:00 [ERR] Connection id "0HNNLBL3L9TID", Request id "0HNNLBL3L9TID:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:18.446 +02:00 [ERR] Connection id "0HNNLBL3L9TID", Request id "0HNNLBL3L9TID:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 16:57:22.231 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 16:57:29.650 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 16:57:29.651 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 16:57:29.654 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 16:57:29.659 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 16:57:29.663 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 16:57:29.665 +02:00 [INF] Next session: Free Practice
+2026-08-08 16:57:29.666 +02:00 [INF] Switching session to id 0
+2026-08-08 16:57:29.924 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 16:57:29.961 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 16:57:29.963 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 16:57:29.981 +02:00 [INF] Registering server to lobby...
+2026-08-08 16:57:29.986 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 16:57:30.093 +02:00 [INF] Lobby registration successful
+2026-08-08 17:47:59.300 +02:00 [INF] Server shutting down
+2026-08-08 17:48:02.423 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 17:48:02.499 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 17:48:02.529 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 17:48:02.540 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 17:48:03.673 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 17:48:03.805 +02:00 [INF] Starting server
+2026-08-08 17:48:03.860 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 17:48:04.067 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 17:48:04.078 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 17:48:04.080 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 17:48:04.085 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 17:48:04.088 +02:00 [INF] Loaded 21 cars
+2026-08-08 17:48:04.099 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 17:48:04.101 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 17:48:04.102 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 17:48:04.102 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 17:48:05.128 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 17:48:05.425 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 17:48:05.425 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 17:48:05.548 +02:00 [ERR] Connection id "0HNNLCHNSRG4E", Request id "0HNNLCHNSRG4E:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:05.934 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 17:48:05.935 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 17:48:05.940 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 17:48:05.940 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 17:48:05.940 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 17:48:05.941 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 17:48:05.941 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 17:48:06.035 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 17:48:06.042 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 17:48:06.484 +02:00 [ERR] Connection id "0HNNLCHNSRG4F", Request id "0HNNLCHNSRG4F:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:06.637 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 17:48:06.639 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 17:48:06.668 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 17:48:06.675 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 17:48:06.675 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 17:48:06.870 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 17:48:06.884 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 17:48:07.305 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 17:48:07.875 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 17:48:07.876 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 17:48:07.878 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 17:48:07.879 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 17:48:07.882 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 17:48:07.884 +02:00 [INF] Next session: Free Practice
+2026-08-08 17:48:07.885 +02:00 [INF] Switching session to id 0
+2026-08-08 17:48:08.129 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 17:48:08.172 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 17:48:08.174 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 17:48:08.184 +02:00 [INF] Registering server to lobby...
+2026-08-08 17:48:08.190 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 17:48:08.288 +02:00 [INF] Lobby registration successful
+2026-08-08 17:48:12.335 +02:00 [INF] Server shutting down
+2026-08-08 17:48:19.307 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 17:48:19.354 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 17:48:19.379 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 17:48:19.386 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 17:48:19.965 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 17:48:19.987 +02:00 [INF] Starting server
+2026-08-08 17:48:20.038 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 17:48:20.230 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 17:48:20.236 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 17:48:20.237 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 17:48:20.243 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 17:48:20.245 +02:00 [INF] Loaded 21 cars
+2026-08-08 17:48:20.253 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 17:48:20.253 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 17:48:20.253 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 17:48:20.253 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 17:48:20.788 +02:00 [ERR] Connection id "0HNNLCHSE7O96", Request id "0HNNLCHSE7O96:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:20.862 +02:00 [ERR] Connection id "0HNNLCHSE7O96", Request id "0HNNLCHSE7O96:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:21.151 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 17:48:21.440 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 17:48:21.441 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 17:48:21.802 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 17:48:21.804 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 17:48:21.808 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 17:48:21.809 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 17:48:21.809 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 17:48:21.810 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 17:48:21.810 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 17:48:21.904 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 17:48:21.911 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 17:48:22.257 +02:00 [ERR] Connection id "0HNNLCHSE7O97", Request id "0HNNLCHSE7O97:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:22.409 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 17:48:22.409 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 17:48:22.437 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 17:48:22.443 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 17:48:22.443 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 17:48:22.589 +02:00 [ERR] Connection id "0HNNLCHSE7O98", Request id "0HNNLCHSE7O98:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:22.614 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 17:48:22.628 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 17:48:23.071 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 17:48:23.618 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 17:48:23.619 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 17:48:23.623 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 17:48:23.624 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 17:48:23.627 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 17:48:23.630 +02:00 [INF] Next session: Free Practice
+2026-08-08 17:48:23.632 +02:00 [INF] Switching session to id 0
+2026-08-08 17:48:23.879 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 17:48:23.910 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 17:48:23.914 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 17:48:23.926 +02:00 [INF] Registering server to lobby...
+2026-08-08 17:48:23.937 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 17:48:23.995 +02:00 [ERR] Error during Kunos lobby registration
+AssettoServer.Server.KunosLobbyException: ERROR - TOO MANY REGISTRATION ATTEMPTS, SLOW DOWN
+   at AssettoServer.Server.KunosLobbyRegistration.RegisterToLobbyAsync(CancellationToken token) in AssettoServer/Server/KunosLobbyRegistration.cs:line 113
+   at AssettoServer.Server.KunosLobbyRegistration.ExecuteAsync(CancellationToken stoppingToken) in AssettoServer/Server/KunosLobbyRegistration.cs:line 37
+2026-08-08 17:48:30.981 +02:00 [INF] Server shutting down
+2026-08-08 17:48:38.167 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 17:48:38.214 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 17:48:38.238 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 17:48:38.248 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 17:48:38.836 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 17:48:38.861 +02:00 [INF] Starting server
+2026-08-08 17:48:38.908 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 17:48:39.084 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 17:48:39.091 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 17:48:39.092 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 17:48:39.095 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 17:48:39.096 +02:00 [INF] Loaded 21 cars
+2026-08-08 17:48:39.103 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 17:48:39.103 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 17:48:39.104 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 17:48:39.104 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 17:48:39.755 +02:00 [ERR] Connection id "0HNNLCI235401", Request id "0HNNLCI235401:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method489(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:39.941 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 17:48:40.232 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 17:48:40.232 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 17:48:40.589 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 17:48:40.590 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 17:48:40.595 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 17:48:40.595 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 17:48:40.595 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 17:48:40.596 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 17:48:40.596 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 17:48:40.687 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 17:48:40.694 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 17:48:41.119 +02:00 [ERR] Connection id "0HNNLCI235402", Request id "0HNNLCI235402:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method495(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:48:41.197 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 17:48:41.198 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 17:48:41.226 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 17:48:41.231 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 17:48:41.232 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 17:48:41.404 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 17:48:41.418 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 17:48:41.831 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 17:48:42.382 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 17:48:42.383 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 17:48:42.385 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 17:48:42.385 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 17:48:42.388 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 17:48:42.391 +02:00 [INF] Next session: Free Practice
+2026-08-08 17:48:42.391 +02:00 [INF] Switching session to id 0
+2026-08-08 17:48:42.626 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 17:48:42.661 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 17:48:42.663 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 17:48:42.676 +02:00 [INF] Registering server to lobby...
+2026-08-08 17:48:42.682 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 17:48:42.780 +02:00 [INF] Lobby registration successful
+2026-08-08 17:50:16.997 +02:00 [INF] Coach Boule (76561198275999678 - 176.132.101.28:50317) is attempting to connect (ks_alfa_romeo_gta)
+2026-08-08 17:50:17.000 +02:00 [DBG] Coach Boule supports extra CSP features: ["STEAM_TICKET","CLIENT_MESSAGES","SPECTATING_AWARE","WEATHERFX_V1","WEATHERFX_V2","WEATHERFX_V3","BATCH_FIX_V2","CUSTOM_UPDATE","CUSTOM_UPDATE_V2","CLIENT_UDP_MESSAGES","BATCH_MESSAGES","EXPLICIT_ADMIN_STATE","3839"]
+2026-08-08 17:50:17.008 +02:00 [INF] Coach Boule (76561198275999678, 0 (ks_alfa_romeo_gta-0_rosso_alfa)) has connected
+2026-08-08 17:50:43.394 +02:00 [DBG] AI Slot overbooking update - No. players: 1 - No. AI Slots: 20 - Target AI count: 20 - Overbooking: 1 - Rest: 0
+2026-08-08 17:50:44.790 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:AQD/DgAAAQEBALExT8E0X/8g
+2026-08-08 17:50:47.387 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOoQwB57
+2026-08-08 17:52:27.330 +02:00 [INF] CHAT: Coach Boule (0): /help
+2026-08-08 17:52:40.925 +02:00 [DBG] Received clean exit from Coach Boule (0)
+2026-08-08 17:52:40.927 +02:00 [DBG] Disconnecting Coach Boule (176.132.101.28:50317)
+2026-08-08 17:52:40.930 +02:00 [INF] Coach Boule has disconnected
+2026-08-08 17:53:16.447 +02:00 [INF] Coach Boule (76561198275999678 - 176.132.101.28:58661) is attempting to connect (ks_alfa_romeo_gta)
+2026-08-08 17:53:16.447 +02:00 [DBG] Coach Boule supports extra CSP features: ["STEAM_TICKET","CLIENT_MESSAGES","SPECTATING_AWARE","WEATHERFX_V1","WEATHERFX_V2","WEATHERFX_V3","BATCH_FIX_V2","CUSTOM_UPDATE","CUSTOM_UPDATE_V2","CLIENT_UDP_MESSAGES","BATCH_MESSAGES","EXPLICIT_ADMIN_STATE","3839"]
+2026-08-08 17:53:16.447 +02:00 [INF] Coach Boule (76561198275999678, 0 (ks_alfa_romeo_gta-0_rosso_alfa)) has connected
+2026-08-08 17:53:39.810 +02:00 [DBG] AI Slot overbooking update - No. players: 1 - No. AI Slots: 20 - Target AI count: 20 - Overbooking: 1 - Rest: 0
+2026-08-08 17:53:40.027 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:AQD/DgAAAQEBALExT8E0X/8g
+2026-08-08 17:53:41.813 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOoQwB57
+2026-08-08 17:53:49.691 +02:00 [INF] CHAT: Coach Boule (0): /admin
+2026-08-08 17:53:56.549 +02:00 [INF] CHAT: Coach Boule (0): /admin adminpass
+2026-08-08 17:53:59.711 +02:00 [INF] CHAT: Coach Boule (0): /help
+2026-08-08 17:56:23.149 +02:00 [DBG] Received clean exit from Coach Boule (0)
+2026-08-08 17:56:23.149 +02:00 [DBG] Disconnecting Coach Boule (176.132.101.28:58661)
+2026-08-08 17:56:23.149 +02:00 [INF] Coach Boule has disconnected
+2026-08-08 17:57:59.982 +02:00 [INF] Server shutting down
+2026-08-08 17:58:02.994 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 17:58:03.074 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 17:58:03.110 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 17:58:03.120 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 17:58:03.840 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 17:58:03.865 +02:00 [INF] Starting server
+2026-08-08 17:58:03.916 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 17:58:04.116 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 17:58:04.121 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 17:58:04.121 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 17:58:04.124 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 17:58:04.127 +02:00 [INF] Loaded 21 cars
+2026-08-08 17:58:04.137 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 17:58:04.138 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 17:58:04.138 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 17:58:04.138 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 17:58:05.080 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 17:58:05.373 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 17:58:05.374 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 17:58:05.797 +02:00 [ERR] Connection id "0HNNLCNAPI298", Request id "0HNNLCNAPI298:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method486(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 17:58:05.818 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 17:58:05.819 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 17:58:05.824 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 17:58:05.824 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 17:58:05.824 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 17:58:05.826 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 17:58:05.826 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 17:58:05.918 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 17:58:05.925 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 17:58:06.444 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 17:58:06.444 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 17:58:06.472 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 17:58:06.477 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 17:58:06.478 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 17:58:06.646 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 17:58:06.660 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 17:58:07.077 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 17:58:07.628 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 17:58:07.630 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 17:58:07.632 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 17:58:07.632 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 17:58:07.636 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 17:58:07.639 +02:00 [INF] Next session: Free Practice
+2026-08-08 17:58:07.639 +02:00 [INF] Switching session to id 0
+2026-08-08 17:58:07.883 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 17:58:07.919 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 17:58:07.922 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 17:58:07.933 +02:00 [INF] Registering server to lobby...
+2026-08-08 17:58:07.938 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 17:58:08.036 +02:00 [INF] Lobby registration successful
+2026-08-08 18:04:32.969 +02:00 [INF] Server shutting down
+2026-08-08 18:04:34.938 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 18:04:34.993 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 18:04:35.019 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 18:04:35.028 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 18:04:35.653 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 18:04:35.675 +02:00 [INF] Starting server
+2026-08-08 18:04:35.754 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 18:04:35.940 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 18:04:35.948 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 18:04:35.950 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 18:04:35.954 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 18:04:35.956 +02:00 [INF] Loaded 21 cars
+2026-08-08 18:04:35.965 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 18:04:35.965 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 18:04:35.966 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 18:04:35.966 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 18:04:36.863 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 18:04:37.178 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 18:04:37.178 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 18:04:37.540 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 18:04:37.542 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 18:04:37.547 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 18:04:37.547 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 18:04:37.547 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 18:04:37.549 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 18:04:37.549 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 18:04:37.644 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 18:04:37.651 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 18:04:37.850 +02:00 [ERR] Connection id "0HNNLCQVKFLF4", Request id "0HNNLCQVKFLF4:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method486(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 18:04:38.068 +02:00 [ERR] Connection id "0HNNLCQVKFLF5", Request id "0HNNLCQVKFLF5:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method492(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 18:04:38.158 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 18:04:38.158 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 18:04:38.189 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 18:04:38.195 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 18:04:38.196 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 18:04:38.372 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 18:04:38.386 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 18:04:38.803 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 18:04:39.415 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 18:04:39.417 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 18:04:39.422 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 18:04:39.422 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 18:04:39.429 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 18:04:39.434 +02:00 [INF] Next session: Free Practice
+2026-08-08 18:04:39.436 +02:00 [INF] Switching session to id 0
+2026-08-08 18:04:39.692 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 18:04:39.732 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 18:04:39.734 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 18:04:39.742 +02:00 [INF] Registering server to lobby...
+2026-08-08 18:04:39.747 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 18:04:39.850 +02:00 [INF] Lobby registration successful
+2026-08-08 18:11:39.442 +02:00 [INF] Server shutting down
+2026-08-08 18:11:40.795 +02:00 [INF] AssettoServer 0.0.54+51737e2c2e
+2026-08-08 18:11:40.838 +02:00 [DBG] Loading server_cfg.ini from cfg/server_cfg.ini
+2026-08-08 18:11:40.862 +02:00 [DBG] Loading entry_list.ini from cfg/entry_list.ini
+2026-08-08 18:11:40.870 +02:00 [DBG] Loading extra_cfg.yml from cfg/extra_cfg.yml
+2026-08-08 18:11:41.143 +02:00 [INF] Loaded plugin FastTravelPlugin
+2026-08-08 18:11:41.531 +02:00 [DBG] Mapping cached AI spline 46457918DD91738F.aic1 to memory
+2026-08-08 18:11:41.588 +02:00 [INF] Starting server
+2026-08-08 18:11:41.633 +02:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-08-08 18:11:41.777 +02:00 [DBG] Loaded blacklist.txt with 0 entries
+2026-08-08 18:11:41.783 +02:00 [DBG] Loaded whitelist.txt with 0 entries
+2026-08-08 18:11:41.784 +02:00 [DBG] Loaded admins.txt with 0 entries
+2026-08-08 18:11:41.787 +02:00 [INF] Starting HTTP server on port 8666
+2026-08-08 18:11:41.788 +02:00 [INF] Loaded 21 cars
+2026-08-08 18:11:41.795 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/main_layout/data/surfaces.ini
+2026-08-08 18:11:41.796 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/models_main_layout.ini
+2026-08-08 18:11:41.796 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_s.kn5
+2026-08-08 18:11:41.796 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_heiwajima_n.kn5
+2026-08-08 18:11:42.676 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/shuto_revival_project_beta.kn5
+2026-08-08 18:11:42.966 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_mirai_0_9_3.kn5
+2026-08-08 18:11:42.967 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_tatsumi.kn5
+2026-08-08 18:11:43.406 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyashinjuku_0_9_3.kn5
+2026-08-08 18:11:43.408 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_gapmarkings_0_9_3.kn5
+2026-08-08 18:11:43.412 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/reverb.kn5
+2026-08-08 18:11:43.413 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_main.kn5
+2026-08-08 18:11:43.413 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_yoyogi.kn5
+2026-08-08 18:11:43.414 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/vantablack.kn5
+2026-08-08 18:11:43.414 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_daishi.kn5
+2026-08-08 18:11:43.507 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_shibuyacrossing_0_9_3.kn5
+2026-08-08 18:11:43.514 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_animations_0_9_3.kn5
+2026-08-08 18:11:43.515 +02:00 [ERR] Connection id "0HNNLCUUFOUCR", Request id "0HNNLCUUFOUCR:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method496(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 18:11:43.638 +02:00 [ERR] Connection id "0HNNLCUUFOUCS", Request id "0HNNLCUUFOUCS:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetInfo() in AssettoServer/Network/Http/HttpController.cs:line 62
+   at lambda_method502(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 18:11:44.030 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yokohane_0_9_3.kn5
+2026-08-08 18:11:44.031 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_pits_shibaura.kn5
+2026-08-08 18:11:44.061 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yoyogi_0_9_3.kn5
+2026-08-08 18:11:44.067 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_barriers_0_9_3.kn5
+2026-08-08 18:11:44.067 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_cameras_c1_0_9_2.kn5
+2026-08-08 18:11:44.239 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_yaesu_0_9_3.kn5
+2026-08-08 18:11:44.253 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/terrain.kn5
+2026-08-08 18:11:44.491 +02:00 [ERR] Connection id "0HNNLCUUFOUCT", Request id "0HNNLCUUFOUCT:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AssettoServer.Network.Http.HttpController.GetDetails(String guid) in AssettoServer/Network/Http/HttpController.cs:line 124
+   at lambda_method496(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2026-08-08 18:11:44.673 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/physical.kn5
+2026-08-08 18:11:45.225 +02:00 [DBG] Added checksum for content/tracks/shuto_revival_project_beta/srp_bayshore_0_9_3.kn5
+2026-08-08 18:11:45.226 +02:00 [INF] Initialized 25 track checksums
+2026-08-08 18:11:45.227 +02:00 [DBG] Added checksum for ks_alfa_romeo_gta
+2026-08-08 18:11:45.228 +02:00 [DBG] Added checksum for gpl67_honda
+2026-08-08 18:11:45.230 +02:00 [INF] Initialized 2 car checksums
+2026-08-08 18:11:45.232 +02:00 [INF] Next session: Free Practice
+2026-08-08 18:11:45.233 +02:00 [INF] Switching session to id 0
+2026-08-08 18:11:45.456 +02:00 [INF] Server invite link: https://acstuff.ru/s/q:race/online/join?ip=82.29.172.87&httpPort=8666
+2026-08-08 18:11:45.491 +02:00 [INF] Starting TCP server on port 9666
+2026-08-08 18:11:45.493 +02:00 [INF] Starting UDP server on port 9666
+2026-08-08 18:11:45.503 +02:00 [INF] Registering server to lobby...
+2026-08-08 18:11:45.509 +02:00 [INF] Starting update loop with an update rate of 18hz
+2026-08-08 18:11:45.606 +02:00 [INF] Lobby registration successful
+2026-08-08 18:13:58.039 +02:00 [INF] Coach Boule (76561198275999678 - 176.132.101.28:57375) is attempting to connect (ks_alfa_romeo_gta)
+2026-08-08 18:13:58.041 +02:00 [DBG] Coach Boule supports extra CSP features: ["STEAM_TICKET","CLIENT_MESSAGES","SPECTATING_AWARE","WEATHERFX_V1","WEATHERFX_V2","WEATHERFX_V3","BATCH_FIX_V2","CUSTOM_UPDATE","CUSTOM_UPDATE_V2","CLIENT_UDP_MESSAGES","BATCH_MESSAGES","EXPLICIT_ADMIN_STATE","3839"]
+2026-08-08 18:13:58.051 +02:00 [INF] Coach Boule (76561198275999678, 0 (ks_alfa_romeo_gta-0_rosso_alfa)) has connected
+2026-08-08 18:14:18.332 +02:00 [DBG] AI Slot overbooking update - No. players: 1 - No. AI Slots: 20 - Target AI count: 20 - Overbooking: 1 - Rest: 0
+2026-08-08 18:14:18.874 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:AQD/DgAAAQEBALExT8E0X/8g
+2026-08-08 18:14:20.353 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOoQwB57
+2026-08-08 18:14:48.763 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOrfBdyZAQ
+2026-08-08 18:15:26.332 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOotJkUNAAAAAAAAAAAAAAAA//FmRNDiu0A2yp3D
+2026-08-08 18:15:31.373 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOrfBdyZ
+2026-08-08 18:15:47.106 +02:00 [INF] Collision between Coach Boule (0) and environment, rel. speed 13km/h
+2026-08-08 18:15:50.709 +02:00 [INF] Collision between Coach Boule (0) and environment, rel. speed 10km/h
+2026-08-08 18:15:52.745 +02:00 [INF] Collision between Coach Boule (0) and environment, rel. speed 1km/h
+2026-08-08 18:16:01.957 +02:00 [INF] Collision between Coach Boule (0) and Traffic 2 (2), rel. speed 162km/h
+2026-08-08 18:16:06.033 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOrfBdyZAQ
+2026-08-08 18:16:11.444 +02:00 [INF] CHAT: Coach Boule (0): 				$CSP0:YOotJkUNAAAAAAAAAAAAAAAAh37AxfD2TkLdFF9G
+2026-08-08 18:16:14.139 +02:00 [DBG] Received clean exit from Coach Boule (0)
+2026-08-08 18:16:14.142 +02:00 [DBG] Disconnecting Coach Boule (176.132.101.28:57375)
+2026-08-08 18:16:14.146 +02:00 [INF] Coach Boule has disconnected
