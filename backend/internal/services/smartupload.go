@@ -79,9 +79,6 @@ func processArchiveUniversal(file multipart.File, ext string) error {
 		export EXTRACT_PATH="%[1]s"
 		export BASE_PATH="%[2]s"
 
-		# Remove heavy graphical assets to save space, since the server doesn't need them
-		find "$EXTRACT_PATH" -type f \( -iname "*.kn5" -o -iname "*.dds" \) -delete
-
 		# 1. Discover Tracks (look for ui_track.json)
 		# The structure is usually tracks/<track_name>/ui/ui_track.json or tracks/<track_name>/ui/<layout>/ui_track.json
 		find "$EXTRACT_PATH" -type f -iname "ui_track.json" | while read -r uifile; do
@@ -131,6 +128,9 @@ func processArchiveUniversal(file multipart.File, ext string) error {
 		if [ -d "$EXTRACT_PATH/weather" ]; then
 			rsync -a "$EXTRACT_PATH/weather/" "$BASE_PATH/weather/"
 		fi
+
+		# Fix permissions for ACSM
+		chown -R 1000:1000 "$BASE_PATH"
 	`, extractPath, basePath)
 
 	cmd = exec.Command("sh", "-c", script)
@@ -142,10 +142,6 @@ func processArchiveUniversal(file multipart.File, ext string) error {
 }
 
 func shouldIgnore(filename string) bool {
-	ext := strings.ToLower(filepath.Ext(filename))
-	if ext == ".kn5" || ext == ".dds" {
-		return true
-	}
 	return false
 }
 
@@ -169,6 +165,7 @@ func saveFile(relPath string, r io.Reader) error {
 	if err := os.MkdirAll(filepath.Dir(fullPath), 0755); err != nil {
 		return err
 	}
+	os.Chown(filepath.Dir(fullPath), 1000, 1000)
 
 	out, err := os.Create(fullPath)
 	if err != nil {
@@ -177,5 +174,8 @@ func saveFile(relPath string, r io.Reader) error {
 	defer out.Close()
 
 	_, err = io.Copy(out, r)
+	if err == nil {
+		os.Chown(fullPath, 1000, 1000)
+	}
 	return err
 }
