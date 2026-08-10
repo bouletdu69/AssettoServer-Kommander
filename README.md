@@ -61,7 +61,14 @@ Go to the **Events** tab. You can create a new Event Preset.
 - In the **CSP Extra Options** section, you can add custom rules like disabling wrong way penalties using the quick-insert buttons.
 - Click **Apply Preset** to automatically restart the server with this new configuration.
 
-### 3. Uploading Custom Plugins
+### 3. Patreon Upgrade (Custom Image & Key)
+Go to the **Configuration -> Global Logs / Server Control** tab (or wherever the Patreon settings are located).
+- To enable premium features (like AI Traffic), you need the AssettoServer Patreon version.
+- **Option A (Docker Image):** If you have a custom Docker image (e.g., `custom-assettoserver-patreon:latest`), specify it in the panel and restart.
+- **Option B (Zip Upload):** You can also upload the official `.zip` provided by the AssettoServer Patreon directly into the UI.
+- Enter your Patreon Key in the configuration if required.
+
+### 4. Uploading Custom Plugins
 Go to the **Plugins** tab. Scroll down to the "Custom Plugins" section.
 - Compile your plugin targeting `.NET 8` (AssettoServer requirement).
 - Zip the folder containing the `.dll` (e.g., `CannonballTimingPlugin.zip`).
