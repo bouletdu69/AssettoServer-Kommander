@@ -82,7 +82,19 @@ func (m *ServerManager) injectCustomPlugins() {
 		if f.IsDir() || strings.HasSuffix(strings.ToLower(f.Name()), ".dll") {
 			src := pluginsDir + "/" + f.Name()
 			dest := m.container + ":/app/plugins/" + f.Name()
-			exec.Command("docker", "cp", src, dest).Run()
+
+			if f.IsDir() {
+				exec.Command("docker", "exec", m.container, "mkdir", "-p", "/app/plugins/"+f.Name()).Run()
+				src = src + "/."
+				dest = dest + "/"
+			}
+
+			cmd := exec.Command("docker", "cp", src, dest)
+			if output, err := cmd.CombinedOutput(); err != nil {
+				m.broadcastLog(fmt.Sprintf("--- Failed to inject plugin %s: %v, output: %s ---", f.Name(), err, string(output)))
+			} else {
+				m.broadcastLog(fmt.Sprintf("--- Injected custom plugin: %s ---", f.Name()))
+			}
 		}
 	}
 }
@@ -141,7 +153,7 @@ func (m *ServerManager) Start() error {
 }
 
 func (m *ServerManager) startLogStream() {
-	if m.logCmd != nil {
+	if m.logCmd != nil && m.logCmd.Process != nil {
 		m.logCmd.Process.Kill()
 	}
 
@@ -161,7 +173,13 @@ func (m *ServerManager) startLogStream() {
 		go m.readOutput(stderr)
 	}
 
-	m.logCmd.Start()
+	if err := m.logCmd.Start(); err != nil {
+		m.broadcastLog("--- Error starting log stream: " + err.Error() + " ---")
+		m.mu.Lock()
+		m.logCmd = nil
+		m.mu.Unlock()
+		return
+	}
 
 	go func() {
 		m.logCmd.Wait()
